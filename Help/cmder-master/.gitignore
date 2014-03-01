@@ -1,9 +1,0 @@
-
-## Those files should be taken from their repositary
-
-vendor/*
-!vendor/*.md
-!vendor/*.bat
-config/.history
-Thumbs.db
-*.exe

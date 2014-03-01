@@ -40,4 +40,4 @@
 
 :: Feel free to modify/remove
 @echo [3;1mWelcome to cmder! customized by [31;mdufferzafar 
-@echo                   [3;0mcustomized some more by [31;mrootavish
+@echo [3;0mcustomized some more by [31;mrootavish

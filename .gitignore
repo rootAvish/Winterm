@@ -1,7 +1,3 @@
-# +++++++++++++++++++++++++++++++++++ #
-# dufferzafar's flavor of the Cmder   #
-# +++++++++++++++++++++++++++++++++++ #
-
 # The directory structure:
 
 # Bring back the executables (they are ignored in the global gitignore file)
@@ -48,5 +44,8 @@ vendor/GetGnuWin32
 # Oh my ssh!
 vendor/putty
 
-# Vi Improved :)
-vendor/vim
+#ignore swap files produced by vim , for all us vimmers
+*.swp
+
+#ignore the help folder
+Help
