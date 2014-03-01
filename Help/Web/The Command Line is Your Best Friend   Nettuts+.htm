@@ -1,0 +1,959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html
+xmlns="http://www.w3.org/1999/xhtml"><head><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>The Command Line is Your Best Friend | Nettuts+</title><link
+rel='stylesheet' href='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/plugins/wp-post-ratings/wp-post-ratings.css,wp-content/themes/tuts/style.css,wp-content/themes/tuts/images/theme/nettuts/theme.css,wp-content/themes/tuts/css/jobs-widget.css,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css,wp-content/plugins/organize-series/orgSeries.css&amp;m=1386206800' type='text/css' media='screen' /><link
+href="http://envato.s3.amazonaws.com/widget/widget.css" rel="stylesheet" type="text/css" media="screen" /><link
+rel="shortcut icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/favicon.ico" /><link
+rel="apple-touch-icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/apple-touch-icon.png" /> <script>Env = window.Env || {};
+  Env.facebookUrl = 'http://facebook.com/nettutsplus';
+  Env.mailChimpUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/functions/mc/mail-chimp.php';
+  Env.trackingCode = 'UA-11792865-8';
+  Env.boxUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif';
+      Env.trackingFields = [
+      {id: 1, name: 'Author', value: 'Patkos Csaba'},
+      {id: 2, name: 'Category', value: 'tutorials/tools-and-tips'},
+      {id: 3, name: 'Publish Date', value: '2013-03'}
+    ];</script> <script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/themes/tuts/js/jquery-1.8.3.min.js,wp-content/plugins/wp-post-ratings/wp-post-ratings.js,wp-content/themes/tuts/js/jquery.ui.widget.js,wp-content/themes/tuts/js/jquery.ui.tabs.js,wp-content/themes/tuts/js/jobs.main.js,wp-content/themes/tuts/js/marketplace-url-rewriter.js,wp-content/themes/tuts/js/lazyload.js,wp-content/themes/tuts/js/google-analytics.js,wp-content/themes/tuts/js/mail-chimp.js,wp-content/themes/tuts/js/header.js,wp-includes/js/comment-reply.min.js,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js,wp-content/plugins/flash-player/swfobject.js&amp;m=1386206800'></script> <link
+rel='stylesheet' id='print-css'  href='http://net.tutsplus.com/wp-content/themes/tuts/css/print.css?ver=2.0' type='text/css' media='print' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://net.tutsplus.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://net.tutsplus.com/wp-includes/wlwmanifest.xml" /><link
+rel='prev' title='Active Record: The Rails Database Bridge' href='http://net.tutsplus.com/tutorials/ruby/active-record-the-rails-database-bridge/' /><link
+rel='next' title='Headless Functional Testing with Selenium and PhantomJS' href='http://net.tutsplus.com/tutorials/javascript-ajax/headless-functional-testing-with-selenium-and-phantomjs/' /><link
+rel='shortlink' href='http://net.tutsplus.com/?p=30362' /><meta
+name="description" content="The command line can either be your best friend, or your worst enemy. It simply depends on how you use it, and what you use it for. If you're one of the many" /><meta
+name="keywords" content="bash,cmd,commnd line,tools &amp; tips,tutorials" /><link
+rel="canonical" href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/" /><meta
+id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" /> <script type="text/javascript" src="http://osc.optimize.webtrends.com/628645/wt_capi.js"></script> <link
+rel="alternate" type="application/rss+xml" title="Nettuts+ RSS Feed" href="http://net.tutsplus.com/feed/" /><link
+rel="pingback" href="http://net.tutsplus.com/xmlrpc.php" /><meta
+name="google-site-verification" content="aoXTcdQJMMCGh8FUsMlj35Qw-2jK83Wpt7XnqUPB9KI" /><link
+href="https://plus.google.com/100395074731712398322" rel="publisher" /></head><body
+class="single single-post postid-30362 single-format-standard"> <script type="text/javascript">/*<![CDATA[*/if(window.WTOptimize && typeof wtObj != "undefined"){
+    WTOptimize.setup(wtObj);
+  }/*]]>*/</script>  <script type='text/javascript'>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();</script> <script type='text/javascript'>googletag.cmd.push(function() {
+  googletag.defineSlot('/11757429/net_leaderboard', [728, 90], 'div-gpt-ad-leaderboard').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_sidebar_premium', [300, 250], 'div-gpt-ad-sidebar-premium').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_featured_sidebar', [300, 250], 'div-gpt-ad-featured-sidebar').addService(googletag.pubads());
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script>  <script type="text/javascript">if (!plus_member_logged_in()) {
+  (function(){
+    var bsa = document.createElement('script');
+       bsa.type = 'text/javascript';
+       bsa.async = true;
+       bsa.src = '//s3.buysellads.com/ac/bsa.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+  })();
+}</script> <div
+id="fb-root"></div>  <script type="text/javascript">(function(){
+  var fb = document.createElement('script');
+  fb.type = 'text/javascript';
+  fb.async = true;
+  fb.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fb);
+})();</script> <div
+id="header_wrap"><div
+id="header"><a
+href="http://net.tutsplus.com" class="logo">Nettuts+</a><ul
+class="top_navigation"><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li><li><a
+href="http://net.tutsplus.com/about/">About</a></li></ul><div
+class="search_form"><form
+method="get" action="http://net.tutsplus.com/"> <input
+type="text" class="submit_input" name="s" id="s" placeholder="Search..." /> <input
+class="submit_button" type="submit" value="Search" /></form></div><div
+id="navigation"><ul
+class="navigation"><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><ul
+class="child-nav"><li
+class="cat-item cat-item-568"><a
+href="http://net.tutsplus.com/category/tutorials/asp-net/" title="ASP.NET programming tutorials.">ASP.NET</a></li><li
+class="cat-item cat-item-464"><a
+href="http://net.tutsplus.com/category/tutorials/cmss/" title="Tutorials that details how to work with various CMSs.">CMSs</a></li><li
+class="cat-item cat-item-547"><a
+href="http://net.tutsplus.com/category/tutorials/databases/" title="Learn how to work more efficiently with databases.">Databases</a></li><li
+class="cat-item cat-item-286"><a
+href="http://net.tutsplus.com/category/tutorials/design-tutorials/" title="Learn the ins and outs of web design.">Design</a></li><li
+class="cat-item cat-item-8"><a
+href="http://net.tutsplus.com/category/tutorials/html-css-techniques/" title="Get up to speed with HTML and CSS.">HTML &amp; CSS</a></li><li
+class="cat-item cat-item-10"><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/" title="Learn about vanilla JavaScript, and the various popular libraries that are available, like jQuery.">JavaScript &amp; AJAX</a></li><li
+class="cat-item cat-item-153"><a
+href="http://net.tutsplus.com/category/tutorials/other/" title="View all posts filed under Other">Other</a></li><li
+class="cat-item cat-item-41"><a
+href="http://net.tutsplus.com/category/tutorials/php/" title="Learn how to use PHP.">PHP</a></li><li
+class="cat-item cat-item-1285"><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/" title="View all posts filed under Python">Python</a></li><li
+class="cat-item cat-item-124"><a
+href="http://net.tutsplus.com/category/tutorials/ruby/" title="High quality Ruby and RoR tutorials and screencasts.">Ruby</a></li><li
+class="cat-item cat-item-1650"><a
+href="http://net.tutsplus.com/category/tutorials/scala-tutorials/" title="View all posts filed under Scala">Scala</a></li><li
+class="cat-item cat-item-7"><a
+href="http://net.tutsplus.com/category/tutorials/site-builds/" title="Learn how to convert a PSD to HTML from scratch.">Site Builds</a></li><li
+class="cat-item cat-item-29"><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/" title="Details the most popular tools when building web applications.">Tools &amp; Tips</a></li><li
+class="cat-item cat-item-35"><a
+href="http://net.tutsplus.com/category/tutorials/wordpress/" title="Become a WordPress master.">Wordpress</a></li></ul></li><li><a
+href="http://net.tutsplus.com/category/articles/">Articles</a><ul
+class="child-nav"><li
+class="cat-item cat-item-182"><a
+href="http://net.tutsplus.com/category/articles/contests/" title="View all posts filed under Contests">Contests</a></li><li
+class="cat-item cat-item-1334"><a
+href="http://net.tutsplus.com/category/articles/editorials/" title="Opinion pieces on the web development arena. ">Editorials</a></li><li
+class="cat-item cat-item-128"><a
+href="http://net.tutsplus.com/category/articles/general/" title="Generic articles on web development.">General</a></li><li
+class="cat-item cat-item-127"><a
+href="http://net.tutsplus.com/category/articles/interviews/" title="Interviews with prominent developers in the web development industry.">Interviews</a></li><li
+class="cat-item cat-item-1084"><a
+href="http://net.tutsplus.com/category/articles/lectures/" title="Featured talks from web development conferences around the world.">Lectures</a></li><li
+class="cat-item cat-item-1"><a
+href="http://net.tutsplus.com/category/articles/news/" title="Recent news in the web development industry.">News</a></li><li
+class="cat-item cat-item-1251"><a
+href="http://net.tutsplus.com/category/articles/quizzes/" title="Quizzes to check your knowledge.">Quizzes</a></li><li
+class="cat-item cat-item-437"><a
+href="http://net.tutsplus.com/category/articles/reviews/" title="Reviews of new web apps, frameworks, and books.">Reviews</a></li><li
+class="cat-item cat-item-1379"><a
+href="http://net.tutsplus.com/category/articles/roundups-articles/" title="Compilations of tools, frameworks and other assorted stuff.">Roundups</a></li><li
+class="cat-item cat-item-23"><a
+href="http://net.tutsplus.com/category/articles/web-roundups/" title="Compilations of popular articles from around the web.">Web Roundups</a></li></ul></li><li><a
+href="http://net.tutsplus.com/tag/tips/">Tips</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=tips" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/?tag=tips" title="Tutorials">Tutorials</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/ruby/?tag=tips" title="Ruby">Ruby</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=tips" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/other/?tag=tips" title="Other">Other</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=tips" title="PHP">PHP</a></li></ul></li><li><a
+href="http://net.tutsplus.com/sessions/">Sessions</a></li><li><a
+href="http://net.tutsplus.com/resources/">Resources</a></li><li><a
+href="http://net.tutsplus.com/tag/videos/">Videos</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/?tag=videos" title="Python">Python</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=videos" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=videos" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=videos" title="PHP">PHP</a></li></ul></li><li
+id="nav-premium-link"> <a
+href="http://tutsplus.com/courses/?q=true&filter_topic=35" target="_blank">Tuts+ Premium</a></li></ul></div><div
+class="site_switcher"><ul><li
+class="link-hub"><a
+href="http://hub.tutsplus.com/">Tuts+ Hub <span>The Latest Tuts+ Updates</span></a></li><li
+class="link-psd"><a
+href="http://psd.tutsplus.com/">Psdtuts+ <span>Adobe Photoshop</span></a></li><li
+class="link-net"><a
+href="http://net.tutsplus.com/">Nettuts+ <span>Web Development</span></a></li><li
+class="link-vector"><a
+href="http://vector.tutsplus.com/">Vectortuts+ <span>Illustrator and Vector</span></a></li><li
+class="link-audio"><a
+href="http://audio.tutsplus.com/">Audiotuts+ <span>Audio and Production</span></a></li><li
+class="link-ae"><a
+href="http://ae.tutsplus.com/">Aetuts+ <span>Adobe After Effects</span></a></li><li
+class="link-cg"><a
+href="http://cg.tutsplus.com/">Cgtuts+ <span>Computer Graphics</span></a></li><li
+class="link-photo"><a
+href="http://photo.tutsplus.com/">Phototuts+ <span>Photography</span></a></li><li
+class="link-mobile"><a
+href="http://mobile.tutsplus.com/">Mobiletuts+ <span>Mobile Development</span></a></li><li
+class="link-webdesign"><a
+href="http://webdesign.tutsplus.com/">Webdesigntuts+ <span>Web Design</span></a></li><li
+class="link-wp"><a
+href="http://wp.tutsplus.com/">Wptuts+ <span>WordPress</span></a></li><li
+class="link-mac"><a
+href="http://mac.tutsplus.com/">Mactuts+ <span>Mac &amp; OS X</span></a></li><li
+class="link-gamedev"><a
+href="http://gamedev.tutsplus.com/">Gamedevtuts+ <span>Game Development</span></a></li><li
+class="link-craft"><a
+href="http://craft.tutsplus.com/">Crafttuts+ <span>Craft &amp; Handmade</span></a></li></ul> <a
+href="javascript:void(0);" class="site_switcher_button">Toggle</a></div><div
+class="header-marketplace-ad ad-themeforest"><a
+href="http://themeforest.net?WT.mc_id=TutsHeader&ref=NetPremium" rel="external"><span>&nbsp;</span>Website Templates</a></div></div></div><div
+id="content_wrap"><div
+id="content" class="clearfix"><div
+class="page_wrap"><div
+id="leader-board-wrap" style="display: none"><div
+class="leader_board"> <a
+href="http://net.tutsplus.com/advertise/" class="LB_advert">Advertise Here</a><div
+class="lb_inner"><div
+id='div-gpt-ad-leaderboard' style='width:728px; height:90px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-leaderboard'); });</script> </div></div></div></div> <script type="text/javascript">if (!plus_member_logged_in()) {
+    $('#leader-board-wrap').show()
+  }</script> <div
+id="page" class="single_post"><div
+class="page_inner"><div
+class="post post_inner" id="post-30362"><div
+class="tut_top"><div
+class="post_image"> <a
+href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/"><img
+src="http://cdn.tutsplus.com/net/authors/jeffreyway/command-line-is-your-best-friend.jpg" alt="The Command Line is Your Best Friend" width="200" height="200" /></a></div><div
+class="preview"><div
+class="post_taxonomy"><ul><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><span>\</span></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/">Tools &amp; Tips</a></li></ul></div><h1 class="post_title"> The Command Line is Your Best Friend</h1><div
+class="post_meta"> <a
+href="http://net.tutsplus.com/author/csaba-patkos/" title="Posts by Patkos Csaba" rel="author">Patkos Csaba</a> on Mar 4th 2013 with <a
+href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/#comments" title="Comment on The Command Line is Your Best Friend"><span
+class="dsq-postid" rel="30362 http://net.tutsplus.com/?p=30362">36 comments</span></a></div><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="90" height="21"></fb:like></div></div></div></div></div><div
+class="tut_bottom"><div
+class="tutorial_details"><h5>Tutorial Details</h5><ul><li><li><strong>Difficulty: </strong>Intermediate<li><strong>Completion Time: </strong>30 Minutes</li></ul></div><div
+class="hublink"><a
+href="http://dev.tutsplus.com/tutorials/the-command-line-is-your-best-friend--net-30362
+" class="hublink_button">View post on <span>Tuts+ Beta</span></a><strong>Tuts+ Beta</strong> is an optimized, mobile-friendly and easy-to-read version of the Tuts+ network.</div></div><div
+class="post post_inner_article"> <script type="text/javascript">/*<![CDATA[*///
+(function($) { $(function() { WpPostRatings({context: $('#post-30362'), post_id: 30362, rpc: 'http://net.tutsplus.com/wp-admin/admin-ajax.php', base_url: 'http://net.tutsplus.com', allow_voting: true}).init() })})(jQuery)
+//]]&gt;/*]]>*/</script><p>The command line can either be your best friend, or your worst enemy. It simply depends on how you use it, and what you use it for. If you&#8217;re one of the many people who cringe at the mere thought of using the command line, then you&#8217;ve come to the right place!</p><p><span
+id="more-30362"></span></p><hr
+/><h2>Command Line Interface?</h2><p>Yes, it&#8217;s that white (or green) on black screen, where mysterious text flows and strange commands execute. I know great programmers who never use the CLI; however, I also know basic computer users who do everything in the CLI instead of the graphical user interface (GUI). They have console applications to browse the web and file system, read mail, view images and edit text. They even watch YouTube videos and read PDF files without a GUI!</p><p>It&#8217;s up to each person to find his or her best workflow. Some prefer the GUI, while others enjoy the CLI.</p><div
+class="tip-shortcode"><p><strong>Please Note:</strong> The real CLI has little or nothing to do with what you see on TV. Rarely is the CLI realistically portrayed in movies or <a
+href="http://www.youtube.com/watch?v=hkDD03yeLnU" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.youtube.com']);">TV shows</a>.</p></div><hr
+/><h2>Terminology</h2><p>Newcomers to the Unix/Linux world are typically confused, when it comes to the difference between a terminal, a console and a shell.</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net/authors/jeremymcpeak/cmd-console-terminal-shell-schema.png" data-original-url="http://cdn.tutsplus.com/net.tutsplus.com/authors/jeremymcpeak/cmd-console-terminal-shell-schema.png" /></div><p>From the user&#8217;s perspective, there may be little to no difference between them, but in actuality, the the user uses a console to connect to a terminal, in order to look at the shell running on the computer.</p><blockquote
+class="pullquote"><p>It&#8217;s up to each person to find his or her best workflow.</p></blockquote><p>In ye olden days, these three items were separate hardware. The console was nothing more than a monitor and keyboard; it had no computing capabilities. It connected to a terminal, via a serial interface, the most common being the RS-232 connector.</p><p>A terminal is akin to an end-point to a mainframe. It usually had some computing capabilities and could communicate over a network, or some form of specialized connection, to a mainframe. A terminal also provided administrative rights to the system, which was why it was usually kept in a closed room. The consoles from the employees&#8217; area connected to these terminals, allowing them to work without having administrative access to the mainframe.</p><p>Consoles and terminals eventually merged in a single device, the most notorious being the VT terminals emulated in modern Linux distributions.</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net/authors/jeremymcpeak/cmd-vt100-vt101.png" data-original-url="http://cdn.tutsplus.com/net.tutsplus.com/authors/jeremymcpeak/cmd-vt100-vt101.png" /></div><div
+class="tip-shortcode"><p><strong>A Little Computer History:</strong> <a
+href="http://www.youtube.com/watch?v=HMYiktO0D64" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.youtube.com']);">Training Video for Bell Labs&#8217; Holmdel Computing Center &#8211; AT&amp;T Archives</a></p></div><p>The shell is the actual program capable of reading the user&#8217;s input and providing the result on the screen. A shell can be textual (like the CLI) or graphical (like Windows&#8217; GUI). In today&#8217;s computing, a shell is much more than a simple interface between the user and system. It is responsible for managing processes, windows, applications, commands and other aspects of the system.</p><blockquote><p>The CLI is a shell that offers a text-based interface to the user.</p></blockquote><p>The shell interprets the commands entered through the command line, and a user can combine multiple commands into a single script. Modern shells have a scripting language of their own, providing the ability to perform complex decisions.</p><p>Most modern Linux distributions, as well as Mac OSX, use a shell, called BASH. Solaris and OpenIndiana use KornShell by default, which is another variant of BASH. Please note that this tutorial will focus on BASH.</p><div
+class="tip-shortcode"><p><strong>Windows users</strong> can also use BASH. It is distributed with Cygwin and MinGW.</p></div><hr
+/><h2>Let&#8217;s Talk About BASH</h2><blockquote
+class="pullquote"><p>Most modern Linux distributions, as well as Mac OSX, use a shell, called BASH.</p></blockquote><p>BASH stands for Bourne Again Shell. It was released in 1989 as a reincarnation of the Bourne Shell, the then default shell on Unix systems. It was programmed by Stephen Bourne and came as a replacement for Thompson Shell, the first ever shell software for UNIX. The old Bourne Shell is still present in some Unix systems. You can usually find it as <code>/bin/sh</code>. However, even that has been replaced by BASH on most modern distributions; both <code>/bin/sh</code> and <code>/bin/bash</code> are executables for BASH.</p><h3>The BASH Prompt</h3><p>The one thing that you will always have is BASH&#8217;s prompt. It is a story in and of itself, and we could spend this entire tutorial on how to configure and personalize it. Instead, we&#8217;ll only discuss the basics in this tutorial.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/Personal/Programming/NetTuts $</pre><p>This is what my prompt looks like. The first word, <code>csaba</code> is my username, followed by <code>@</code> and my computer&#8217;s hostname, and then the current folder. The character &#8220;<code>~</code>&#8221; stands for the current user&#8217;s home directory &#8211; <code>/home/csaba</code>, in my case. The line ends with <code>$</code>. Whatever I type after the <code>$</code> is the command that I want my shell to execute.</p><div
+class="tip-shortcode"><p><strong>Root is Special:</strong> If you are root, the prompt ends with <code>#</code> instead of <code>$</code>.</p></div><p>Of course, this is only a simple example; you can put a lot more information in your prompt line. Let&#8217;s explore some basic examples.</p><p>BASH has a set of special variables, <code>PS1</code>, <code>PS2</code>, <code>PS3</code> and <code>PS4</code>, which control the contents in the prompt at different stages of a program&#8217;s execution. We will only talk about <code>PS1</code> in this tutorial. You can check what the <code>PS1</code> variable contains with the following command:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/Personal/Programming/NetTuts $ echo $PS1
+\[&#92;&#48;33[01;32m\]\u@\h\[&#92;&#48;33[01;34m\] \w \$\[&#92;&#48;33[00m\]
+</pre><p>What you see here is my prompt, followed by a command <code>echo $PS1</code> and the output of the command. In BASH, you put the dollar sign before the variable name when you want to read its contents. The <code>echo</code> command simply outputs whatever it receives as a parameter. If the parameter is a variable, its value displays on the screen.</p><p>The output represents a format. <code>\[\033[01;32m\]</code> is a color code for green, and <code>\u</code> represents the current user&#8217;s username. The <code>\h</code> token stands for hostname, and <code>\[\033[01;34m\]</code> is the color code for blue. <code>\w</code> is the current directory, and <code>\[\033[00m\]</code> is a light gray color for whatever follows (the commands I type). Below is a screenshot, so that you can better visualize the result.</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net/authors/jeremymcpeak/cmd-console-prompt.png" data-original-url="http://cdn.tutsplus.com/net.tutsplus.com/authors/jeremymcpeak/cmd-console-prompt.png" /></div><p>There are special characters preceded by &#8220;\&#8221; that have their own special meaning. Otherwise, &#8220;\&#8221; denotes an escape character for what follows (as in the color codes). Below is the complete list of special characters that you can use in the BASH prompt, cited from the official BASH manual:</p><ul><li><code>\a</code> &#8211; an ASCII bell character (07)</li><li><code>\d</code> &#8211; the date in &#8220;Weekday Month Date&#8221; format (e.g., &#8220;Tue May 26&#8243;)</li><li><code>\D{format}</code> &#8211; the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation.  The braces are required</li><li><code>\e</code> &#8211; an ASCII escape character (033)</li><li><code>\h</code> &#8211; the hostname up to the first `.&#8217;</li><li><code>\H</code> &#8211; the hostname</li><li><code>\j</code> &#8211; the number of jobs currently managed by the shell</li><li><code>\l</code> &#8211; the basename of the shell&#8217;s terminal device name</li><li><code>\n</code> &#8211; newline</li><li><code>\r</code> &#8211; carriage return</li><blockquote
+class="pullquote"><p>Each of these commands are capable of much more than what I covered in this tutorial.</p></blockquote><li><code>\s</code> &#8211; the name of the shell, the basename of $0 (the portion following the final slash)</li><li><code>\T</code> &#8211; the current time in 12-hour HH:MM:SS format</li><li><code>\t</code> &#8211; the current time in 24-hour HH:MM:SS format</li><li><code>\@</code> &#8211; the current time in 12-hour am/pm format</li><li><code>\A</code> &#8211; the current time in 24-hour HH:MM format</li><li><code>\u</code> &#8211; the username of the current user</li><li><code>\v</code> &#8211; the version of bash (e.g., 2.00)</li><li><code>\V</code> &#8211; the release of bash, version + patch level (e.g., 2.00.0)</li><li><code>\w</code> &#8211; the current working directory, with $HOME abbreviated with a tilde (uses the value of the PROMPT_DIRTRIM variable)</li><li><code>\W</code> &#8211; the basename of the current working directory, with $HOME abbreviated with a tilde</li><li><code>\!</code> &#8211; the history number of this command</li><li><code>\#</code> &#8211; the command number of this command</li><li><code>\$</code> &#8211; if the effective UID is 0, a #, otherwise a $</li><li><code>\nnn</code> &#8211; the character corresponding to the octal number nnn</li><li><code>\\</code> &#8211; a backslash</li><li><code>\[</code> - begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt</li><li><code>\]</code> &#8211; end a sequence of non-printing characters</li></ul><h3>Working with Directories and Files</h3><p>The things everyone must do in a command line environment is navigate the file system, create, delete, copy and move file system objects, and execute commands. This may be common knowledge to some of you, but let&#8217;s take a quick look:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~ $ mkdir ~/tmp/NetTuts
+csaba@csaba-pc ~ $ cd ~/tmp/NetTuts/
+csaba@csaba-pc ~/tmp/NetTuts $ mkdir ./AnotherDir
+csaba@csaba-pc ~/tmp/NetTuts $ mkdir ./SecondDir
+csaba@csaba-pc ~/tmp/NetTuts $ touch ./SecondDir/aFile
+csaba@csaba-pc ~/tmp/NetTuts $ touch ./SecondDir/AnotherFile
+csaba@csaba-pc ~/tmp/NetTuts $ cd ./SecondDir/
+csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ pushd ~/tmp/NetTuts
+~/tmp/NetTuts ~/tmp/NetTuts/SecondDir
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 16
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 SecondDir
+csaba@csaba-pc ~/tmp/NetTuts $ popd
+~/tmp/NetTuts/SecondDir
+csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ ls -al
+total 8
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 .
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 ..
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 aFile
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 AnotherFile
+csaba@csaba-pc ~/tmp/NetTuts/SecondDir $
+</pre><p>A line-by-line explanation:</p><blockquote
+class="pullquote"><p>If you are root, the prompt ends with <code>#</code> instead of <code>$</code>.</p></blockquote><ol><li>Create a directory called NetTuts under /home/csaba/tmp.</li><li>Change current directory to the newly created directory.</li><li>Create a directory called &#8220;AnotherDir&#8221; inside the current directory.</li><li>Create a directory called &#8220;SecondDir&#8221; inside the current directory.</li><li>Create two empty files inside &#8220;SecondDir&#8221; using the touch command.</li><li>Change current directory to SecondDir.</li><li>Use pushd to change directory to ~/tmp/NetTuts in order to put our current directory on a stack.</li><li>List all files in ~/tmp/NetTuts</li><li>Return to our previous directory by issuing a popd command, which fetches (and removes) the top directory from the stack.</li><li>List again the contents and see the two files we created a few steps above.</li></ol><p>Of course, you have an almighty file manager for the command line, called Midnight Commander. Just execute the <code>mc</code> commdn to start using it. It also has a built-in text editor (with code highlighting) for a large number of languages, as well as smart indentation and other features. It&#8217;s not a full blown editor, in fact it&#8217;s a rather simple tool for simple and quick edits. You can simply select any file and hit F4, or you can open a file directly in the editor without starting mc.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ mcedit ./aFile</pre><hr
+/><h2>Input/Output</h2><p>Every command must communicate with the command line environment. Commands need input and provide output. <strong>Standard Input</strong> refers to source from where a command can read information. This is the keyboard by default, and it&#8217;s frequently referred to as &#8220;stdin&#8221;. <strong>Standard Output</strong> refers to the place where a command&#8217;s output will be sent. By default, this is the current console, and its usually referred to as &#8220;stdout&#8221;. <strong>Standard Error</strong> refers to the place where a command outputs its errors. This is the current console by default, and many refer to it as &#8220;stderr&#8221;.</p><p>What we defined so far simply states that a command can read from the keyboard and output its results, both good and bad, to the screen.</p><blockquote><p>In Unix (and similar systems) everything is a file. Your keyboard is a file, your mouse is a file, your screen is a file, programs are in files, text is in files, etc.</p></blockquote><p>A <strong>File Descriptor</strong> is an integer that the operating system&#8217;s kernel uses to reference open files. Every system has at least three file descriptors:</p><ul><li>Descriptor no. <strong>0</strong> &#8211; standard input.</li><li>Descriptor no. <strong>1</strong> &#8211; standard output.</li><li>Descriptor no. <strong>2</strong> &#8211; standard error.</li></ul><h3>Redirections</h3><p>Unix systems have a very powerful feature: because everything is a file, you can reference and redirect everything from one place to another. The redirection operators are <code>&lt;</code> for stdin and <code>&gt;</code> for stdout. So, if you want a command to read information from the keyboard, you can do something like this:</p><pre class="brush: bash; title: ; notranslate" title="">$ someCommand &lt; </pre><p>But what if you want your command to read from a file? Well you can redirect a file into its stdin, like this:</p><pre class="brush: bash; title: ; notranslate" title="">$ someCommand &lt; /your/file.txt</pre><p>If you want your command&#8217;s output to go into a file, you can use the <code>&gt;</code> operator. For example we&#8217;ve seen how to list files in a folder:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ ls -al
+total 8
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 .
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 ..
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 aFile
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 AnotherFile
+csaba@csaba-pc ~/tmp/NetTuts/SecondDir $
+</pre><p>You can send that result to a file with the following command:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ ls -al &gt; ./ThirdFile </pre><p>The contents of ThirdFile is:</p><pre class="brush: bash; title: ; notranslate" title="">total 12
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 .
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 ..
+-rw-r--r-- 1 csaba csaba   12 Feb 19 21:19 aFile
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 AnotherFile
+-rw-r--r-- 1 csaba csaba    0 Feb 24 00:06 ThirdFile
+</pre><p>Let&#8217;s say we want to navigate to the parent folder, list all its files, and use a command to append the list to the existing file. The <code>&gt;</code> operator redirects output to a file and overwrites that file; so we can&#8217;t use it. We can, however, use <code>&gt;&gt;</code> (a double <code>&gt;</code>) to append new data to an existing file.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts/SecondDir $ cd ..
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 16
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al &gt;&gt; ./SecondDir/ThirdFile
+</pre><p>And our file&#8217;s content is:</p><pre class="brush: bash; title: ; notranslate" title="">total 12
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 .
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 ..
+-rw-r--r-- 1 csaba csaba   12 Feb 19 21:19 aFile
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 AnotherFile
+-rw-r--r-- 1 csaba csaba    0 Feb 24 00:06 ThirdFile
+total 16
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir</pre><h3>Input/Output Redirections</h3><p>We can combine our knowledge and redirect stderr, stdin and stdout in different ways. In fact the commands below are doing the same thing:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ls -al &gt; ./SecondDir/ThirdFile
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al 1&gt; ./SecondDir/ThirdFile </pre><p>In the second command, we specified the source as standard output (<code>1&gt;</code>) right before the redirection. Please also note that there is no space between <code>1</code> and <code>&gt;</code>. In fact, placing a space between the two characters makes <code>1</code> a parameter and <code>&gt;</code> would automatically imply redirection of standard output. The two expressions below do the same thing and are different from the ones above:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ls -al 1 &gt; ./SecondDir/ThirdFile
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al 1 1&gt; ./SecondDir/ThirdFile </pre><p>Of course, these result in an error: &#8220;ls: cannot access 1: No such file or directory&#8221; &#8211; unless you really have a directory named <code>1</code>. This makes us wonder about the next steps we can take: redirecting errors.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ls -al inexistenFilder &gt; ./SecondDir/ThirdFile
+ls: cannot access inexistenFilder: No such file or directory
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al inexistenFilder 2&gt; ./SecondDir/ThirdFile </pre><p>As you can see, the first command outputs stderr in the console and redirects stdout to a file. The result of the first command is an empty file and a message on the screen. The second command, however, redirects the errors to our file. The result is that if there were any outputs on standard output, they would go on the screen and errors would go to the file.</p><h3>A Real Life Example for I/O Redirection</h3><p>You basically have two options when you need to search for files in the console. The first is the <code>locate</code> command. It is usually, but not necessarily, installed on many modern Linux distributions. The <code>updatedb</code> command indexes your files and <code>locate</code> uses that database to find your files. It does not actually do a real-time search, it simply looks up indexes in a database. That&#8217;s why this application is usually scheduled for a daily <code>updatedb</code>.</p><blockquote><p>The second command is called, well, <code>find</code>.</p></blockquote><p>This command performs a real-time search. It is more accurate than <code>locate</code>, but is obviously much slower. Let&#8217;s play with it a little:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 16
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al ./SecondDir/
+total 16
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 .
+drwxr-xr-x 4 csaba csaba 4096 Feb 19 21:09 ..
+-rw-r--r-- 1 csaba csaba   12 Feb 19 21:19 aFile
+-rw-r--r-- 1 csaba csaba    0 Feb 19 21:09 AnotherFile
+-rw-r--r-- 1 csaba csaba   61 Feb 24 00:23 ThirdFile
+csaba@csaba-pc ~/tmp/NetTuts $ find . -name ThirdFile
+./SecondDir/ThirdFile
+</pre><p>I printed the two <code>ls</code> commands so that you can see the directory structure. The third command is our <code>find</code>. It has a complex parameter system that I will not detail here, but the above example demonstrates the most common use of <code>find</code>. The first parameter, <code>.</code>, is the directory in which we want to search.</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> <code>.</code> refers to the current directory. <code>..</code> refers to the parent directory.</p></div><p>The second parameter we used for <code>find</code> was <code>-name</code>, followed by a file&#8217;s name. We can use <code>?</code> and <code>*</code> in the <code>-name</code> parameter to broaden our search:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ find . -name ?File
+./SecondDir/aFile
+csaba@csaba-pc ~/tmp/NetTuts $ find . -name *File
+./SecondDir/aFile
+./SecondDir/AnotherFile
+./SecondDir/ThirdFile</pre><p><code>?</code> stands for any single character, and <code>*</code> refers to any number of any characters.</p><p>Next, we will create a directory and make it unreadable by our user. We have not yet reviewed permissions, but don&#8217;t worry, we will shortly. For now, simply try the following:</p><div
+class="tutorial_image"><script type="text/javascript">google_ad_client = "pub-9093712935949486";
+/* 300x250 nettuts middle tutsads */
+google_ad_slot = "1775681443";
+google_ad_width = 300;
+google_ad_height = 250;</script> <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ mkdir ThirdDir
+csaba@csaba-pc ~/tmp/NetTuts $ chmod 000 ThirdDir
+csaba@csaba-pc ~/tmp/NetTuts $ find . -name *File
+./SecondDir/aFile
+./SecondDir/AnotherFile
+./SecondDir/ThirdFile
+find: `./ThirdDir': Permission denied
+</pre><p>I wanted you to not have permission to a directory so that I can demonstrate what <code>find</code> outputs in this case. It tries to access all the directories and search for files that match the given pattern. When it can&#8217;t access a directory, it outputs a message. This is OK when you have one or two messages, but try to search for something starting from the root folder as an ordinary user. You will get hundreds of such error messages and probably only one or two search results. You don&#8217;t want to miss the results; you want to get rid of the error messages.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ find . -name *File 2&gt; /dev/null
+./SecondDir/aFile
+./SecondDir/AnotherFile
+./SecondDir/ThirdFile</pre><p>We redirected stderr into <code>/dev/null</code>. This points to&#8230; well nothing. Whatever you throw into <code>/dev/null</code> will simply vanish. It is common practice to send errors there when you don&#8217;t want to see them. If you prefer your results in a file, and your errors sent to <code>/dev/null</code>, you can use multiple redirections:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ find . -name *File 2&gt; /dev/null 1&gt;./SecondDir/ThirdFile
+csaba@csaba-pc ~/tmp/NetTuts $</pre><p>As you can see, this command outputs nothing to the screen because both errors and standard output are sent to different files. But what if you want both in the same file? Well, you can send stderr into stdout and then send stdout to a file:</p><pre class="brush: bash; title: ; notranslate" title="">find . -name *File 1&gt;./SecondDir/ThirdFile 2&gt;&amp;1</pre><p>Redirections are interpreted from right to left. So the first one that happens is <code>2>&amp;1</code>, which redirects standard error to standard output. Then <code>1>./SecondDir/ThirdFile</code> redirects standard output (with the errors already in it) into the specified file.</p><hr
+/><h2>Let&#8217;s Talk About Permissions</h2><p>The permissions discussed in this tutorial are applicable to *nix operating systems. I am not that familiar with the latest Windows versions, but Microsoft uses a different concept for permissions on their file systems.</p><h3>Users and Groups</h3><p>There can be several users on the same computer. In fact, several applications register their own special user and use it to run the program in a restricted environment. Each user can be identified by their name and/or their ID, also known as UID.</p><blockquote><p>You can find the list of the currently existing users in the file <code>/etc/passwd</code>.</p></blockquote><p>Groups are listed in the file <code>/etc/group</code>. A group has a name and ID (known as GID), and a group is a container of zero or more users. Each user usually has at least one corresponding group, which has the same name as the user.</p><h3>The Owner</h3><p>Files have owners, and the user that creates a file is, by default, its owner. Directories are just special files, and they have the same owner and permission rules as ordinary files.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 20
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba csaba 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+d--------- 2 csaba csaba 4096 Feb 24 00:44 ThirdDir</pre><p>In our <code>ls -al</code> command, the owner of each result is specified as &#8220;user group&#8221; (&#8220;csaba csaba&#8221; in our example). We will now change the owner of <code>AnotherDir</code> with the following:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ chown csaba:users ./AnotherDir/
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 20
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba users 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+d--------- 2 csaba csaba 4096 Feb 24 00:44 ThirdDir</pre><p>The <code>chown</code> command means &#8220;change owner&#8221;, and it has a simple syntax: <code>chown user:group path</code>. A user can only change the group ownership to one of the groups it is a member of, and an ordinary user cannot change ownership to another user it cannot access. Of course, a user with administrative privileges, such as &#8220;root&#8221;, can change the ownership of any file and set it to any user and group.</p><p>There are three types of file permissions:</p><ul><li><code>r</code> &#8211; read</li><li><code>w</code> &#8211; write</li><li><code>x</code> &#8211; execute</li></ul><div
+class="tip-shortcode"><p><strong>Please Note:</strong> The contents of a directory can be listed, if it has execute permissions.</p></div><p>Refer to the previous <code>ls</code> command example. The permissions for each file system object are displayed at the beginning of each line (those rwx characters). Each permission can be set (thus marked with a letter) or not set (marked with a dash: &#8220;-&#8221;).</p><p>The three permission types are applied to three categories:</p><ul><li>User &#8211; the rights for the owner user.</li><li>Group &#8211; the permissions for the owner group</li><li>Others &#8211; the permissions for other users attempting to access our file or folder.</li></ul><p>The directory called <code>ThirdDir</code> has no permissions, so not even its owner can access it.</p><pre class="brush: bash; title: ; notranslate" title="">chown: changing ownership of ‘./AnotherDir/’: Operation not permitted
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al ./ThirdDir/*
+ls: cannot access ./ThirdDir/*: Permission denied</pre><p>But its owner does have the rights to change its permissions:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ chmod +rwx ./ThirdDir/
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al ./ThirdDir
+total 8
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:44 .
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 ..
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 20
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba users 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:44 ThirdDir</pre><p>The <code>chmod</code> command sets global permissions on a file system object, and its syntax is: <code>chmod +/-rights path</code>. Using a <code>+</code> means you enable a right, and <code>-</code> means you remove a right. You can specify any combination of rights. In the previous example, we added read, write and execute permissions to <code>ThirdDir</code>.</p><div
+class="tip-shortcode"><p><strong>Please Note:</strong> Read and execute permissions defined this way are applied to owner, group and others. Write permissions are applied only to the current user.</p></div><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ chmod +r-w ./ThirdDir/
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 20
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba users 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+dr-xr-xr-x 2 csaba csaba 4096 Feb 24 00:44 ThirdDir
+</pre><p>In this second example, we selectively enabled read permissions, removed write permissions and left execute permissions untouched.</p><p>But at some point, everything in computing comes down to a binary string. The <code>chown</code> command allows you to easily specify permissions using a decimal representation of the binary permissions.</p><ul><li><code>rwx</code>: Each bit is set to 1: 111. Which in decimal is 7.</li><li><code>rw-</code>: Is represented as 110. Which in decimal is 6.</li><li><code>r-x</code>: Is represented as 101. Which in decimal is 5.</li><li><code>r--</code>: Is represented as 100. Which in decimal is 4.</li><li><code>-wx</code>: Is represented as 011. Which in decimal is 3.</li><li><code>-w-</code>: Is represented as 010. Which in decimal is 2.</li><li><code>--x</code>: Is represented as 001. Which in decimal is 1.</li><li><code>---</code>: Is represented as 000. Which in decimal is 0.</li></ul><p>The <code>chown</code> command can accept a string of three numbers between <code>0</code> and <code>7</code>. Each digit represents the rights for a specific category in order: user, group, others.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ chmod 765 ./ThirdDir/
+csaba@csaba-pc ~/tmp/NetTuts $ ls -al
+total 20
+drwxr-xr-x 5 csaba csaba 4096 Feb 24 00:44 .
+drwx------ 7 csaba csaba 4096 Feb 19 21:09 ..
+drwxr-xr-x 2 csaba users 4096 Feb 19 21:09 AnotherDir
+drwxr-xr-x 2 csaba csaba 4096 Feb 24 00:06 SecondDir
+drwxrw-r-x 2 csaba csaba 4096 Feb 24 00:44 ThirdDir</pre><p>This command sets read, write and execute rights for the owner, read, write, and not-execute for the group, and read, execute, and not-write for others.</p><hr
+/><h2>The Cat, Sed, and Pipe</h2><p>Here are a few of the most useful commands.</p><h3>Cat</h3><p>This command lets you read the contents of a file. Simply provide the filename as a parameter, and it outputs the file&#8217;s contents to stdout.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ cat ./SecondDir/ThirdFile
+./SecondDir/aFile
+./SecondDir/AnotherFile
+./SecondDir/ThirdFile
+find: `./ThirdDir': Permission denied</pre><h3>Grep</h3><p>Grep searches for a pattern and outputs the matching lines. You can optionally specify a file to search as the third parameter:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ grep &quot;AnotherFile&quot; ./SecondDir/ThirdFile
+./SecondDir/AnotherFile</pre><p>Adding the <code>--color</code> option highlights the matched word in the the resulting lines.</p><h3>Pipe</h3><p>The pipe is represented by the <code>|</code> character; it takes one command&#8217;s output and feeds it to a second command. This may sound simple, but it&#8217;s a huge thing. That single character has tens of thousands of lines of code behind it so that you can do this:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ cat ./SecondDir/ThirdFile | grep &quot;Another&quot;
+./SecondDir/AnotherFile</pre><p>This actually runs the <code>cat</code> command, and instead of outputing the results to stdout, it feeds that output to <code>grep</code>. The <code>grep</code> command uses that data and searches for the string &#8220;Another&#8221;. The result is identical to our previous example.</p><div
+class="tip-shortcode"><p><strong><a
+href="http://www.youtube.com/watch?v=tc4ROCJYbm0" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.youtube.com']);">The History of UNIX:</a></strong> This is an old video from AT&amp;T. It is a great video, but scroll to 4:56, if you are only interested in the PIPEs.</p></div><h3>Sed</h3><p>The <code>sed</code> command allows you to execute regular expressions on its input. It can read from a file or be used in a piped command. It outputs the result to stdout.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ cat ./SecondDir/ThirdFile | grep &quot;Another&quot; | sed -e &quot;s/AnotherFile/MyFile/&quot;
+./SecondDir/MyFile</pre><p>This example adds a <code>sed</code> to our previous command. With the help of <code>sed</code>, we replaced the string &#8220;AnotherFile&#8221; with &#8220;MyFile&#8221; in the output of the <code>cat...grep</code>. Pretty cool, right?</p><p>The <code>sed</code> command can accept several parameters. Specifying the <code>-e</code> argument executes the regular expression on its input. If you are not familiar with regular expressions, check out these other Nettuts+ tutorials: <a
+href="http://net.tutsplus.com/articles/news/introducing-regular-expressions-up-and-running/?search_index=1" >Introducing &#8220;Regular Expressions: Up and Running&#8221;</a> or <a
+href="http://net.tutsplus.com/freebies/cheat-sheets/regular-expressions-cheat-sheets/?search_index=4" > Regular Expressions Cheat Sheets</a>.</p><hr
+/><h2>Defining Your Own Commands</h2><p>Let&#8217;s imagine that you execute the following <code>ssh</code> connection command frequently:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ssh <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="d6bbaf89a3a5b3a4b8b7bbb396b5b9bba6babfb5b7a2b3b2f8a5b3a4a0b3a4f8b7b2b2a4b3a5a5f8b5b9bb">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script> -p 8743</pre><p>You can shorten this by creating a custom command, say <code>sshcon</code>. You could create your own commands by using an alias. Alias syntax is in the form of: <code>alias shorthand='original_command'</code>.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ alias sshcon='ssh <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="224f5b7d575147504c434f4762414d4f524e4b41435647460c5147505447500c434646504751510c414d4f">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script> -p 8743'</pre><p>Running <code>sshcon</code> executes the more complicated <code>ssh</code> command. But aliases are temporary; they&#8217;re forgotten when you log out. One possible solution is to edit your <code>.bashrc</code> file.</p><h3>.bashrc and .bash.profile</h3><p>The <code>.bashrc</code> file is usually located in your home directory. This file lets you specify any command(s) you want to execute whenever you open a console or log into a shell. Let&#8217;s add the aforementioned <code>sshcon</code> alias to this file.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ mcedit ~/.bashrc</pre><p>Add your code to the end of the file, hit F2 to save the file, and then ESC twice to close the file. Press CTRL+D to log out from the shell. Open another shell and try your alias command. Voila.</p><p>Some operating systems, such as Solaris, may not have a <code>~/.bashrc</code> file. In this case, you can do your magic by editing <code>~/.bash_profile</code>. In fact, <code>~/.bash_profile</code> is always present on all systems.</p><div
+class="tip-shortcode"><p><strong>The Hidden Files:</strong> Files that begin with a dot (<code>.</code>) denote a hidden file.</p></div><hr
+/><h2>A Little Networking</h2><p>Let&#8217;s play with the network a little.</p><h3>Ping</h3><p>The <code>ping</code> command is an easy way to check if a server is up and accessible.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=47 time=44.0 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=47 time=65.6 ms
+^C
+--- 8.8.8.8 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 44.081/54.871/65.661/10.790 ms
+csaba@csaba-pc ~/tmp/NetTuts $ ping inexistent.server
+ping: unknown host inexistent.server
+</pre><p>Its syntax is easy: <code>ping IP_address_or_name</code>. If the server is accessible, you will see a list of reply lines with details. If it&#8217;s not, an error message states the problem.</p><h3>Traceroute</h3><p>The <code>traceroute</code> command displays the route a packet takes from your computer to the destination device.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ traceroute 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+ 1  192.168.111.1 (192.168.111.1)  0.239 ms  0.322 ms  0.317 ms
+ 2  * * *
+ 3  95.77.39.65 (95.77.39.65)  45.754 ms  45.887 ms  46.024 ms
+ 4  ro-cj01a-rd4-xe-1-2-1-v1643.upcnet.ro (84.116.216.1)  83.121 ms ro-cj01a-rd4-xe-1-2-0-v1642.upcnet.ro (84.116.225.253)  83.289 ms ro-cj01a-rd4-xe-1-3-0-v1713.upcnet.ro (84.116.217.26)  83.119 ms
+ 5  84.116.217.93 (84.116.217.93)  83.153 ms 84.116.217.85 (84.116.217.85)  77.407 ms  77.350 ms
+ 6  84-116-131-53.aorta.net (84.116.131.53)  77.327 ms  53.442 ms  53.357 ms
+ 7  84.116.132.174 (84.116.132.174)  53.211 ms  48.923 ms  53.186 ms
+ 8  72.14.219.9 (72.14.219.9)  85.040 ms 72.14.214.29 (72.14.214.29)  67.289 ms  72.216 ms
+ 9  209.85.241.110 (209.85.241.110)  48.129 ms  47.389 ms 209.85.240.64 (209.85.240.64)  45.096 ms
+10  72.14.239.62 (72.14.239.62)  47.254 ms 72.14.236.68 (72.14.236.68)  51.770 ms 72.14.239.62 (72.14.239.62)  43.242 ms
+11  209.85.254.118 (209.85.254.118)  46.137 ms 209.85.254.116 (209.85.254.116)  52.165 ms 209.85.254.114 (209.85.254.114)  102.070 ms
+12  * * *
+13  google-public-dns-a.google.com (8.8.8.8)  47.471 ms  47.986 ms  43.645 ms</pre><h3>Routing Table</h3><p>Both *nix and Windows have a <code>route</code> command. And despite their slight differences in syntax, their functionality is basically the same. This command allows us to see the current routing table of the system, and if necessary, add/delete static routes.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         192.168.111.1   0.0.0.0         UG    0      0        0 eno1
+loopback        localhost       255.0.0.0       UG    0      0        0 lo
+192.168.111.0   *               255.255.255.0   U     1      0        0 eno1</pre><p>The first column is the destination, the target of a network connection or communication. The term &#8220;default&#8221; means anything not matched by something else or sent here. Loopback is our virtual local device, the one having the IP 127.0.0.1. This IP always refers to the local, machine and it is present on all operating systems ([ed] there&#8217;s no place like 127.0.0.1).</p><p>The second column is the gateway the connection uses to reach its destination. The first line displays my default gateway as 192.168.111.1. The second line for loopback goes to localhost, and the third line goes to <code>*</code>, no gateway is necessary for acessing our own network.</p><p>The third interesting thing here is the last column: &#8220;Iface&#8221;. It specifies the interface used to communicate to the specific destination. In our example, loopback communication goes over the loopback interface <code>lo</code>. Everything else goes through the <code>eno1</code> interface.</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> If you find no <code>route</code> command, try using <code>netstat -nr</code>. It should produce similar output.</p></div><h3>Network Configuration</h3><p>If you want a quick glance at your network configuration, just type <code>ifconfig</code> in the command line.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ ifconfig
+eno1: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 192.168.111.10  netmask 255.255.255.0  broadcast 192.168.111.255
+        inet6 fe80::4e72:b9ff:fef6:c9ff  prefixlen 64  scopeid 0x20&lt;link&gt;
+        ether 4c:72:b9:f6:c9:ff  txqueuelen 1000  (Ethernet)
+        RX packets 2935016  bytes 696255521 (664.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5586410  bytes 6331639146 (5.8 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 1  collisions 0
+        device interrupt 17
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 16436
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 0  (Local Loopback)
+        RX packets 7396  bytes 599533 (585.4 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7396  bytes 599533 (585.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+</pre><p>There is a lot of information here. First, we have two sections, each for a network adapter. My wired network card is called <code>eno1</code> on my system. You may see things like <code>e1000g0</code>, <code>eth0</code>, <code>en0</code> or other names. Wireless network devices usually (but not always) begin with a &#8220;w&#8221;.</p><p>On the same line is the current status of the interface. In this example, the interface is up, broadcasting, running, etc. The second line is for the IPv4 IP address, netmask and broadcast. The third line is very similar but for IPv6. The forth line, starting with &#8220;ether&#8221;, is the MAC address of the network card, and the remaining lines display data transfer statistics.</p><h3>Current Network Connections</h3><p>Another useful command is <code>netstat</code>. It can list all the network connections to the system, as well as the IPs, interfaces and ports the system listens on. Here is a part of <code>netstat</code>&#8216;s output on my system. I shortened it to eliminate irrelevant information:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba-pc ~/tmp/NetTuts $ netstat -an
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN
+tcp        0      0 0.0.0.0:59017           0.0.0.0:*               LISTEN
+tcp        0     40 192.168.111.10:59017    109.99.97.81:53681      ESTABLISHED
+tcp        0      0 192.168.111.10:51137    109.99.97.81:55175      TIME_WAIT
+tcp        0      0 192.168.111.10:34715    173.194.70.109:993      ESTABLISHED
+tcp        0      0 192.168.111.10:34722    173.194.70.109:993      ESTABLISHED
+tcp        0      1 192.168.111.10:42876    86.162.58.4:7055        LAST_ACK
+tcp6       0      0 :::111                  :::*                    LISTEN
+tcp6       0      0 :::4434                 :::*                    LISTEN
+tcp6       0      0 :::59017                :::*                    LISTEN</pre><p>Each line represents a connection in a specific state. In this example, you can see connections in listening states (see the first line, port 22, my ssh server), established states, waiting states and so on.</p><hr
+/><h2>Final Thoughts</h2><p>So there you have it: some of the most used CLI commands! Naturally, each of these commands are capable of much more than what I&#8217;ve covered in this tutorial. I hope I&#8217;ve shed a bit of light on some of these CLI mysteries. Thanks for reading!</p><div
+style="clear:both;padding-bottom:20px;"><fb:like layout="standard" width="450" height="30"></fb:like></div><p
+style="text-align: center;"><div
+id="bsap_1284118" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div></p></div><div
+id="tag-list"><span>Tags:</span> <a
+href="http://net.tutsplus.com/tag/bash/">bash</a><a
+href="http://net.tutsplus.com/tag/cmd/">cmd</a><a
+href="http://net.tutsplus.com/tag/commnd-line/">commnd line</a></div><div
+class="post_footer" style="padding-bottom: 170px;"><div
+class="enjoyed_post"> <span
+class="thumb_icon">&nbsp;</span><h5>Enjoyed this Post?</h5><p>Subscribe to our <a
+href="http://feeds.feedburner.com/nettuts">RSS Feed</a>, <a
+href="http://twitter.com/nettuts">Follow us on Twitter</a> or simply recommend us to friends and colleagues!</p><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="100" height="21"></fb:like></div></div></div><div
+class="the_author"> <img
+alt='' src='http://1.gravatar.com/avatar/dfa06b20297d7fddd2fa5c4a1d4990dd?s=40&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D40&amp;r=PG' class='avatar avatar-40 photo' height='40' width='40' /><h5>By <a
+href="http://net.tutsplus.com/author/csaba-patkos/" title="Posts by Patkos Csaba" rel="author">Patkos Csaba</a></h5><p
+class="the_author_p">Rollover to read this author's bio or click through to see a full list of posts by this author.</p><div
+class="autor_div"> I had my first contact with computers in the mid-80s when I visited my father at work. Probably it was an important moment for what I am doing now. I am a proud member of an agile team working for a company called Syneto.Through my carrier I programmed in several programming languages and I had the chance to learn and use daily all the major Agile techniques from Scrum to Lean and from TDD to DDD.Since August 2012 I am sharing my knowledge with the Nettuts+ readers by articles, tutorials and premium courses, all about programming. <span
+class="arrow">&nbsp;</span></div></div> <br
+class="clear" /><div
+class="plus_membership"><div
+class="plus_membership_text"> <a
+href="" class="plus_icon">Plus Premium</a><div
+id="logged-in-plus-footer" style="display: none;"><div
+class="plus_content wide"><h3>Hello!</h3><p>You can grab source files and bonus tutorials from the <a
+href="http://tutsplus.com/">members area</a>.</p></div><div
+class="plus_form"></div></div><div
+id="logged-out-plus-footer" style="display: none;"><div
+class="plus_content"><h3>Premium Members</h3><p>Source Files, Bonus Tutorials &amp; More for all relevant Tuts+ sites in one subscription. <a
+href="http://tutsplus.com/amember/signup.php">Join Now</a></p></div><div
+class="plus_form"><form
+name="login" method="post" action="http://tutsplus.com/amember/login.php?amember_redirect_url=http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/" id="signIn"><fieldset> <input
+type="text" name="amember_login" id="username" class="input" /> <input
+type="password" name="amember_pass" id="password" class="input" /> <input
+type="submit" id="submit_plus" class="submit_plus" value="Sign In" /></fieldset></form></div></div></div><div
+class="left_corner">&nbsp;</div><div
+class="right_corner">&nbsp;</div></div> <script type="text/javascript">if (plus_member_logged_in()) {
+                  $('#logged-in-plus-footer').show()
+                } else {
+                  $('#logged-out-plus-footer').show()
+                }</script> </div><div
+class="post extra_posts single"></div><div
+class='discus-note'><strong>Note:</strong> Want to add some source code? Type &lt;pre&gt;&lt;code&gt; before it and &lt;/code&gt;&lt;/pre&gt; after it. <a
+href="http://help.disqus.com/customer/portal/articles/665057" target="_blank">Find out more</a></div><div
+class="comments"><div
+id="disqus_thread"><div
+id="dsq-content"><ul
+id="dsq-comments"><li
+class="comment even thread-even depth-1" id="dsq-comment-461925"><div
+id="dsq-comment-header-461925" class="dsq-comment-header"><cite
+id="dsq-cite-461925"> http://twitter.com/Clockwise_Mahdi <span
+id="dsq-author-user-461925">Mahdi-</span></cite></div><div
+id="dsq-comment-body-461925" class="dsq-comment-body"><div
+id="dsq-comment-message-461925" class="dsq-comment-message"><p>Great tutorial, have to complete reading it as soon as possible.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-461927"><div
+id="dsq-comment-header-461927" class="dsq-comment-header"><cite
+id="dsq-cite-461927"> http://www.facebook.com/greatdex <span
+id="dsq-author-user-461927">Deck Trout</span></cite></div><div
+id="dsq-comment-body-461927" class="dsq-comment-body"><div
+id="dsq-comment-message-461927" class="dsq-comment-message"><p>great!</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-461929"><div
+id="dsq-comment-header-461929" class="dsq-comment-header"><cite
+id="dsq-cite-461929"> <span
+id="dsq-author-user-461929">Rafael</span></cite></div><div
+id="dsq-comment-body-461929" class="dsq-comment-body"><div
+id="dsq-comment-message-461929" class="dsq-comment-message"><p>Love you guys! I&#8217;ve dreaming with this tutorial..</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-461931"><div
+id="dsq-comment-header-461931" class="dsq-comment-header"><cite
+id="dsq-cite-461931"> http://www.facebook.com/jesus.bejarano.948 <span
+id="dsq-author-user-461931">Jesus Bejarano</span></cite></div><div
+id="dsq-comment-body-461931" class="dsq-comment-body"><div
+id="dsq-comment-message-461931" class="dsq-comment-message"><p>Is&#8217;n  this something that should be posted already. Awesome tutorial.</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-461939"><div
+id="dsq-comment-header-461939" class="dsq-comment-header"><cite
+id="dsq-cite-461939"> <span
+id="dsq-author-user-461939">IfeanyiOraelosi</span></cite></div><div
+id="dsq-comment-body-461939" class="dsq-comment-body"><div
+id="dsq-comment-message-461939" class="dsq-comment-message"><p>I finally learnt how to use &#8220;find&#8221;. Thanks. I had to install some of the commands:</p><p>sudo apt-get install traceroute</p><p>sudo apt-get install mc</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2 is-author" id="dsq-comment-461940"><div
+id="dsq-comment-header-461940" class="dsq-comment-header"><cite
+id="dsq-cite-461940"> <span
+id="dsq-author-user-461940">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-461940" class="dsq-comment-body"><div
+id="dsq-comment-message-461940" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>Yeah, sorry for that. Each Linux distro has different defaults. Mine has mc by default, I installed traceroute however. The rest were installed by default. On MacOSX you have to install only mc, I think. You can install it from rudix. Traceroute, find, etc. are available by default, locate I think is again not by default. On Solaris you may or may not have mc by default, depending on the version and type of distribution, traceroute and others should be there. I think, but didn&#8217;t try it, you can do a &#8220;pkg install locate&#8221; also.</p></div></div></li></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-461943"><div
+id="dsq-comment-header-461943" class="dsq-comment-header"><cite
+id="dsq-cite-461943"> <span
+id="dsq-author-user-461943">Simone</span></cite></div><div
+id="dsq-comment-body-461943" class="dsq-comment-body"><div
+id="dsq-comment-message-461943" class="dsq-comment-message"><p>I really appreciate this guide. Great work. thanks</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-461944"><div
+id="dsq-comment-header-461944" class="dsq-comment-header"><cite
+id="dsq-cite-461944"> <span
+id="dsq-author-user-461944">Kefah Issa</span></cite></div><div
+id="dsq-comment-body-461944" class="dsq-comment-body"><div
+id="dsq-comment-message-461944" class="dsq-comment-message"><p>Very well written!<br
+/> I plan to consider this article as a bases of a course to 10/13 years old young people.<br
+/> Thanks!</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-461949"><div
+id="dsq-comment-header-461949" class="dsq-comment-header"><cite
+id="dsq-cite-461949"> <span
+id="dsq-author-user-461949">MPinteractiv</span></cite></div><div
+id="dsq-comment-body-461949" class="dsq-comment-body"><div
+id="dsq-comment-message-461949" class="dsq-comment-message"><p>nice ! *nix for life !</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-461953"><div
+id="dsq-comment-header-461953" class="dsq-comment-header"><cite
+id="dsq-cite-461953"> http://twitter.com/Dingo_Me <span
+id="dsq-author-user-461953">thusitha sumanadasa</span></cite></div><div
+id="dsq-comment-body-461953" class="dsq-comment-body"><div
+id="dsq-comment-message-461953" class="dsq-comment-message"><p>thank you very much for this..great work.. :)</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-461955"><div
+id="dsq-comment-header-461955" class="dsq-comment-header"><cite
+id="dsq-cite-461955"> <span
+id="dsq-author-user-461955">Chris</span></cite></div><div
+id="dsq-comment-body-461955" class="dsq-comment-body"><div
+id="dsq-comment-message-461955" class="dsq-comment-message"><p>This post is everything!</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-461956"><div
+id="dsq-comment-header-461956" class="dsq-comment-header"><cite
+id="dsq-cite-461956"> http://www.clippingpathcenter.com/clipping-path-service.php <span
+id="dsq-author-user-461956">mamun</span></cite></div><div
+id="dsq-comment-body-461956" class="dsq-comment-body"><div
+id="dsq-comment-message-461956" class="dsq-comment-message"><p>Fantastic work&#8230;&#8230;&#8230;&#8230;..thanks</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-461959"><div
+id="dsq-comment-header-461959" class="dsq-comment-header"><cite
+id="dsq-cite-461959"> <span
+id="dsq-author-user-461959">heliogracie</span></cite></div><div
+id="dsq-comment-body-461959" class="dsq-comment-body"><div
+id="dsq-comment-message-461959" class="dsq-comment-message"><p>Is anyone know why can&#8217;t I hear audible pings? The ping manual says that ping -a will generate audible pings, but when I try this no sound is made. What am I doing wrong?</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2 is-author" id="dsq-comment-461973"><div
+id="dsq-comment-header-461973" class="dsq-comment-header"><cite
+id="dsq-cite-461973"> <span
+id="dsq-author-user-461973">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-461973" class="dsq-comment-body"><div
+id="dsq-comment-message-461973" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>It works on my systems (both MacOS X and Linux). Be sure you do not have system bell set to mute. Also check the volume for PC speaker.</p></div></div></li><ul
+class="children"><li
+class="comment even depth-3" id="dsq-comment-461996"><div
+id="dsq-comment-header-461996" class="dsq-comment-header"><cite
+id="dsq-cite-461996"> <span
+id="dsq-author-user-461996">heliogracie</span></cite></div><div
+id="dsq-comment-body-461996" class="dsq-comment-body"><div
+id="dsq-comment-message-461996" class="dsq-comment-message"><p>Thank you. I forgot turned on in terminal preferences.</p></div></div></li></li></ul></li></ul></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-461961"><div
+id="dsq-comment-header-461961" class="dsq-comment-header"><cite
+id="dsq-cite-461961"> <span
+id="dsq-author-user-461961">karmicdice</span></cite></div><div
+id="dsq-comment-body-461961" class="dsq-comment-body"><div
+id="dsq-comment-message-461961" class="dsq-comment-message"><p>This is superb!</p><p>I loved the way you have put up things in different sections. Short &#8211; Straight to the point and Neat! Pretty Neat!</p><p>PS: You have missed on &#8216;locate&#8217; , the present generation Linux are indexing files and folders in the database, locate uses indexed database, find does not. Put it up, maybe? :)</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-461962"><div
+id="dsq-comment-header-461962" class="dsq-comment-header"><cite
+id="dsq-cite-461962"> <span
+id="dsq-author-user-461962">karmicdice</span></cite></div><div
+id="dsq-comment-body-461962" class="dsq-comment-body"><div
+id="dsq-comment-message-461962" class="dsq-comment-message"><p>This is superb!</p><p>I loved the way you have put up things in different sections. Short &#8211; Straight to the point and Neat! Pretty Neat!</p><p>You have missed on &#8216;locate&#8217; , the present generation Linux are indexing files and folders in the database, locate uses indexed database, find does not. Put it up, maybe?</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-461968"><div
+id="dsq-comment-header-461968" class="dsq-comment-header"><cite
+id="dsq-cite-461968"> http://www.facebook.com/birkir.gudjonsson <span
+id="dsq-author-user-461968">Birkir Rafn Guðjónsson</span></cite></div><div
+id="dsq-comment-body-461968" class="dsq-comment-body"><div
+id="dsq-comment-message-461968" class="dsq-comment-message"><p>Not part of shell core elements. You won&#8217;t find locate on bare bone systems. But good point! I would stay away from locate. By knowing your system, you should be able to know where your stuff is, better yet; you should know where you put your stuff.</p></div></div></li></li><li
+class="comment even depth-2 is-author" id="dsq-comment-461972"><div
+id="dsq-comment-header-461972" class="dsq-comment-header"><cite
+id="dsq-cite-461972"> <span
+id="dsq-author-user-461972">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-461972" class="dsq-comment-body"><div
+id="dsq-comment-message-461972" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>I am not sure what do you mean. The first paragraph in &#8220;A Real Life Example for I/O Redirection&#8221; is exactly about &#8220;locate&#8221; and it says exactly what you&#8217;ve said.</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-3" id="dsq-comment-461985"><div
+id="dsq-comment-header-461985" class="dsq-comment-header"><cite
+id="dsq-cite-461985"> <span
+id="dsq-author-user-461985">karmicdice</span></cite></div><div
+id="dsq-comment-body-461985" class="dsq-comment-body"><div
+id="dsq-comment-message-461985" class="dsq-comment-message"><p>pardon my tl;dr approach, I read your article at whooping speed of 1 article per 2 minutes. :)<br
+/> Few examples of Locate would be great! I mean, one of which I can share with you is the one which I just used few mins ago, it was to uninstall my netbeans 7.3 beta so that I can fresh install netbeans 7.3, long story short, I used this :</p><p>locate uninstall | grep netbeans | sh</p></div></div></li></li><li
+class="comment even depth-3 is-author" id="dsq-comment-462000"><div
+id="dsq-comment-header-462000" class="dsq-comment-header"><cite
+id="dsq-cite-462000"> <span
+id="dsq-author-user-462000">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-462000" class="dsq-comment-body"><div
+id="dsq-comment-message-462000" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>:) Good to hear there are other NetBeans users here. A &#8220;Perfect Workflow in NetBeans&#8221; is in production already.</p></div></div></li></li><li
+class="comment odd alt depth-3" id="dsq-comment-462044"><div
+id="dsq-comment-header-462044" class="dsq-comment-header"><cite
+id="dsq-cite-462044"> <span
+id="dsq-author-user-462044">karmicdice</span></cite></div><div
+id="dsq-comment-body-462044" class="dsq-comment-body"><div
+id="dsq-comment-message-462044" class="dsq-comment-message"><p>I wish I had time to contribute :(<br
+/> But, hey that sounds GREAT!!! Looking forward to it! :)<br
+/> And yea, feel absolutely free to put my one line command, incase you show users how to uninstall ;)</p></div></div></li></li></ul></li></ul></li><li
+class="comment even thread-even depth-1" id="dsq-comment-462013"><div
+id="dsq-comment-header-462013" class="dsq-comment-header"><cite
+id="dsq-cite-462013"> <span
+id="dsq-author-user-462013">PMK</span></cite></div><div
+id="dsq-comment-body-462013" class="dsq-comment-body"><div
+id="dsq-comment-message-462013" class="dsq-comment-message"><p>Most important command of all is &#8220;[your command] &#8211;help&#8221; or &#8220;man [your command]&#8220;.</p><p>Almost all programs has the option &#8220;&#8211;help&#8221; to show what you can do with the program. For example:</p><p>$ ls &#8211;help</p><p>There are some programs using the &#8220;man&#8221; program for better documenting:</p><p>$ man ls</p><p>Try it! To close (you are now in a program called &#8220;less&#8221;), press &#8220;q&#8221;.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-462065"><div
+id="dsq-comment-header-462065" class="dsq-comment-header"><cite
+id="dsq-cite-462065"> http://www.miniarray.com/ <span
+id="dsq-author-user-462065">Simon W. Jackson</span></cite></div><div
+id="dsq-comment-body-462065" class="dsq-comment-body"><div
+id="dsq-comment-message-462065" class="dsq-comment-message"><p>My command line is only a close acquaintance but we&#8217;re working towards BFF status at the moment.</p><p>Long live ZSH!</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-462097"><div
+id="dsq-comment-header-462097" class="dsq-comment-header"><cite
+id="dsq-cite-462097"> <span
+id="dsq-author-user-462097">casas en remate</span></cite></div><div
+id="dsq-comment-body-462097" class="dsq-comment-body"><div
+id="dsq-comment-message-462097" class="dsq-comment-message"><p>Greats!!!</p><p> <a
+href="http://www.enremate.co" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.enremate.co']);" rel="nofollow">embargo</a></p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-462179"><div
+id="dsq-comment-header-462179" class="dsq-comment-header"><cite
+id="dsq-cite-462179"> http://cubicleninjas.com/ <span
+id="dsq-author-user-462179">Tyler Etters</span></cite></div><div
+id="dsq-comment-body-462179" class="dsq-comment-body"><div
+id="dsq-comment-message-462179" class="dsq-comment-message"><p>I enjoy that you have provided newcomers will immediately useful applications of CLI usage. I think that&#8217;s the problem for a lot of beginners: why would I use this tool?</p></div></div></li><ul
+class="children"><li
+class="comment even depth-2" id="dsq-comment-464621"><div
+id="dsq-comment-header-464621" class="dsq-comment-header"><cite
+id="dsq-cite-464621"> <span
+id="dsq-author-user-464621">nanoo_k</span></cite></div><div
+id="dsq-comment-body-464621" class="dsq-comment-body"><div
+id="dsq-comment-message-464621" class="dsq-comment-message"><p>That&#8217;s definitely one of them. I would love to learn to write better shell scripts but none of my work has called for it so far!</p></div></div></li></li></ul></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-462289"><div
+id="dsq-comment-header-462289" class="dsq-comment-header"><cite
+id="dsq-cite-462289"> <span
+id="dsq-author-user-462289">anit.shrestha</span></cite></div><div
+id="dsq-comment-body-462289" class="dsq-comment-body"><div
+id="dsq-comment-message-462289" class="dsq-comment-message"><p>great tut. thanks.</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-462395"><div
+id="dsq-comment-header-462395" class="dsq-comment-header"><cite
+id="dsq-cite-462395"> <span
+id="dsq-author-user-462395">Jeremy Freeman</span></cite></div><div
+id="dsq-comment-body-462395" class="dsq-comment-body"><div
+id="dsq-comment-message-462395" class="dsq-comment-message"><p>Learning to use terminal is a very useful tool, I have recently began doing many of my basic commands in my workflow and it saves a ton of time.</p><p>Jeremy at <a
+href="http://www.cubicleninjas.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.cubicleninjas.com']);" rel="nofollow">Cubicle Ninjas</a></p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-462540"><div
+id="dsq-comment-header-462540" class="dsq-comment-header"><cite
+id="dsq-cite-462540"> <span
+id="dsq-author-user-462540">Lucas</span></cite></div><div
+id="dsq-comment-body-462540" class="dsq-comment-body"><div
+id="dsq-comment-message-462540" class="dsq-comment-message"><p>Great article! thanks!</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-462780"><div
+id="dsq-comment-header-462780" class="dsq-comment-header"><cite
+id="dsq-cite-462780"> <span
+id="dsq-author-user-462780">Henno Schooljan</span></cite></div><div
+id="dsq-comment-body-462780" class="dsq-comment-body"><div
+id="dsq-comment-message-462780" class="dsq-comment-message"><p>&#8220;Please Note: The contents of a directory can be listed, if it has execute permissions.&#8221;</p><p>I can only traverse directories when having execute permissions, but not list them. You sure you didn&#8217;t mean the read permission? (that one allows me to list their contents)</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-463008"><div
+id="dsq-comment-header-463008" class="dsq-comment-header"><cite
+id="dsq-cite-463008"> http://twitter.com/mezklador <span
+id="dsq-author-user-463008">studio_mezklador</span></cite></div><div
+id="dsq-comment-body-463008" class="dsq-comment-body"><div
+id="dsq-comment-message-463008" class="dsq-comment-message"><p>MC on MacOSX is available at GitHub : git clone <a
+href="https://github.com/MidnightCommander/mc.git" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','github.com']);" rel="nofollow">https://github.com/MidnightCommander/mc.git</a></p><p>OR :</p><p><a
+href="https://github.com/MidnightCommander/mc" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','github.com']);" rel="nofollow">https://github.com/MidnightCommander/mc</a></p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-463266"><div
+id="dsq-comment-header-463266" class="dsq-comment-header"><cite
+id="dsq-cite-463266"> <span
+id="dsq-author-user-463266">tiffanyzhou</span></cite></div><div
+id="dsq-comment-body-463266" class="dsq-comment-body"><div
+id="dsq-comment-message-463266" class="dsq-comment-message"><p>Great tutorial, the command make our life easy and simple. The designs for them are so beautiful.<br
+/> Thank you very much.</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-463923"><div
+id="dsq-comment-header-463923" class="dsq-comment-header"><cite
+id="dsq-cite-463923"> http://www.facebook.com/pauwels.kevin <span
+id="dsq-author-user-463923">Kevin Pauwels</span></cite></div><div
+id="dsq-comment-body-463923" class="dsq-comment-body"><div
+id="dsq-comment-message-463923" class="dsq-comment-message"><p>tail command would have been an awesome one to include!</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-464157"><div
+id="dsq-comment-header-464157" class="dsq-comment-header"><cite
+id="dsq-cite-464157"> <span
+id="dsq-author-user-464157">Alon</span></cite></div><div
+id="dsq-comment-body-464157" class="dsq-comment-body"><div
+id="dsq-comment-message-464157" class="dsq-comment-message"><p>Thanks a lot !!<br
+/> I learned many new things from this article.</p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-464984"><div
+id="dsq-comment-header-464984" class="dsq-comment-header"><cite
+id="dsq-cite-464984"> <span
+id="dsq-author-user-464984">web design</span></cite></div><div
+id="dsq-comment-body-464984" class="dsq-comment-body"><div
+id="dsq-comment-message-464984" class="dsq-comment-message"><p>thanks a lot!  i learned many usefull things from your article. keep the good work.</p></div></div></li></li></ul></div></div> <script type="text/javascript">/*<![CDATA[*//*  */
+    var disqus_url = 'http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/';
+    var disqus_identifier = '30362 http://net.tutsplus.com/?p=30362';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'nettuts';
+    var disqus_title = "The Command Line is Your Best Friend";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=30362';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://net.tutsplus.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/*  *//*]]>*/</script> <script type="text/javascript">/*  */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/net.tutsplus.com\/tutorials\/tools-and-tips\/the-command-line-is-your-best-friend\/trackback\/"    };
+/*  */</script> <script type="text/javascript">/*<![CDATA[*//*  */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/*  *//*]]>*/</script> </div></div></div></div><div
+id="sidebar"><div
+id="social-stats"><ul><li
+class="ss-twitter"> <a
+href="http://twitter.com/nettuts" rel="nofollow external"> <span>Twitter</span> <large>99,343</large> <small>Twitter Followers</small> </a></li><li
+class="ss-facebook"> <a
+href="http://facebook.com/nettutsplus" rel="nofollow external"> <span>Facebook</span> <large>82,845</large> <small>Facebook Fans</small> </a></li><li
+class="ss-google-plus"> <a
+href="https://plus.google.com/100395074731712398322" rel="nofollow external"> <span>Google+</span> <large>22,465</large> <small>Google+ Followers</small> </a></li></ul></div><div
+id="ad-tuts-premium"> <a
+class="premium-dev" href="http://tutsplus.com/">&nbsp;</a></div><div
+id="ad-sidebar-premium"><div
+id='div-gpt-ad-sidebar-premium' style='width:300px; height:250px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-sidebar-premium'); });</script> </div></div><div
+id="ad-block"><div
+id="bsap_1616" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div> <a
+href="http://net.tutsplus.com/advertise/" class="end-ad-here">advertise here</a></div><div
+id="site-updates"><ul
+class="navfor-sections"><li
+class="mail-chimp-nav"><a
+href="#mail-chimp-section"><span>&nbsp;</span>Get Email Updates</a></li><li
+class="rss-nav"><a
+href="#rss-section"><span>&nbsp;</span>Subscribe via RSS</a></li></ul><div
+id="mail-chimp-section" class="section-fornav"><div
+id="mail-chimp-response"></div><form
+id="mail-chimp-form" action="" method="get"> <input
+type="text" name="mail-chimp-email" class="mail-chimp-email" value="" placeholder="me@email.com" /> <input
+type="submit" name="mail-chimp-subscribe" value="Subscribe" id="mail-chimp-subscribe" /></form></div><div
+id="rss-section" class="section-fornav"><ul><li><a
+href="javascript:void(0);">Select a subscription type...</a><ul><li><a
+href="http://feeds.feedburner.com/nettuts">Full Post RSS</a></li><li><a
+href="http://feedproxy.google.com/nettuts-summary">Summary RSS</a></li></ul></li></ul></div></div>  <script type="text/javascript">if ( ! plus_member_logged_in()) {
+    $('#ad-block').show();
+    $('#ad-sidebar-premium').show();
+    $('#temp-ads').show();
+    $('#ad-tuts-premium').show();
+  }</script> <div
+id="tutsjobs" class="jobs"><h3 class="jobs_header"> Full-time, Part-time and Contract Jobs</h3><div
+class="jobs_body"><ul
+class="jobs_list"></ul> <a
+class="more_jobs" href="http://jobs.tutsplus.com" title="Tuts+ Job Board"> More on Tuts+ Jobs... </a></div></div><div
+id="social-networking"><ul
+class="navfor-sections"><li
+class="facebook-nav"><a
+href="#facebook-section"><span>&nbsp;</span>Facebook</a></li><li
+class="twitter-nav"><a
+href="#twitter-section"><span>&nbsp;</span>Twitter</a></li><li
+class="google-plus-nav"><a
+href="#google-plus-section"><span>&nbsp;</span>Google+</a></li></ul><div
+id="facebook-section" class="section-fornav"></div><div
+id="twitter-section" class="section-fornav"><div><h3>Follow <a
+href="http://twitter.com/nettuts"><span>Nettuts+</a></span> and <span><a
+href="http://twitter.com/tutsplus">Tuts+</a></span> on Twitter</h3><ul><li>The latest Twitter feed isn't piping through at the moment, check back soon!<br
+/><br
+/>Sorry for the inconvenience.</li></ul></div></div><div
+id="google-plus-section" class="section-fornav"><div
+class="g-plus" data-href="https://plus.google.com/100395074731712398322" data-size="badge" data-width="388"></div></div></div></div></div></div><div
+id="footer_wrap"><div
+id="footer"><p
+class="footer_text"><strong>Nettuts+</strong> is part of the <a
+href="http://tutsplus.com/">Tuts+ Network</a>, teaching creative skills to millions worldwide.</p><ul><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a><span>&middot;</span></li><li><a
+href="http://www.formstack.com/forms/envato-tuts__contact_form">Suggestions</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/">About Us</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/tuts-terms-user-agreement/">Terms and Conditions</a><span>&middot;</span></li><li><a
+href="http://hub.tutsplus.com/privacy-policy">Privacy Policy</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li></ul> <a
+href="http://net.tutsplus.com" class="footer_logo">Nettuts+</a><div
+class="lower_footer"><p
+class="footer_copy">Copyright &copy; 2014 Envato</p> <a
+href="http://envato.com" class="envato_logo">Envato</a></div></div></div>
+ <script type="text/javascript" src="http://envato.s3.amazonaws.com/widget/widget.js"></script> <script type='text/javascript'>var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://net.tutsplus.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}</script> <script type="text/javascript">/*<![CDATA[*/// 
+        var disqus_shortname = 'nettuts';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    ///*]]>*/</script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushAll.js"></script> <script class="javascript">dp.SyntaxHighlighter.ClipboardSwf = 'http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');</script><script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['tab-size'] = 3;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/themes/tuts/js/footer.js?ver=2.0'></script>
+
+    <!-- Remarketing tags --> 
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1065398951;
+    var google_conversion_label = "YJmqCNWStQQQp-WC_AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065398951/?value=0&label=YJmqCNWStQQQp-WC_AM&guid=ON&script=0"/>
+      </div>
+    </noscript>
+    
+<script type="text/javascript" src="http://s.skimresources.com/js/1342X589339.skimlinks.js"></script>  </body>
+</html>
+
+<!-- Dynamic Page Served (once) in 1.158 seconds -->

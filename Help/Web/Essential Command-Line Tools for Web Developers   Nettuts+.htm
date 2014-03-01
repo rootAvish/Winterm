@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html
+xmlns="http://www.w3.org/1999/xhtml"><head><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<title>Essential Command-Line Tools for Web Developers | Nettuts+</title><link
+rel='stylesheet' href='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/plugins/wp-post-ratings/wp-post-ratings.css,wp-content/themes/tuts/style.css,wp-content/themes/tuts/images/theme/nettuts/theme.css,wp-content/themes/tuts/css/jobs-widget.css,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css,wp-content/plugins/organize-series/orgSeries.css&amp;m=1386206800' type='text/css' media='screen' /><link
+href="http://envato.s3.amazonaws.com/widget/widget.css" rel="stylesheet" type="text/css" media="screen" /><link
+rel="shortcut icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/favicon.ico" /><link
+rel="apple-touch-icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/apple-touch-icon.png" /> <script>Env = window.Env || {};
+  Env.facebookUrl = 'http://facebook.com/nettutsplus';
+  Env.mailChimpUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/functions/mc/mail-chimp.php';
+  Env.trackingCode = 'UA-11792865-8';
+  Env.boxUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif';
+      Env.trackingFields = [
+      {id: 1, name: 'Author', value: 'Chris Kelly'},
+      {id: 2, name: 'Category', value: 'tutorials/tools-and-tips'},
+      {id: 3, name: 'Publish Date', value: '2012-12'}
+    ];</script> <script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/themes/tuts/js/jquery-1.8.3.min.js,wp-content/plugins/wp-post-ratings/wp-post-ratings.js,wp-content/themes/tuts/js/jquery.ui.widget.js,wp-content/themes/tuts/js/jquery.ui.tabs.js,wp-content/themes/tuts/js/jobs.main.js,wp-content/themes/tuts/js/marketplace-url-rewriter.js,wp-content/themes/tuts/js/lazyload.js,wp-content/themes/tuts/js/google-analytics.js,wp-content/themes/tuts/js/mail-chimp.js,wp-content/themes/tuts/js/header.js,wp-includes/js/comment-reply.min.js,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js,wp-content/plugins/flash-player/swfobject.js&amp;m=1386206800'></script> <link
+rel='stylesheet' id='print-css'  href='http://net.tutsplus.com/wp-content/themes/tuts/css/print.css?ver=2.0' type='text/css' media='print' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://net.tutsplus.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://net.tutsplus.com/wp-includes/wlwmanifest.xml" /><link
+rel='prev' title='All I Want For Christmas (A Developer&#8217;s Wishlist)' href='http://net.tutsplus.com/articles/general/all-i-want-for-christmas-a-developers-wishlist/' /><link
+rel='next' title='How to Setup Laravel 4' href='http://net.tutsplus.com/tutorials/php/how-to-setup-laravel-4/' /><link
+rel='shortlink' href='http://net.tutsplus.com/?p=28521' /><meta
+name="description" content="Tools can make our workflows feel seamless, allowing us to focus on what we are building, and not worry about the process. Most web developers, on all portions" /><meta
+name="keywords" content="command-line,terminal,tools &amp; tips" /><link
+rel="canonical" href="http://net.tutsplus.com/tutorials/tools-and-tips/essential-command-line-tools-for-web-developers/" /><meta
+id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" /> <script type="text/javascript" src="http://osc.optimize.webtrends.com/628645/wt_capi.js"></script> <link
+rel="alternate" type="application/rss+xml" title="Nettuts+ RSS Feed" href="http://net.tutsplus.com/feed/" /><link
+rel="pingback" href="http://net.tutsplus.com/xmlrpc.php" /><meta
+name="google-site-verification" content="aoXTcdQJMMCGh8FUsMlj35Qw-2jK83Wpt7XnqUPB9KI" /><link
+href="https://plus.google.com/100395074731712398322" rel="publisher" /></head><body
+class="single single-post postid-28521 single-format-standard"> <script type="text/javascript">/*<![CDATA[*/if(window.WTOptimize && typeof wtObj != "undefined"){
+    WTOptimize.setup(wtObj);
+  }/*]]>*/</script>  <script type='text/javascript'>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();</script> <script type='text/javascript'>googletag.cmd.push(function() {
+  googletag.defineSlot('/11757429/net_leaderboard', [728, 90], 'div-gpt-ad-leaderboard').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_sidebar_premium', [300, 250], 'div-gpt-ad-sidebar-premium').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_featured_sidebar', [300, 250], 'div-gpt-ad-featured-sidebar').addService(googletag.pubads());
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script>  <script type="text/javascript">if (!plus_member_logged_in()) {
+  (function(){
+    var bsa = document.createElement('script');
+       bsa.type = 'text/javascript';
+       bsa.async = true;
+       bsa.src = '//s3.buysellads.com/ac/bsa.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+  })();
+}</script> <div
+id="fb-root"></div>  <script type="text/javascript">(function(){
+  var fb = document.createElement('script');
+  fb.type = 'text/javascript';
+  fb.async = true;
+  fb.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fb);
+})();</script> <div
+id="header_wrap"><div
+id="header"><a
+href="http://net.tutsplus.com" class="logo">Nettuts+</a><ul
+class="top_navigation"><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li><li><a
+href="http://net.tutsplus.com/about/">About</a></li></ul><div
+class="search_form"><form
+method="get" action="http://net.tutsplus.com/"> <input
+type="text" class="submit_input" name="s" id="s" placeholder="Search..." /> <input
+class="submit_button" type="submit" value="Search" /></form></div><div
+id="navigation"><ul
+class="navigation"><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><ul
+class="child-nav"><li
+class="cat-item cat-item-568"><a
+href="http://net.tutsplus.com/category/tutorials/asp-net/" title="ASP.NET programming tutorials.">ASP.NET</a></li><li
+class="cat-item cat-item-464"><a
+href="http://net.tutsplus.com/category/tutorials/cmss/" title="Tutorials that details how to work with various CMSs.">CMSs</a></li><li
+class="cat-item cat-item-547"><a
+href="http://net.tutsplus.com/category/tutorials/databases/" title="Learn how to work more efficiently with databases.">Databases</a></li><li
+class="cat-item cat-item-286"><a
+href="http://net.tutsplus.com/category/tutorials/design-tutorials/" title="Learn the ins and outs of web design.">Design</a></li><li
+class="cat-item cat-item-8"><a
+href="http://net.tutsplus.com/category/tutorials/html-css-techniques/" title="Get up to speed with HTML and CSS.">HTML &amp; CSS</a></li><li
+class="cat-item cat-item-10"><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/" title="Learn about vanilla JavaScript, and the various popular libraries that are available, like jQuery.">JavaScript &amp; AJAX</a></li><li
+class="cat-item cat-item-153"><a
+href="http://net.tutsplus.com/category/tutorials/other/" title="View all posts filed under Other">Other</a></li><li
+class="cat-item cat-item-41"><a
+href="http://net.tutsplus.com/category/tutorials/php/" title="Learn how to use PHP.">PHP</a></li><li
+class="cat-item cat-item-1285"><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/" title="View all posts filed under Python">Python</a></li><li
+class="cat-item cat-item-124"><a
+href="http://net.tutsplus.com/category/tutorials/ruby/" title="High quality Ruby and RoR tutorials and screencasts.">Ruby</a></li><li
+class="cat-item cat-item-1650"><a
+href="http://net.tutsplus.com/category/tutorials/scala-tutorials/" title="View all posts filed under Scala">Scala</a></li><li
+class="cat-item cat-item-7"><a
+href="http://net.tutsplus.com/category/tutorials/site-builds/" title="Learn how to convert a PSD to HTML from scratch.">Site Builds</a></li><li
+class="cat-item cat-item-29"><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/" title="Details the most popular tools when building web applications.">Tools &amp; Tips</a></li><li
+class="cat-item cat-item-35"><a
+href="http://net.tutsplus.com/category/tutorials/wordpress/" title="Become a WordPress master.">Wordpress</a></li></ul></li><li><a
+href="http://net.tutsplus.com/category/articles/">Articles</a><ul
+class="child-nav"><li
+class="cat-item cat-item-182"><a
+href="http://net.tutsplus.com/category/articles/contests/" title="View all posts filed under Contests">Contests</a></li><li
+class="cat-item cat-item-1334"><a
+href="http://net.tutsplus.com/category/articles/editorials/" title="Opinion pieces on the web development arena. ">Editorials</a></li><li
+class="cat-item cat-item-128"><a
+href="http://net.tutsplus.com/category/articles/general/" title="Generic articles on web development.">General</a></li><li
+class="cat-item cat-item-127"><a
+href="http://net.tutsplus.com/category/articles/interviews/" title="Interviews with prominent developers in the web development industry.">Interviews</a></li><li
+class="cat-item cat-item-1084"><a
+href="http://net.tutsplus.com/category/articles/lectures/" title="Featured talks from web development conferences around the world.">Lectures</a></li><li
+class="cat-item cat-item-1"><a
+href="http://net.tutsplus.com/category/articles/news/" title="Recent news in the web development industry.">News</a></li><li
+class="cat-item cat-item-1251"><a
+href="http://net.tutsplus.com/category/articles/quizzes/" title="Quizzes to check your knowledge.">Quizzes</a></li><li
+class="cat-item cat-item-437"><a
+href="http://net.tutsplus.com/category/articles/reviews/" title="Reviews of new web apps, frameworks, and books.">Reviews</a></li><li
+class="cat-item cat-item-1379"><a
+href="http://net.tutsplus.com/category/articles/roundups-articles/" title="Compilations of tools, frameworks and other assorted stuff.">Roundups</a></li><li
+class="cat-item cat-item-23"><a
+href="http://net.tutsplus.com/category/articles/web-roundups/" title="Compilations of popular articles from around the web.">Web Roundups</a></li></ul></li><li><a
+href="http://net.tutsplus.com/tag/tips/">Tips</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=tips" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/?tag=tips" title="Tutorials">Tutorials</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/ruby/?tag=tips" title="Ruby">Ruby</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=tips" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/other/?tag=tips" title="Other">Other</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=tips" title="PHP">PHP</a></li></ul></li><li><a
+href="http://net.tutsplus.com/sessions/">Sessions</a></li><li><a
+href="http://net.tutsplus.com/resources/">Resources</a></li><li><a
+href="http://net.tutsplus.com/tag/videos/">Videos</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/?tag=videos" title="Python">Python</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=videos" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=videos" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=videos" title="PHP">PHP</a></li></ul></li><li
+id="nav-premium-link"> <a
+href="http://tutsplus.com/courses/?q=true&filter_topic=35" target="_blank">Tuts+ Premium</a></li></ul></div><div
+class="site_switcher"><ul><li
+class="link-hub"><a
+href="http://hub.tutsplus.com/">Tuts+ Hub <span>The Latest Tuts+ Updates</span></a></li><li
+class="link-psd"><a
+href="http://psd.tutsplus.com/">Psdtuts+ <span>Adobe Photoshop</span></a></li><li
+class="link-net"><a
+href="http://net.tutsplus.com/">Nettuts+ <span>Web Development</span></a></li><li
+class="link-vector"><a
+href="http://vector.tutsplus.com/">Vectortuts+ <span>Illustrator and Vector</span></a></li><li
+class="link-audio"><a
+href="http://audio.tutsplus.com/">Audiotuts+ <span>Audio and Production</span></a></li><li
+class="link-ae"><a
+href="http://ae.tutsplus.com/">Aetuts+ <span>Adobe After Effects</span></a></li><li
+class="link-cg"><a
+href="http://cg.tutsplus.com/">Cgtuts+ <span>Computer Graphics</span></a></li><li
+class="link-photo"><a
+href="http://photo.tutsplus.com/">Phototuts+ <span>Photography</span></a></li><li
+class="link-mobile"><a
+href="http://mobile.tutsplus.com/">Mobiletuts+ <span>Mobile Development</span></a></li><li
+class="link-webdesign"><a
+href="http://webdesign.tutsplus.com/">Webdesigntuts+ <span>Web Design</span></a></li><li
+class="link-wp"><a
+href="http://wp.tutsplus.com/">Wptuts+ <span>WordPress</span></a></li><li
+class="link-mac"><a
+href="http://mac.tutsplus.com/">Mactuts+ <span>Mac &amp; OS X</span></a></li><li
+class="link-gamedev"><a
+href="http://gamedev.tutsplus.com/">Gamedevtuts+ <span>Game Development</span></a></li><li
+class="link-craft"><a
+href="http://craft.tutsplus.com/">Crafttuts+ <span>Craft &amp; Handmade</span></a></li></ul> <a
+href="javascript:void(0);" class="site_switcher_button">Toggle</a></div><div
+class="header-marketplace-ad ad-themeforest"><a
+href="http://themeforest.net?WT.mc_id=TutsHeader&ref=NetPremium" rel="external"><span>&nbsp;</span>Website Templates</a></div></div></div><div
+id="content_wrap"><div
+id="content" class="clearfix"><div
+class="page_wrap"><div
+id="leader-board-wrap" style="display: none"><div
+class="leader_board"> <a
+href="http://net.tutsplus.com/advertise/" class="LB_advert">Advertise Here</a><div
+class="lb_inner"><div
+id='div-gpt-ad-leaderboard' style='width:728px; height:90px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-leaderboard'); });</script> </div></div></div></div> <script type="text/javascript">if (!plus_member_logged_in()) {
+    $('#leader-board-wrap').show()
+  }</script> <div
+id="page" class="single_post"><div
+class="page_inner"><div
+class="post post_inner" id="post-28521"><div
+class="tut_top"><div
+class="post_image"> <a
+href="http://net.tutsplus.com/tutorials/tools-and-tips/essential-command-line-tools-for-web-developers/"><img
+src="http://cdn.tutsplus.com/net/uploads/legacy/2172_TerminalForWebDevs/terminal-for-web-devs.jpg" alt="Essential Command-Line Tools for Web Developers" width="200" height="200" /></a></div><div
+class="preview"><div
+class="post_taxonomy"><ul><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><span>\</span></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/">Tools &amp; Tips</a></li></ul></div><h1 class="post_title"> Essential Command-Line Tools for Web Developers</h1><div
+class="post_meta"> <a
+href="http://net.tutsplus.com/author/chris-kelly/" title="Posts by Chris Kelly" rel="author">Chris Kelly</a> on Dec 19th 2012 with <a
+href="http://net.tutsplus.com/tutorials/tools-and-tips/essential-command-line-tools-for-web-developers/#comments" title="Comment on Essential Command-Line Tools for Web Developers"><span
+class="dsq-postid" rel="28521 http://net.tutsplus.com/?p=28521">40 comments</span></a></div><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="90" height="21"></fb:like></div></div></div></div></div><div
+class="tut_bottom"><div
+class="tutorial_details"><h5>Tutorial Details</h5><ul><li><li><strong>Difficulty: </strong>Intermediate<li><strong>Completion Time: </strong> N/A</li></ul></div><div
+class="hublink"><a
+href="http://dev.tutsplus.com/tutorials/essential-command-line-tools-for-web-developers--net-28521
+" class="hublink_button">View post on <span>Tuts+ Beta</span></a><strong>Tuts+ Beta</strong> is an optimized, mobile-friendly and easy-to-read version of the Tuts+ network.</div></div><div
+class="post post_inner_article"> <script type="text/javascript">/*<![CDATA[*///
+(function($) { $(function() { WpPostRatings({context: $('#post-28521'), post_id: 28521, rpc: 'http://net.tutsplus.com/wp-admin/admin-ajax.php', base_url: 'http://net.tutsplus.com', allow_voting: true}).init() })})(jQuery)
+//]]&gt;/*]]>*/</script><p>Tools can make our workflows feel seamless, allowing us to focus on what we are building, and not worry about the process. Most web developers, on all portions of the stack, work from the command-line. There are countless utilities, which can make you more productive. These aren&#39;t full blown command-line applications, such as Git, but rather simple and composable tools, which can improve your workflow as a web developer.</p><p><span
+id="more-28521"></span></p><p>If you are on Mac OS X, you can use <a
+href="http://mxcl.github.com/homebrew/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','mxcl.github.com']);">Homebrew</a> to install any of the tools that are not part of the standard packages. Each of these tools have pages worth of options, and only a fraction of them are reviewed below. If you&#8217;d like to learn more about each tool, begin in the <code>man</code> pages with <code>man &lt;command&gt;</code> or <code>&lt;command&gt; -h</code>.</p><blockquote><p>Getting familiar with reading the supplied documentation, rather than Googling for an answer, is an essential skill for a productive developer.</p></blockquote><hr
+/><h2>cURL</h2><blockquote
+class="pullquote"><p>cURL is a venerable Swiss-Army knife for hitting URLs and receiving data in return.</p></blockquote><p><a
+href="http://man.cx/curl" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','man.cx']);">cURL</a> is used to &#8220;transfer a URL&#8221; according to the man page. It&#8217;s a venerable Swiss-Army knife for hitting URLs and receiving data in return. From simply returning the body of a page, such as your external IP address from <a
+href="http://ifconfig.me" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','ifconfig.me']);">ifconfig.me</a>, to downloading a file, to viewing the headers of a page. But cURL isn&#39;t just about pulling data, you can use it to push data to URLs to submit forms or APIs. Every developer working on the web should know this tool.</p><p>The basic usage of cURL is to download the contents of a website. Here&#8217;s an example:</p><pre class="brush: bash; title: ; notranslate" title="">$ curl ifconfig.me
+173.247.192.90
+</pre><p>You may want to download a file from a site, in which case you&#39;ll use the <code>-O</code> flag.</p><pre class="brush: bash; title: ; notranslate" title="">$ curl -LO http://download.virtualbox.org/virtualbox/4.2.4/VirtualBox-4.2.4-81684-OSX.dmg
+</pre><p>Notice that we also used the <code>-L</code> flag, which tells cURL to follow any redirects (which we need to download VirtualBox).</p><p>Often, when configuring web servers, you&#39;ll want to see that the headers are being set properly (e.g., Cache-Control and Etags). You can view just the headers of a page with the <code>-I</code> flag:</p><pre class="brush: bash; title: ; notranslate" title="">$ curl -I http://newrelic.com     
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Fri, 16 Nov 2012 22:24:36 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Status: 200 OK
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: &quot;4dafac3d1cc508e44b4ed1b0ac7f22d9&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Runtime: 0.056271
+X-Rack-Cache: miss
+</pre><p>Setting request headers is fairly common when working with URLs from the command-line. Many times, you&#39;ll need to define an Accept Header to set the response type, or Authorization header for setting your credentials. You can also set custom headers, if required by your API.</p><pre class="brush: bash; title: ; notranslate" title="">$ curl -iH &quot;x-api-key:yourapikey&quot; https://api.newrelic.com/api/v1/accounts/1/servers.xml
+HTTP/1.1 200 OK
+Server: NewRelic/0.8.53
+Date: Fri, 16 Nov 2012 22:38:55 GMT
+Content-Type: application/xml; charset=utf-8
+Connection: keep-alive
+Status: 200 OK
+X-Runtime: 606
+ETag: &quot;c57879ddfc1e35ec4a390d306114275f&quot;
+Cache-Control: private, max-age=0, must-revalidate
+Content-Length: 38871
+Vary: Accept-Encoding
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    &lt;servers type=&quot;array&quot;&gt;
+        &lt;server&gt;
+            &lt;id type=&quot;integer&quot;&gt;987987&lt;/id&gt;
+            &lt;hostname&gt;proxy1&lt;/hostname&gt;
+            &lt;overview-url&gt;https://api.newrelic.com/accounts/1/servers/987987&lt;/overview-url&gt;
+        &lt;/server&gt;
+    &lt;/servers&gt;
+</pre><p>In addition to setting an API key header with <code>-H</code>, we&#39;ve used <code>-i</code> to return both the header information, as well as the response body.</p><p>cURL isn&#39;t just for pulling down URLs, you can also use it to make POST/PUT requests to submit data to an API or act as an HTML form.</p><pre class="brush: bash; title: ; notranslate" title="">$ curl https://api.faker.com/v1/customers \
+    -H 'x-api-key:apikey' \
+    -H 'Content-Type: application/json' \
+    -d '{&quot;firstName&quot;:&quot;Justin&quot;, &quot;lastName&quot;:&quot;Bieber&quot;}'
+</pre><blockquote
+class="pullquote"><p>The beauty of cURL is that it can be piped into other programs to work with the returned data.</p></blockquote><p>We&#39;ve broken the command down to multiple lines, using <code>\</code> to make it easier to read. First, we need to set the proper headers with <code>-H</code>; you can see that we&#8217;ve set multiple headers by using multiple <code>-H</code>. Then, we set the JSON data for the POST using <code>-d</code>.</p><p>We&#39;ve only scratched the surface of the power of cURL, and you should get very familiar with these basic commands. After a while, you may even find yourself browsing the web more often through cURL.  The beauty of cURL, as with many UNIX utilities, is that it can be piped into other programs (like grep or jq) to work with the returned data.</p><hr
+/><h2><a
+href="http://stedolan.github.com/jq/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','stedolan.github.com']);">jq</a></h2><blockquote
+class="pullquote"><p><a
+href="http://stedolan.github.com/jq/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','stedolan.github.com']);">jq</a> is like sed for JSON.</p></blockquote><p>If you are working with a lot of JSON APIs (who isn&#39;t these days?), then you&#39;ll want to become familiar with <a
+href="http://stedolan.github.com/jq/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','stedolan.github.com']);">jq</a>. Described as a lightweight and flexible command-line JSON parser, jq is like sed for JSON. You aren&#39;t limited to using jq with APIs though; it can parse any JSON document (maybe from your favorite NoSQL database like Riak or Couchbase). The most common use case would be to pipe the results of a cURL request into jq, and you&#39;ve got a powerful combination for working with JSON APIs.</p><p>First, start with retrieving a JSON document; in this case, we&#39;re pulling tweets as JSON from Twitter&#39;s API, and piping it into jq. We&#39;ll return the entire response with <code>.</code> (period).</p><pre class="brush: bash; title: ; notranslate" title="">$ curl 'http://search.twitter.com/search.json?q=bieber&amp;rpp=5&amp;include_entities=true' | jq '.'
+
+{
+    &quot;since\_id\_str&quot;: &quot;0&quot;,
+    &quot;since_id&quot;: 0,
+    &quot;results\_per\_page&quot;: 5,
+    &quot;completed_in&quot;: 0.082,
+    &quot;max_id&quot;: 269583781747372030,
+    &quot;max\_id\_str&quot;: &quot;269583781747372032&quot;,
+    &quot;next_page&quot;: &quot;?page=2&amp;max_id=269583781747372032&amp;q=bieber&amp;rpp=5&amp;include_entities=1&quot;,
+    &quot;page&quot;: 1,
+    &quot;query&quot;: &quot;bieber&quot;,  
+    &quot;refresh_url&quot;: &quot;?since_id=269583781747372032&amp;q=bieber&amp;include_entities=1&quot;,
+    &quot;results&quot;: [...]
+}
+</pre><p>The JSON response includes meta-data about the request, as well as the results of the query, stored in the <code>results[]</code> array (which I truncated in the above response). We can pull out just the first tweet with:</p><pre class="brush: bash; title: ; notranslate" title="">$ curl 'http://search.twitter.com/search.json?q=bieber&amp;rpp=5&amp;include_entities=true' | jq '.results[0]'
+</pre><p>The tweet contains a fair bit of information that might not be pertinent to our current project, so we can show only the individual fields we&#39;re interested in:</p><pre class="brush: bash; title: ; notranslate" title="">$ curl 'http://search.twitter.com/search.json?q=bieber&amp;rpp=5&amp;include_entities=true' | jq '.results[0] | {from_user, text}'
+
+{
+    &quot;text&quot;: &quot;I just voted for Justin Bieber #maleartist #PeoplesChoice. Retweet to vote http://t.co/Y8405WqO via @peopleschoice&quot;,
+    &quot;from_user&quot;: &quot;PequenaDoDrew&quot;
+}
+</pre><p>You can collect complex results into usable formats by surrounding the filter in <code>[]</code>. For example, we might want to return all image URLs found in our tweets into the media array. Twitter&#39;s API returns any included media information within the entities field, so we can return the URLs, like so:</p><div
+class="tutorial_image"><script type="text/javascript">google_ad_client = "pub-9093712935949486";
+/* 300x250 nettuts middle tutsads */
+google_ad_slot = "1775681443";
+google_ad_width = 300;
+google_ad_height = 250;</script> <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div><pre class="brush: bash; title: ; notranslate" title="">$ curl 'http://search.twitter.com/search.json?q=bieber&amp;rpp=5&amp;include_entities=true' | jq '.results[] | {from_user, text, media: [.entities.media[].media_url]}'
+
+{
+    &quot;media&quot;: [ &quot;https://twitpic.com/show/iphone/bdpx8p&quot; ],
+    &quot;text&quot;: &quot;I just voted for Justin Bieber #maleartist #PeoplesChoice. Retweet to vote http://t.co/Y8405WqO via @peopleschoice&quot;,
+    &quot;from_user&quot;: &quot;PequenaDoDrew&quot;
+}
+</pre><p>That&#39;s just the start of what jq is capable of. Refer to the <a
+href="http://stedolan.github.com/jq/manual/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','stedolan.github.com']);">full documentation</a> to unlock its serious power. Once you get the hang of folding up responses into a desired result, you&#39;ll be able to work with and transform data like a machine.</p><hr
+/><h2><a
+href="http://ngrep.sourceforge.net/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','ngrep.sourceforge.net']);">ngrep</a></h2><blockquote
+class="pullquote"><p>Ngrep, or network grep, is exactly what it sounds like: grep for network traffic.</p></blockquote><p>Ngrep, or network grep, is exactly what it sounds like: grep for network traffic. It allows you to use a regular expression to match network packets, and it will return very similar information to what you would get from <code>curl -I</code>. The basic usage can be helpful to see all the requests a page is making, but that&#39;s just the start. When working with rich JavaScript client applications that make countless AJAX requests, which can be difficult to monitor and debug, ngrep will be your new best friend.</p><pre class="brush: bash; title: ; notranslate" title="">$ ngrep -d en1 -q -W byline &quot;^(GET|POST) .*&quot;
+interface: en1 (172.16.0.0/255.255.255.0)
+match: ^(GET|POST) .*
+
+T 172.16.0.79:59435 -&gt; 204.93.223.150:80 [A]
+GET / HTTP/1.1.
+Host: newrelic.com.
+Connection: keep-alive.
+Cache-Control: max-age=0.
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_7\_4) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11.
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+Accept-Encoding: gzip,deflate,sdch.
+Accept-Language: en-US,en;q=0.8.
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3.
+Cookie: ...
+</pre><p>This command will show all GET and POST requests made on a non-default interface with <code>-d en1</code>. The <code>-W byline</code> will maintain the line breaks for better readability, and <code>-q</code> will give you less noise about non-matching packets. You can use the <code>host</code> and <code>port</code> parameters to isolate the traffic to the specific application you are working with, if you need to.</p><p><code>ngrep</code> is great for viewing network traffic, and can bring to light what type of data is being passed between your computer and various sites. For example, it wouldn&#39;t take long to find a site sending your password in plaintext in the POST request for a login form.</p><hr
+/><h2><a
+href="http://s3tools.org/s3cmd" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','s3tools.org']);">S3cmd</a></h2><blockquote
+class="pullquote"><p><a
+href="http://s3tools.org/s3cmd" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','s3tools.org']);">S3cmd</a> gives you command-line access to your buckets and files on S3, plus much more.</p></blockquote><p>Nearly every developer stores files in <a
+href="http://aws.amazon.com/s3/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','aws.amazon.com']);">Amazon S3</a> at this point. You might be using it for simple storage of DB backups, or using it as the backing to your CDN, or even serving an entire static site from it. While the name stands for Simple Storage Service, working with the admin panel can be anything but simple. Besides, why would you want to leave the command-line to use an interface for a file system? <a
+href="http://s3tools.org/s3cmd" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','s3tools.org']);">S3cmd</a> gives you command-line access to your buckets and files on S3, plus much more.</p><p>After configuring the tool, which entails entering access keys from the AWS console, you will be able to work with S3 much in the same way that you would your local filesystem.</p><p><strong>Make a bucket:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd mb s3://ckelly-demo-bucket
+Bucket 's3://ckelly-demo-bucket/' created
+</pre><p><strong>List your buckets:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd ls
+2012-11-27 00:52  s3://ckelly-demo-bucket
+</pre><p><strong>Put a file into the bucket:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd put index.html s3://ckelly-demo-bucket/index.html
+index.html -&gt; s3://ckelly-demo-bucket/index.html  [1 of 1]
+</pre><p><strong>List the contents of the bucket:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd ls s3://ckelly-demo-bucket                       
+2012-11-27 00:54  0  s3://ckelly-demo-bucket/index.html
+</pre><p><strong>Download a file from the bucket:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd get s3://ckelly-demo-bucket/index.html
+s3://ckelly-demo-bucket/index.html -&gt; ./index.html  [1 of 1]
+</pre><p><strong>Remove a bucket and its content:</strong></p><pre class="brush: bash; title: ; notranslate" title="">$ s3cmd rb --recursive s3://ckelly-demo-bucket 
+WARNING: Bucket is not empty. Removing all the objects from it first. This may take some time...
+File s3://ckelly-demo-bucket/index.html deleted
+Bucket 's3://ckelly-demo-bucket/' removed
+</pre><p>We&#39;ve just previewed the file system commands, but that is only the start for S3cmd. You can also use it to manage your access control list, as well as your CloudFront distribution points from the command-line!</p><hr
+/><h2><a
+href="http://progrium.com/localtunnel/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','progrium.com']);">Localtunnel</a></h2><blockquote
+class="pullquote"><p>You&#39;ll never have to mess with manually tunneling traffic again.</p></blockquote><p><a
+href="http://progrium.com/localtunnel/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','progrium.com']);">Localtunnel</a> is a project, by <a
+href="http://progrium.com/blog/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','progrium.com']);">Jeff Lindsay</a> and sponsored by <a
+href="http://www.twilio.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.twilio.com']);">Twilio</a>, that makes it dead simple to expose your local web server to the Internet. Localtunnel is one tool that takes the UNIX philosophy to heart: it does one thing and does it well. The only option is to upload a public key for authentication, but that only needs to be done once.</p><p>Localtunnel is a RubyGem, so you&#39;ll need Ruby and RubyGems installed. A simple <code>gem install localtunnel</code> will get you started. Then, to expose a locally running server and port, you simply pass the port you want to expose as an argument.</p><pre class="brush: bash; title: ; notranslate" title="">$ localtunnel -k /Users/ckelly/.ssh/id_rsa.pub 3000
+This localtunnel service is brought to you by Twilio.
+Port 3000 is now publicly accessible from http://4nc9.localtunnel.com ...
+</pre><p>Your local server can then be accessed by anyone, anywhere. It&#39;s great for sharing work in progress, and perfect for accessing your application on a mobile device. You&#39;ll never have to mess with manually tunneling traffic again. Localtunnel solves a simple, but painful problem; it&#39;s the ideal tool for a web developer.</p><hr
+/><h2>Just Getting Started</h2><p>There are numerous other tools, which are central to a web developer&#39;s life (load testing, network monitoring, etc.), and they vary wildly, depending on what portion of the stack you&#8217;re working in. You might want to visit <a
+href="http://www.commandlinefu.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.commandlinefu.com']);">Command-line Fu</a> or follow <a
+href="https://twitter.com/climagic" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','twitter.com']);">Command-line Magic</a> on Twitter to discover new tools. And, of course, you should definitely <a
+href="http://newrelic.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','newrelic.com']);">try New Relic</a>, since no web developer should be without it.</p><div
+style="clear:both;padding-bottom:20px;"><fb:like layout="standard" width="450" height="30"></fb:like></div><p
+style="text-align: center;"><div
+id="bsap_1284118" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div></p></div><div
+id="tag-list"><span>Tags:</span> <a
+href="http://net.tutsplus.com/tag/command-line/">command-line</a><a
+href="http://net.tutsplus.com/tag/terminal/">terminal</a></div><div
+class="post_footer" style="padding-bottom: 170px;"><div
+class="enjoyed_post"> <span
+class="thumb_icon">&nbsp;</span><h5>Enjoyed this Post?</h5><p>Subscribe to our <a
+href="http://feeds.feedburner.com/nettuts">RSS Feed</a>, <a
+href="http://twitter.com/nettuts">Follow us on Twitter</a> or simply recommend us to friends and colleagues!</p><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="100" height="21"></fb:like></div></div></div><div
+class="the_author"> <img
+alt='' src='http://1.gravatar.com/avatar/dc6b66ebccd7100cd0f6e151f1d73bac?s=40&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D40&amp;r=PG' class='avatar avatar-40 photo' height='40' width='40' /><h5>By <a
+href="http://net.tutsplus.com/author/chris-kelly/" title="Posts by Chris Kelly" rel="author">Chris Kelly</a></h5><p
+class="the_author_p">Rollover to read this author's bio or click through to see a full list of posts by this author.</p><div
+class="autor_div"> Chris is the Developer/Evangelist at New Relic, makers of web application performance tools. He is an active Rubyist and Open Source advocate. Prior to New Relic, he was the CTO leading an ecommerce platform in the publishing industry. You can follow Chris on twitter at @amateurhuman. <span
+class="arrow">&nbsp;</span></div></div> <br
+class="clear" /><div
+class="plus_membership"><div
+class="plus_membership_text"> <a
+href="" class="plus_icon">Plus Premium</a><div
+id="logged-in-plus-footer" style="display: none;"><div
+class="plus_content wide"><h3>Hello!</h3><p>You can grab source files and bonus tutorials from the <a
+href="http://tutsplus.com/">members area</a>.</p></div><div
+class="plus_form"></div></div><div
+id="logged-out-plus-footer" style="display: none;"><div
+class="plus_content"><h3>Premium Members</h3><p>Source Files, Bonus Tutorials &amp; More for all relevant Tuts+ sites in one subscription. <a
+href="http://tutsplus.com/amember/signup.php">Join Now</a></p></div><div
+class="plus_form"><form
+name="login" method="post" action="http://tutsplus.com/amember/login.php?amember_redirect_url=http://net.tutsplus.com/tutorials/tools-and-tips/essential-command-line-tools-for-web-developers/" id="signIn"><fieldset> <input
+type="text" name="amember_login" id="username" class="input" /> <input
+type="password" name="amember_pass" id="password" class="input" /> <input
+type="submit" id="submit_plus" class="submit_plus" value="Sign In" /></fieldset></form></div></div></div><div
+class="left_corner">&nbsp;</div><div
+class="right_corner">&nbsp;</div></div> <script type="text/javascript">if (plus_member_logged_in()) {
+                  $('#logged-in-plus-footer').show()
+                } else {
+                  $('#logged-out-plus-footer').show()
+                }</script> </div><div
+class="post extra_posts single"></div><div
+class='discus-note'><strong>Note:</strong> Want to add some source code? Type &lt;pre&gt;&lt;code&gt; before it and &lt;/code&gt;&lt;/pre&gt; after it. <a
+href="http://help.disqus.com/customer/portal/articles/665057" target="_blank">Find out more</a></div><div
+class="comments"><div
+id="disqus_thread"><div
+id="dsq-content"><ul
+id="dsq-comments"><li
+class="comment even thread-even depth-1" id="dsq-comment-457748"><div
+id="dsq-comment-header-457748" class="dsq-comment-header"><cite
+id="dsq-cite-457748"> <span
+id="dsq-author-user-457748">kesavkolla</span></cite></div><div
+id="dsq-comment-body-457748" class="dsq-comment-body"><div
+id="dsq-comment-message-457748" class="dsq-comment-message"><p>Couple of additions I&#8217;d suggest to this list:</p><p>ack &#8211; awesome grep tool just for programmers.  It&#8217;s easy to grep only code files not .svn &amp; .git directories.  Shows colorized line numbers for easy viewing.</p><p>pyed piper (<a
+href="https://code.google.com/p/pyp/wiki/intro" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','code.google.com']);" rel="nofollow">https://code.google.com/p/pyp/wiki/intro</a>)</p><p>A replacement for all awk, sed and any of text manipulation utilities.  In-fact sometimes it replaces the use of shell scripts.</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-458339"><div
+id="dsq-comment-header-458339" class="dsq-comment-header"><cite
+id="dsq-cite-458339"> <span
+id="dsq-author-user-458339">Dane Collins</span></cite></div><div
+id="dsq-comment-body-458339" class="dsq-comment-body"><div
+id="dsq-comment-message-458339" class="dsq-comment-message"><p>This. Especially ack.</p></div></div></li></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-457749"><div
+id="dsq-comment-header-457749" class="dsq-comment-header"><cite
+id="dsq-cite-457749"> <span
+id="dsq-author-user-457749">Heywood</span></cite></div><div
+id="dsq-comment-body-457749" class="dsq-comment-body"><div
+id="dsq-comment-message-457749" class="dsq-comment-message"><p>Been a developer for a dozen years and never needed any of these. But thanks for the suggestions.</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-457754"><div
+id="dsq-comment-header-457754" class="dsq-comment-header"><cite
+id="dsq-cite-457754"> <span
+id="dsq-author-user-457754">Dan</span></cite></div><div
+id="dsq-comment-body-457754" class="dsq-comment-body"><div
+id="dsq-comment-message-457754" class="dsq-comment-message"><p>Yeah.<br
+/> cURL&#8230; developer tools -&gt; network -&gt; headers<br
+/> jq&#8230; enter json url directly in browser</p><p>ngrep is cool, i guess (I can&#8217;t figure out how to search in dev tools)<br
+/> S3cmd&#8230; ftp?<br
+/> Localtunnel seems cool</p></div></div></li><ul
+class="children"><li
+class="comment even depth-3" id="dsq-comment-457755"><div
+id="dsq-comment-header-457755" class="dsq-comment-header"><cite
+id="dsq-cite-457755"> <span
+id="dsq-author-user-457755">Ricky Duckworth</span></cite></div><div
+id="dsq-comment-body-457755" class="dsq-comment-body"><div
+id="dsq-comment-message-457755" class="dsq-comment-message"><p>ngrep could be replaced by wireshark I guess. command line though, I think cURL is much easier and verbose than developer tools -&gt; network -&gt; headers.</p></div></div></li></li></ul></li><li
+class="comment odd alt depth-2" id="dsq-comment-457765"><div
+id="dsq-comment-header-457765" class="dsq-comment-header"><cite
+id="dsq-cite-457765"> <span
+id="dsq-author-user-457765">abimaelmartell</span></cite></div><div
+id="dsq-comment-body-457765" class="dsq-comment-body"><div
+id="dsq-comment-message-457765" class="dsq-comment-message"><p>just curl some times is needed, but i prefer wget | wput</p></div></div></li><ul
+class="children"><li
+class="comment even depth-3" id="dsq-comment-457768"><div
+id="dsq-comment-header-457768" class="dsq-comment-header"><cite
+id="dsq-cite-457768"> <span
+id="dsq-author-user-457768">pixelBender67</span></cite></div><div
+id="dsq-comment-body-457768" class="dsq-comment-body"><div
+id="dsq-comment-message-457768" class="dsq-comment-message"><p>me too, I&#8217;m always using wget</p></div></div></li></li></ul></li><li
+class="comment odd alt depth-2" id="dsq-comment-457918"><div
+id="dsq-comment-header-457918" class="dsq-comment-header"><cite
+id="dsq-cite-457918"> <span
+id="dsq-author-user-457918">Alchemication</span></cite></div><div
+id="dsq-comment-body-457918" class="dsq-comment-body"><div
+id="dsq-comment-message-457918" class="dsq-comment-message"><p>Probably either Microsoft/poor developer ;)) Sorry, had to say it&#8230;</p></div></div></li></li></ul></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457751"><div
+id="dsq-comment-header-457751" class="dsq-comment-header"><cite
+id="dsq-cite-457751"> http://twitter.com/designbymobius <span
+id="dsq-author-user-457751">Uzo Olisemeka</span></cite></div><div
+id="dsq-comment-body-457751" class="dsq-comment-body"><div
+id="dsq-comment-message-457751" class="dsq-comment-message"><p>Would be nice if devs on a Windows machine had access to these tools &#8230;</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-457752"><div
+id="dsq-comment-header-457752" class="dsq-comment-header"><cite
+id="dsq-cite-457752"> <span
+id="dsq-author-user-457752">Ricky Duckworth</span></cite></div><div
+id="dsq-comment-body-457752" class="dsq-comment-body"><div
+id="dsq-comment-message-457752" class="dsq-comment-message"><p>curl is available for windows. ngrep is available for windows. s3cmd is available on windows. jq &amp; localtunnel both available on windows configured under CygWin. Would be nice if devs on a Windows machine simply googled their gripes before moaning at a good article based on false pretenses.</p></div></div></li><ul
+class="children"><li
+class="comment even depth-3" id="dsq-comment-457769"><div
+id="dsq-comment-header-457769" class="dsq-comment-header"><cite
+id="dsq-cite-457769"> http://www.facebook.com/roosterjm2k2 <span
+id="dsq-author-user-457769">Joshua McDonald</span></cite></div><div
+id="dsq-comment-body-457769" class="dsq-comment-body"><div
+id="dsq-comment-message-457769" class="dsq-comment-message"><p>Wow, kind of agressive for a response, eh?  I don&#8217;t see &#8216;moaning at a good article&#8217;, i see moaning at a crappy OS with no real command line to speak of&#8230; I see no criticism of the article&#8230;</p></div></div></li></li><li
+class="comment odd alt depth-3" id="dsq-comment-457774"><div
+id="dsq-comment-header-457774" class="dsq-comment-header"><cite
+id="dsq-cite-457774"> <span
+id="dsq-author-user-457774">Andy</span></cite></div><div
+id="dsq-comment-body-457774" class="dsq-comment-body"><div
+id="dsq-comment-message-457774" class="dsq-comment-message"><p>agreed&#8230; kind of a douchey response.</p></div></div></li></li><li
+class="comment even depth-3" id="dsq-comment-457817"><div
+id="dsq-comment-header-457817" class="dsq-comment-header"><cite
+id="dsq-cite-457817"> <span
+id="dsq-author-user-457817">Ricky Duckworth</span></cite></div><div
+id="dsq-comment-body-457817" class="dsq-comment-body"><div
+id="dsq-comment-message-457817" class="dsq-comment-message"><p>I wasn&#8217;t trying to be aggressive, merely stating the obvious. Like Uzo said, he learnt he could use it on windows. The problem was, it took me saying you can for him to realize! A simple google search could of told him that, but at least now he knows. I admit though, Uzo&#8217;s criticism wasn&#8217;t of the article, it was of the OS, and now I&#8217;ve re-read it I apologize for my retaliation to that!</p></div></div></li></li><li
+class="comment odd alt depth-3" id="dsq-comment-457788"><div
+id="dsq-comment-header-457788" class="dsq-comment-header"><cite
+id="dsq-cite-457788"> http://twitter.com/designbymobius <span
+id="dsq-author-user-457788">Uzo Olisemeka</span></cite></div><div
+id="dsq-comment-body-457788" class="dsq-comment-body"><div
+id="dsq-comment-message-457788" class="dsq-comment-message"><p>i wasn&#8217;t saying they aren&#8217;t. i was saying i personally don&#8217;t know if they did exist for windows devs. fair enough though .. ive learned a few new things today so that&#8217;s good, right? :)</p></div></div></li></li><li
+class="comment even depth-3" id="dsq-comment-457818"><div
+id="dsq-comment-header-457818" class="dsq-comment-header"><cite
+id="dsq-cite-457818"> <span
+id="dsq-author-user-457818">Ricky Duckworth</span></cite></div><div
+id="dsq-comment-body-457818" class="dsq-comment-body"><div
+id="dsq-comment-message-457818" class="dsq-comment-message"><p>No problem, I realize you weren&#8217;t condemning the article, more condemning windows, so I apologize for seeming quite hard when responding! But yea, a google search told me all I need to know for that &#8211; it probably was worth the Author noting the fact it&#8217;s available on windows in the article. CygWin is an awesome tool!</p></div></div></li></li><li
+class="comment odd alt depth-3" id="dsq-comment-457888"><div
+id="dsq-comment-header-457888" class="dsq-comment-header"><cite
+id="dsq-cite-457888"> http://twitter.com/designbymobius <span
+id="dsq-author-user-457888">Uzo Olisemeka</span></cite></div><div
+id="dsq-comment-body-457888" class="dsq-comment-body"><div
+id="dsq-comment-message-457888" class="dsq-comment-message"><p>It&#8217;s no problem Ricky. There&#8217;s no point in shooting the messenger. You are right; Google could have told me these things. I just needed to follow that line of thought in my original post one step further and asked Google. End result is I&#8217;m going to be better as a result of this, so no need to apologize. Your words weren&#8217;t in the most friendly tone but the content is priceless. Diamond in the rough, so to speak.</p><p>I saw the value in it and discarded the parts that won&#8217;t build me up. Net result: I learn something and I still maintain a good demeanor for the rest of my day!</p><p>#BiWinning (is this still a thing? You know what? i&#8217;m asking Google &#8230;)</p></div></div></li></li></ul></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-457753"><div
+id="dsq-comment-header-457753" class="dsq-comment-header"><cite
+id="dsq-cite-457753"> http://www.facebook.com/profile.php?id=513148172 <span
+id="dsq-author-user-457753">Jesper Thøgersen</span></cite></div><div
+id="dsq-comment-body-457753" class="dsq-comment-body"><div
+id="dsq-comment-message-457753" class="dsq-comment-message"><p>You forgot the best command of all &#8211; &#8220;python -m SimpleHTTPServer&#8221;</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-458015"><div
+id="dsq-comment-header-458015" class="dsq-comment-header"><cite
+id="dsq-cite-458015"> http://www.fusionstrike.com/ <span
+id="dsq-author-user-458015">Jacob Clark</span></cite></div><div
+id="dsq-comment-body-458015" class="dsq-comment-body"><div
+id="dsq-comment-message-458015" class="dsq-comment-message"><p>Is that a command line Tool? Or just an inbuilt Python function?</p></div></div></li></li></ul></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457757"><div
+id="dsq-comment-header-457757" class="dsq-comment-header"><cite
+id="dsq-cite-457757"> http://cardeo.ca/ <span
+id="dsq-author-user-457757">cardeo</span></cite></div><div
+id="dsq-comment-body-457757" class="dsq-comment-body"><div
+id="dsq-comment-message-457757" class="dsq-comment-message"><p>One of the best typos I&#8217;ve seen in awhile &#8220;cURL is used to “transfer a URL” according to the man page. &#8220;</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-457775"><div
+id="dsq-comment-header-457775" class="dsq-comment-header"><cite
+id="dsq-cite-457775"> <span
+id="dsq-author-user-457775">Dan</span></cite></div><div
+id="dsq-comment-body-457775" class="dsq-comment-body"><div
+id="dsq-comment-message-457775" class="dsq-comment-message"><p>Where&#8217;s the typo?</p><p>If you&#8217;re referring to &#8220;man&#8221; page &#8211; that&#8217;s not a typo. Man pages are &#8220;manual&#8221; files used in the UNIX environment. They usually contain documentation or information on a unix command.</p></div></div></li><ul
+class="children"><li
+class="comment even depth-3" id="dsq-comment-457776"><div
+id="dsq-comment-header-457776" class="dsq-comment-header"><cite
+id="dsq-cite-457776"> http://cardeo.ca/ <span
+id="dsq-author-user-457776">cardeo</span></cite></div><div
+id="dsq-comment-body-457776" class="dsq-comment-body"><div
+id="dsq-comment-message-457776" class="dsq-comment-message"><p>ha yes I was, didn&#8217;t realize that was short for manual. I was just picturing what the man page looks like</p></div></div></li></li><li
+class="comment odd alt depth-3" id="dsq-comment-458461"><div
+id="dsq-comment-header-458461" class="dsq-comment-header"><cite
+id="dsq-cite-458461"> <span
+id="dsq-author-user-458461">Edward Wieczorek</span></cite></div><div
+id="dsq-comment-body-458461" class="dsq-comment-body"><div
+id="dsq-comment-message-458461" class="dsq-comment-message"><p>This killed me hahaha</p></div></div></li></li><li
+class="comment even depth-3" id="dsq-comment-458895"><div
+id="dsq-comment-header-458895" class="dsq-comment-header"><cite
+id="dsq-cite-458895"> <span
+id="dsq-author-user-458895">Dave</span></cite></div><div
+id="dsq-comment-body-458895" class="dsq-comment-body"><div
+id="dsq-comment-message-458895" class="dsq-comment-message"><p>It&#8217;s a page with that old black and white picture of a moustached man putting his hands up to box, with a speech bubble which is dynamically filled with the page content</p></div></div></li></li></ul></li></ul></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457760"><div
+id="dsq-comment-header-457760" class="dsq-comment-header"><cite
+id="dsq-cite-457760"> http://twitter.com/brunogama <span
+id="dsq-author-user-457760">Bruno Gama</span></cite></div><div
+id="dsq-comment-body-457760" class="dsq-comment-body"><div
+id="dsq-comment-message-457760" class="dsq-comment-message"><p>i would also include on that list the &#8220;siege&#8221; command to test server overload</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457767"><div
+id="dsq-comment-header-457767" class="dsq-comment-header"><cite
+id="dsq-cite-457767"> <span
+id="dsq-author-user-457767">pixelBender67</span></cite></div><div
+id="dsq-comment-body-457767" class="dsq-comment-body"><div
+id="dsq-comment-message-457767" class="dsq-comment-message"><p>Nice article S3cmd and localtunnel looks interesting</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457778"><div
+id="dsq-comment-header-457778" class="dsq-comment-header"><cite
+id="dsq-cite-457778"> http://twitter.com/otter311 <span
+id="dsq-author-user-457778">Connor Ross</span></cite></div><div
+id="dsq-comment-body-457778" class="dsq-comment-body"><div
+id="dsq-comment-message-457778" class="dsq-comment-message"><p>For all the windows users, CygWin.  Once you have CygWin you can use all your grep and piping knowledge from unix!</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457782"><div
+id="dsq-comment-header-457782" class="dsq-comment-header"><cite
+id="dsq-cite-457782"> http://www.facebook.com/people/Philip-Damra/1601148243 <span
+id="dsq-author-user-457782">Philip Damra</span></cite></div><div
+id="dsq-comment-body-457782" class="dsq-comment-body"><div
+id="dsq-comment-message-457782" class="dsq-comment-message"><p>ab is another great tool useful for testing the performance of your web apps.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457787"><div
+id="dsq-comment-header-457787" class="dsq-comment-header"><cite
+id="dsq-cite-457787"> <span
+id="dsq-author-user-457787">jaspersam</span></cite></div><div
+id="dsq-comment-body-457787" class="dsq-comment-body"><div
+id="dsq-comment-message-457787" class="dsq-comment-message"><p>very interesting thanks for sharing</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457807"><div
+id="dsq-comment-header-457807" class="dsq-comment-header"><cite
+id="dsq-cite-457807"> <span
+id="dsq-author-user-457807">selami575714</span></cite></div><div
+id="dsq-comment-body-457807" class="dsq-comment-body"><div
+id="dsq-comment-message-457807" class="dsq-comment-message"><p>very interesting thanks for sharing<br
+/> <a
+href="http://www.wiptube.info" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.wiptube.info']);" rel="nofollow">http://www.wiptube.info</a></p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457812"><div
+id="dsq-comment-header-457812" class="dsq-comment-header"><cite
+id="dsq-cite-457812"> <span
+id="dsq-author-user-457812">Dasharath Tanveer</span></cite></div><div
+id="dsq-comment-body-457812" class="dsq-comment-body"><div
+id="dsq-comment-message-457812" class="dsq-comment-message"><p>This is ridiculous, seriously. pff. Go back to the DOS.</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457904"><div
+id="dsq-comment-header-457904" class="dsq-comment-header"><cite
+id="dsq-cite-457904"> <span
+id="dsq-author-user-457904">Thomas Slade</span></cite></div><div
+id="dsq-comment-body-457904" class="dsq-comment-body"><div
+id="dsq-comment-message-457904" class="dsq-comment-message"><p>ZSH &#8211; with oh-my-zsh plugin. It changes your life.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457951"><div
+id="dsq-comment-header-457951" class="dsq-comment-header"><cite
+id="dsq-cite-457951"> <span
+id="dsq-author-user-457951">Djon</span></cite></div><div
+id="dsq-comment-body-457951" class="dsq-comment-body"><div
+id="dsq-comment-message-457951" class="dsq-comment-message"><p>Nice to read, just want to add that people have to consider guake on dealing with command line. f12 is a really easy way of accessing the terminal. Works great for me.</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457978"><div
+id="dsq-comment-header-457978" class="dsq-comment-header"><cite
+id="dsq-cite-457978"> http://blog.pixelingene.com <span
+id="dsq-author-user-457978">Pavan Podila</span></cite></div><div
+id="dsq-comment-body-457978" class="dsq-comment-body"><div
+id="dsq-comment-message-457978" class="dsq-comment-message"><p>I would include <b>lsof</b> as well. With the &#8220;-i -P&#8221; options it can list all the ports in use on your machine. It can be very useful if you multiple servers running or if you want to troubleshoot port collisions</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-457985"><div
+id="dsq-comment-header-457985" class="dsq-comment-header"><cite
+id="dsq-cite-457985"> <span
+id="dsq-author-user-457985">Danny van Kooten</span></cite></div><div
+id="dsq-comment-body-457985" class="dsq-comment-body"><div
+id="dsq-comment-message-457985" class="dsq-comment-message"><p>Localtunnel is awesome. Never heard of it but just gave it a run and it is perfect. Thanks!</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-457991"><div
+id="dsq-comment-header-457991" class="dsq-comment-header"><cite
+id="dsq-cite-457991"> <span
+id="dsq-author-user-457991">Javier</span></cite></div><div
+id="dsq-comment-body-457991" class="dsq-comment-body"><div
+id="dsq-comment-message-457991" class="dsq-comment-message"><p>If your are a developer but dont use command line.. you&#8217;re gonna have a n00b time..</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-458001"><div
+id="dsq-comment-header-458001" class="dsq-comment-header"><cite
+id="dsq-cite-458001"> http://twitter.com/joey89924 <span
+id="dsq-author-user-458001">joey</span></cite></div><div
+id="dsq-comment-body-458001" class="dsq-comment-body"><div
+id="dsq-comment-message-458001" class="dsq-comment-message"><p>great tool useful for testing the performance..<br
+/> <a
+title="TIP122" href="http://www.hqew.net/product-data/TIP122" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.hqew.net']);" rel="nofollow">TIP122</a></p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-458033"><div
+id="dsq-comment-header-458033" class="dsq-comment-header"><cite
+id="dsq-cite-458033"> http://lancejoyner.yolasite.com/ <span
+id="dsq-author-user-458033">AldenHuff</span></cite></div><div
+id="dsq-comment-body-458033" class="dsq-comment-body"><div
+id="dsq-comment-message-458033" class="dsq-comment-message"><p>For all the windows customers, CygWin. Once you have CygWin you can use all your grep and pipes information from unix!</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-458078"><div
+id="dsq-comment-header-458078" class="dsq-comment-header"><cite
+id="dsq-cite-458078"> http://www.facebook.com/mittul.chauhan <span
+id="dsq-author-user-458078">Mittul Chauhan</span></cite></div><div
+id="dsq-comment-body-458078" class="dsq-comment-body"><div
+id="dsq-comment-message-458078" class="dsq-comment-message"><p>i love json .. but now i want to learn jq .. want to move forward .. thanks a lot</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-458103"><div
+id="dsq-comment-header-458103" class="dsq-comment-header"><cite
+id="dsq-cite-458103"> <span
+id="dsq-author-user-458103">Ysgard</span></cite></div><div
+id="dsq-comment-body-458103" class="dsq-comment-body"><div
+id="dsq-comment-message-458103" class="dsq-comment-message"><p>S3 offers you 5Gb of storage, but it only lasts for one year.  After that, you pay.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-458213"><div
+id="dsq-comment-header-458213" class="dsq-comment-header"><cite
+id="dsq-cite-458213"> http://twitter.com/tinogomes <span
+id="dsq-author-user-458213">Celestino Gomes</span></cite></div><div
+id="dsq-comment-body-458213" class="dsq-comment-body"><div
+id="dsq-comment-message-458213" class="dsq-comment-message"><p>instead of curl + jq, try httpie</p></div></div></li></li></ul></div></div> <script type="text/javascript">/*<![CDATA[*//*  */
+    var disqus_url = 'http://net.tutsplus.com/tutorials/tools-and-tips/essential-command-line-tools-for-web-developers/';
+    var disqus_identifier = '28521 http://net.tutsplus.com/?p=28521';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'nettuts';
+    var disqus_title = "Essential Command-Line Tools for Web Developers";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=28521';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://net.tutsplus.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/*  *//*]]>*/</script> <script type="text/javascript">/*  */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/net.tutsplus.com\/tutorials\/tools-and-tips\/essential-command-line-tools-for-web-developers\/trackback\/"    };
+/*  */</script> <script type="text/javascript">/*<![CDATA[*//*  */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/*  *//*]]>*/</script> </div></div></div></div><div
+id="sidebar"><div
+id="social-stats"><ul><li
+class="ss-twitter"> <a
+href="http://twitter.com/nettuts" rel="nofollow external"> <span>Twitter</span> <large>99,348</large> <small>Twitter Followers</small> </a></li><li
+class="ss-facebook"> <a
+href="http://facebook.com/nettutsplus" rel="nofollow external"> <span>Facebook</span> <large>82,846</large> <small>Facebook Fans</small> </a></li><li
+class="ss-google-plus"> <a
+href="https://plus.google.com/100395074731712398322" rel="nofollow external"> <span>Google+</span> <large>22,465</large> <small>Google+ Followers</small> </a></li></ul></div><div
+id="ad-tuts-premium"> <a
+class="premium-dev" href="http://tutsplus.com/">&nbsp;</a></div><div
+id="ad-sidebar-premium"><div
+id='div-gpt-ad-sidebar-premium' style='width:300px; height:250px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-sidebar-premium'); });</script> </div></div><div
+id="ad-block"><div
+id="bsap_1616" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div> <a
+href="http://net.tutsplus.com/advertise/" class="end-ad-here">advertise here</a></div><div
+id="site-updates"><ul
+class="navfor-sections"><li
+class="mail-chimp-nav"><a
+href="#mail-chimp-section"><span>&nbsp;</span>Get Email Updates</a></li><li
+class="rss-nav"><a
+href="#rss-section"><span>&nbsp;</span>Subscribe via RSS</a></li></ul><div
+id="mail-chimp-section" class="section-fornav"><div
+id="mail-chimp-response"></div><form
+id="mail-chimp-form" action="" method="get"> <input
+type="text" name="mail-chimp-email" class="mail-chimp-email" value="" placeholder="me@email.com" /> <input
+type="submit" name="mail-chimp-subscribe" value="Subscribe" id="mail-chimp-subscribe" /></form></div><div
+id="rss-section" class="section-fornav"><ul><li><a
+href="javascript:void(0);">Select a subscription type...</a><ul><li><a
+href="http://feeds.feedburner.com/nettuts">Full Post RSS</a></li><li><a
+href="http://feedproxy.google.com/nettuts-summary">Summary RSS</a></li></ul></li></ul></div></div>  <script type="text/javascript">if ( ! plus_member_logged_in()) {
+    $('#ad-block').show();
+    $('#ad-sidebar-premium').show();
+    $('#temp-ads').show();
+    $('#ad-tuts-premium').show();
+  }</script> <div
+id="tutsjobs" class="jobs"><h3 class="jobs_header"> Full-time, Part-time and Contract Jobs</h3><div
+class="jobs_body"><ul
+class="jobs_list"></ul> <a
+class="more_jobs" href="http://jobs.tutsplus.com" title="Tuts+ Job Board"> More on Tuts+ Jobs... </a></div></div><div
+id="social-networking"><ul
+class="navfor-sections"><li
+class="facebook-nav"><a
+href="#facebook-section"><span>&nbsp;</span>Facebook</a></li><li
+class="twitter-nav"><a
+href="#twitter-section"><span>&nbsp;</span>Twitter</a></li><li
+class="google-plus-nav"><a
+href="#google-plus-section"><span>&nbsp;</span>Google+</a></li></ul><div
+id="facebook-section" class="section-fornav"></div><div
+id="twitter-section" class="section-fornav"><div><h3>Follow <a
+href="http://twitter.com/nettuts"><span>Nettuts+</a></span> and <span><a
+href="http://twitter.com/tutsplus">Tuts+</a></span> on Twitter</h3><ul><li>The latest Twitter feed isn't piping through at the moment, check back soon!<br
+/><br
+/>Sorry for the inconvenience.</li></ul></div></div><div
+id="google-plus-section" class="section-fornav"><div
+class="g-plus" data-href="https://plus.google.com/100395074731712398322" data-size="badge" data-width="388"></div></div></div></div></div></div><div
+id="footer_wrap"><div
+id="footer"><p
+class="footer_text"><strong>Nettuts+</strong> is part of the <a
+href="http://tutsplus.com/">Tuts+ Network</a>, teaching creative skills to millions worldwide.</p><ul><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a><span>&middot;</span></li><li><a
+href="http://www.formstack.com/forms/envato-tuts__contact_form">Suggestions</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/">About Us</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/tuts-terms-user-agreement/">Terms and Conditions</a><span>&middot;</span></li><li><a
+href="http://hub.tutsplus.com/privacy-policy">Privacy Policy</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li></ul> <a
+href="http://net.tutsplus.com" class="footer_logo">Nettuts+</a><div
+class="lower_footer"><p
+class="footer_copy">Copyright &copy; 2014 Envato</p> <a
+href="http://envato.com" class="envato_logo">Envato</a></div></div></div>
+ <script type="text/javascript" src="http://envato.s3.amazonaws.com/widget/widget.js"></script> <script type='text/javascript'>var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://net.tutsplus.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}</script> <script type="text/javascript">/*<![CDATA[*/// 
+        var disqus_shortname = 'nettuts';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    ///*]]>*/</script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushAll.js"></script> <script class="javascript">dp.SyntaxHighlighter.ClipboardSwf = 'http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');</script><script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['tab-size'] = 3;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/themes/tuts/js/footer.js?ver=2.0'></script>
+
+    <!-- Remarketing tags --> 
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1065398951;
+    var google_conversion_label = "YJmqCNWStQQQp-WC_AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065398951/?value=0&label=YJmqCNWStQQQp-WC_AM&guid=ON&script=0"/>
+      </div>
+    </noscript>
+    
+<script type="text/javascript" src="http://s.skimresources.com/js/1342X589339.skimlinks.js"></script>  <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-5.newrelic.com","27851e2035",1307456,"MQBVbURZXEtYVU0LXghKdlpCUV1WFkVQDFYKAA==",0,1128,new Date().getTime()]);</script>
+</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 1.045 seconds -->

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab -->
+<html><script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js"></script><script>var urchinTracker=function(){},_gaq={push:function(){try {if(arguments[0][0]=='_link')window.location.href=arguments[0][1]}catch(er){}}},_gat={_createTracker:function(){}, _getTracker:function(){return{__noSuchMethod__:function(){},_link:function(o){if(o)location.href=o;},_linkByPost:function(){return true;},_getLinkerUrl:function(o){return o;},_trackEvent:function(){}}}};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"profileUrl": null, "token": null, "projectHomeUrl": "/p/conemu-maximus5", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "domainName": null, "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/3076573747170053082", "projectName": "conemu-maximus5", "relativeBaseUrl": "", "loggedInUserEmail": null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-9200434-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+ 
+ 
+ <title>LaunchNewTab - 
+ conemu-maximus5 -
+ 
+ 
+ Windows Console Emulator, Far Manager plugins - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/conemu-maximus5/svnchanges/basic?path=/wiki/LaunchNewTab.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/3076573747170053082/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+<style type="text/css"></style><style type="text/css">.adlesse-hidden{display:none!important;}				.adlesse-invisible{visibility:hidden!important;}								#adlesse_configPopup{position:fixed; background-color:#FFFFFF!important; z-index:5000!important; width:1px; height:1px;}				#adlesse_configPopup_overlay{z-index:4999!important; position:fixed; left:0; top:0; width:0; height:0; background:Black!important;}				#adlesse_configPopup_iframe{width:100%; height:100%; border:0; margin:0; padding:0;}								</style><style type="text/css">.adlesse-hidden{display:none!important;}				.adlesse-invisible{visibility:hidden!important;}				.adlesse-actionpanel{padding:0!important; margin:0!important; position:absolute!important; z-index:9999!important; border:solid #000000 1px!important; background:#ffffff!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color:#000000!important;}				.adlesse-actionpanel a{padding:0!important; margin:0!important; background:none repeat scroll 0 0 transparent!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color: #000000!important; display: inline-block !important }				.adlesse-actionpanel a:hover{text-decoration:underline!important; }				.adlesse-trans-65{opacity:0.65; filter:alpha(opacity=65); -moz-opacity:0.65; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65); -khtml-opacity: 0.65; -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=65)';}				.adlesse-rounded-corner{-moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px; border-radius:3px;}								.adlesse-actionpanel-menu{position:absolute!important; z-index:9999!important;background:#ffffff!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color: #000000!important; border:1px solid #000000;text-align:center!important;padding:0!important; margin:5px!important; margin-top:1px!important;min-width:55px;}				.adlesse-actionpanel-menu-h {margin: 5px;list-style-type: none;}				.adlesse-actionpanel-menu-v {list-style-type: none;} 				.adlesse-actionpanel-menu-h li{background:#ffffff; cursor:pointer; display: inline-block; padding: 5px; zoom: 1;*display: inline;border-right:1px solid #cccccc}				.adlesse-actionpanel-menu-v li{background:#ffffff;cursor:pointer;padding:3px; border-bottom: 1px solid #000000;}								.adlesse-widget-div{}				.adlesse-widget-iframe{border:0px;}								</style></head>
+<body class="t6" promptdialogcheckdone="1">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab" onclick="_CS_click(&#39;/gb/ph/signin&#39;);"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/conemu-maximus5">
+ <a href="https://code.google.com/p/conemu-maximus5/">
+ 
+ 
+ <img src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/logo" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/conemu-maximus5/"><span itemprop="name">conemu-maximus5</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/conemu-maximus5/"><span itemprop="description">Windows Console Emulator, Far Manager plugins</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/conemu-maximus5/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/Downloads?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/TableOfContents?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/Issues?tm=3" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/conemu-maximus5/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <h2><a name="Contents"></a>Contents<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Contents" class="section_anchor"></a></h2><ul class="treeleafcontainer"><li class="treeopen">ConEmu </li><ul class="treeleafcontainer"><li>General </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/x64_or_x86">x64 or x86</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/StableVsPreview">Stable or Preview</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Certificate">What is «Certificate»?</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuTerms">ConEmu Terms</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFolders">Folders</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Screenshots">Screenshots</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Screencasts">Screencasts</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ">FAQ</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Whats_New">Whats new</a> </li></ul><li class="treeopen">Launch apps </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting.htm" class="currentpagelink">Launch new tab</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RestartTab">Restart tab</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/csudo">sudo</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Command_Line">Command line</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuC">ConEmuC</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/NewConsole">-new_console switch</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DosBox">DOS applications</a> </li></ul><li>Settings </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SettingsFast">First start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Settings">Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Fonts">Fonts</a> </li></ul><li>Features </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ExtendedConsole">ExtendedConsole</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/AnsiEscapeCodes">ANSI X3.64 / 256 color</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Xterm256Colors">Xterm 256 colors</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Progress">Operation progress</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Windows7Taskbar">Windows 7 taskbar</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/InsideParent">ConEmu Inside</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu_Clink">Bash completion</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuEnvironment">Environment variables</a> </li></ul><li>Controls </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Tabs">Tabs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SplitScreen">Splits (panes)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SystemMenu">System menu</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/KeyboardShortcuts">Keyboard shortcuts</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/UsingMouse">Using mouse</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TextSelection">Text selection</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/GuiMacro">GUI Macros</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TabletPC">Far and touchscreen</a> </li></ul><li>Far Manager </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFarPlugin">Far &amp; ConEmu plugins</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarMacro">Far Macros</a> </li></ul><li>Extras </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Awards">ConEmu Awards</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Reviews">ConEmu Reviews</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RoadMap">ConEmu Road Map</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHk">Inject ConEmuHk</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TipsAndTweaks">Tips and Tweaks</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PromptAtTheBottom">Prompt at the bottom</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PVSStudio">PVS-Studio</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">MiniDump</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/LogFiles">LogFiles</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DropBox">DropBox</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MicrosoftBugs">Microsoft Bugs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PowershellPrompt">Powershell Prompt</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TaskBarBug">Task bar bug</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/NamedPipes">Named pipes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TerminalVsShell">Terminal vs shell</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ProcessExplorer">Process Explorer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ProcessMonitor">Process Monitor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHelping">How you may help</a> </li></ul></ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarManager">About Far Manager</a> </li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/FarPlugins">Far Manager plugins</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ClipFixer">ClipFixer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FARSelector">FAR Selector</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Far3Wrapper">FAR2-&gt;Far3 wrapper</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarWDS">FarWDS</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FileTypes">FileTypes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ImpEx">ImpEx (PE format browser)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MBlockEditor">MBlockEditor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MMView">Multimedia Viewer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PicView">Picture View 2</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/QSearchSwitch">QSearchSwitch</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RegEditor">RegEditor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Resolve">Resolve</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DirSync">Synchronize Directory</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/UnInstall">UnInstall</a> </li></ul><li class="treeleaf"><a href="http://code.google.com/p/conemu-maximus5/w/list?can=2&q=" rel="nofollow">All wiki pages</a> </li></ul>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">LaunchNewTab</span>
+ &nbsp;
+ <div> 
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Sat Dec 22 16:52:02 2012">
+ Dec 22, 2012</span>
+ 
+ by 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p><font size="5"><strong>Launching applications in ConEmu</strong></font> </p><ul><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_console_dialog">Create new console dialog</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_console_without_dialog">Create new console without dialog</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_tab_from_existing_one">Create new tab from existing one</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Duplicate_root">Duplicate root</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Default_terminal_feature">Default terminal feature</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Attach_existing_console_or_GUI_application">Attach existing console or GUI application</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Attach_from_command_prompt">Attach from command prompt</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Automatic_attach_of_cmd">Automatic attach of cmd</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Gui_Macro">Gui Macro</a></li></ul></ul>  <p></p><h2><a name="Create_new_console_dialog"></a>Create new console dialog<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_console_dialog" class="section_anchor"></a></h2><p>How to start application (tcc, powershell, far, putty) in ConEmu tab? </p><p><img src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ConEmuCreate.png" title="ConEmu confirmation of new console creation" alt="ConEmu new console"> </p><p>This dialog may be opened from: </p><ul><li>Keyboard (Win+W by default), or </li><li><img src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ConEmuAddBtn.png" title="Toolbar" alt="Toolbar"> </li><li><img src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ConEmuAddSys.png" title="System menu" alt="System menu"> </li></ul><p></p><p>Well, what you can do with this dialog? </p><ul><li>Choose command line and startup directory for new process (you may use environment variables in both fields). </li><li>Choose another user name and password, «Restricted current user» account or «Run as administrator» feature. </li><li>You may split active tab vertically or horizontally (you need last alpha versions for this feature). </li><li>And it is possible to start new tab in the new ConEmu window (new <tt>ConEmu.exe</tt> process will be started). </li><li>Dialog's system menu contains «Reset command history» menu item. </li></ul><p></p><p>Similar dialog may be opened when you <a href="https://code.google.com/p/conemu-maximus5/wiki/RestartTab">«Restart current console»</a>. </p><h2><a name="Create_new_console_without_dialog"></a>Create new console without dialog<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_console_without_dialog" class="section_anchor"></a></h2><p>You may switch off create new console confirmation, just disable «Create confirmation» checkbox on <a href="https://code.google.com/p/conemu-maximus5/wiki/Settings#Tabs">Tabs</a> settings page. </p><p><strong>Note</strong>. You may pop up confirmation dialog even if «Create confirmation» unchecked. Just hold Shift while creating console from toolbar, System menu, or Keyboard (Win+Shift+W by default). </p><h2><a name="Create_new_tab_from_existing_one"></a>Create new tab from existing one<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Create_new_tab_from_existing_one" class="section_anchor"></a></h2><p>Use <a href="https://code.google.com/p/conemu-maximus5/wiki/NewConsole">-new_console</a> switch while executing command. For example, if you want to start PuTTY in new ConEmu tab, type in command prompt (cmd.exe started in ConEmu tab) </p><pre class="prettyprint"><span class="pln">putty </span><span class="pun">-</span><span class="pln">new_console</span></pre><p>and it will be launched in the new tab of ConEmu. </p><p>-new_console works even in batch files. </p><p><strong>Note</strong>. Option «Inject ConEmuHk» must be turned on (Settings -&gt; Features). </p><h2><a name="Duplicate_root"></a>Duplicate root<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Duplicate_root" class="section_anchor"></a></h2><p>Well, this interesting feature offers a way to duplicate shell (root process of current tab) state to the new ConEmu tab. For example, you have started <tt>cmd.exe</tt>, set up environment variables, cd somewhere, run any program (vim for example) and call «Duplicate root» from tab popup menu. This will create «copy» of <tt>cmd.exe</tt> at most recent state (when possible). </p><h2><a name="Default_terminal_feature"></a>Default terminal feature<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Default_terminal_feature" class="section_anchor"></a></h2><p>This allows to seize creation of console processes from many (selected by user) applications. For example, when you run «Command prompt» shortcut from «Start menu» cmd.exe may start in the new ConEmu tab. Read more about <a href="https://code.google.com/p/conemu-maximus5/wiki/DefaultTerminal">Default terminal feature</a>. </p><h2><a name="Attach_existing_console_or_GUI_application"></a>Attach existing console or GUI application<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Attach_existing_console_or_GUI_application" class="section_anchor"></a></h2><p>Choose «Attach...» from <a href="https://code.google.com/p/conemu-maximus5/wiki/SystemMenu">system menu</a>. </p><h2><a name="Attach_from_command_prompt"></a>Attach from command prompt<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Attach_from_command_prompt" class="section_anchor"></a></h2><p>Batch file «Attach.cmd» ships with ConEmu package. Run this file from any cmd.exe to attach this console into the new ConEmu tab. This batch just run following command </p><pre class="prettyprint"><span class="typ">ConEmuC</span><span class="pun">.</span><span class="pln">exe </span><span class="pun">/</span><span class="pln">ATTACH </span><span class="pun">/</span><span class="pln">NOCMD</span></pre><p>which you may run from any other console shell or even from your own console application. </p><h2><a name="Automatic_attach_of_cmd"></a>Automatic attach of cmd<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Automatic_attach_of_cmd" class="section_anchor"></a></h2><p>Mostly like as «Attach from command prompt» but you may set up automatic execution of «Attach» on cmd.exe startup. This also works with TCC/LE. Set up feature on «ComSpec» page of «Settings» dialog. </p><h2><a name="Gui_Macro"></a>Gui Macro<a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab#Gui_Macro" class="section_anchor"></a></h2><p>You may set up several most used shells or build environments via <a href="https://code.google.com/p/conemu-maximus5/wiki/GuiMacro">GuiMacro</a>. Example: open «Keys &amp; Macro» settings page, click «Macros» radio (it filters long key list) and in the free «Macro XX» slot type </p><pre class="prettyprint"><span class="pln">shell</span><span class="pun">(</span><span class="str">""</span><span class="pun">,</span><span class="str">"C:\Windows\System32\cmd.exe /E:ON /V:ON /T:0E /K ""C:\\Program Files\\Microsoft SDKs\\Windows\\v7.1\\Bin\\SetEnv.cmd"" /Release /x86"</span><span class="pun">)</span></pre><p>choose any wanted hotkey (<strong>Ctrl</strong>+<strong>Shift</strong>+<strong>1</strong> for example) and <strong>Save settings</strong>. </p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 24 03:59:32 2013">Sep 24, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>True, but Win+2 is not a good hotkey example. Win+Numbers may be hooked/processes by your OS, <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> can't deal with them if you don't enable "Install keyboard hooks" option, Also, there is an option "Win+Numbers - activate console" </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106928760759888597482/">mkebay...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 24 04:12:58 2013">Sep 24, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>You can launch a predefined task (tab) with GUI macro as well this way: </p><ol><li>Open Setup Tasks | Keys &amp; Macro </li><li>Scroll down to Macro XX </li><li>Define a GUI macro with a specified shortcut and command as:  </li></ol><p>Task("Taskname") </p><p>Example:  </p><p><img src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/conemu_tab_keyboard_shortcut.png"> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/106928760759888597482/">mkebay...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 24 05:56:43 2013">Sep 24, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Updated for LCtrl </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">►</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab">Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/conemu-maximus5/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="LaunchNewTab">
+ <input type="hidden" name="token" value="">
+ </form>
+
+
+ <script src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<iframe id="rdbIndicator" width="100%" height="270" border="0" src="./LaunchNewTab - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/indicator.htm" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe><textarea id="adlesse_unifier_magic_element_id" style="display: none;"></textarea><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><div class="menuCategory controls"><a class="menuItem" href="http://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FLaunchNewTab" style="display: block;">Sign in to see your favorites</a><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div></body></html>

@@ -1,0 +1,44 @@
+clear=cls
+ls=ls --color --width=115 -F $*
+
+now=time /t $T date /t
+
+kill=taskkill /f /t /im $*
+
+rot13=tr a-zA-Z n-za-mN-ZA-M
+
+gl=git log  --date=short --pretty=format:"%C(auto) %h %ad %<|(35)%ar %<(70,mtrunc) %s %d" -n 20
+gll=git log --date=short --pretty=format:"%C(auto) %h %ad %<|(35)%ar %<(70,mtrunc) %s %d" $*
+gsl=git shortlog -n -s
+gcount=git rev-list HEAD --count
+
+gwhat=git whatchanged --oneline
+
+gdf=git diff --full-index
+gd=git diff $*
+
+gh=git help $*
+gb=git branch -v $*
+gch=git checkout $*
+
+gs=git status -sb
+ga=git add -A $*
+
+gst=git stash
+
+gc=git commit $*
+gcm=git commit --amend
+
+gacm=git add -A :/ $T git commit -m $*
+gac=git add -A :/ $T git commit -e
+
+gr=git reset head
+
+gru=git remote update
+gf=git fetch
+
+gpl=git pull $*
+gp=git push $*
+gps=git push origin source
+gpm=git push origin master
+gm=git merge 

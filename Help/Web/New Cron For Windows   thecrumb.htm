@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> New Cron For Windows | thecrumb</title>
+	<meta name="description" content="Blog of Jim Priest. Developer, Thinker, Tinkerer." />
+	<meta name="keywords" content="coldfusion, ant, jquery, automation, tools, autohotkey" />
+	<meta name="author" content="Jim Priest">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../../../theme/img/favicon-32x32.png">
+	<!--[if IE]><link rel="shortcut icon" href="../../../../theme/img/favicon.ico"><![endif]-->
+	<link rel="stylesheet" href="../../../../theme/css/thecrumb.min.css?3658ec88">
+</head>
+<body>
+<!-- NAVBAR -->
+<div class="navbar navbar-fixed-top">
+	<div class="header">
+		<div class="container">
+		<a class="brand" href="/" title="Home">thecrumb</a>
+		</div>
+	</div>
+
+	<div class="navbar-inner">
+		<div class="container">
+			<span class="brand tagline">developer, thinker, tinkerer</span>
+			<ul class="nav">
+						<li ><a href="../../../../pages/a-cerium-gist.html" title="a cerium gist">A CERIUM GIST</a></li>
+						<li ><a href="../../../../pages/about.html" title="about">ABOUT</a></li>
+						<li ><a href="../../../../pages/resume.html" title="resume">RESUME</a></li>
+					<li><a href="/wiki"  title="my wiki">WIKI</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- BODY CONTENT -->
+<div class="container">
+	<div class="row">
+		<!-- main content -->
+		<div class="span9">
+<div class='article'>
+	<div class="content-title">
+		<h1>NEW CRON FOR WINDOWS</h1>
+	</div>
+	<div>
+		<p>I've posted about Cron before, but that solution, <a href="http://thecrumb.com/2009/08/15/cron-for-windows/">nnCron</a> hasn't been update in ages and I could never get it to run on Windows 7.  I have been using Windows Task Scheduler but I still run into issues where it fails, or you need to be logged into the machine to run tasks.  It's better, but still not as reliable as cron.</p>
+<p>I'm always searching around for new tools and recently I discovered a new cron program for Windows called <a href="http://www.intelliadmin.com/index.php/2012/05/free-utility-a-simple-task-scheduler-for-windows/">IntelliAdmin Cron</a>.</p>
+<p>Much like the old <a href="http://thecrumb.com/2009/08/15/cron-for-windows/">nnCron</a> it's a simple download and install which sets up a service that runs in the background.</p>
+<p>What is neat about IntelliAdmin Cron is that while you can edit the vanilla cron file yourself (see <a href="http://thecrumb.com/2009/11/05/introduction-to-cron/">Introduction To Cron</a>) they also provide a neat GUI which allows you to enter some values and it will write the cron record for you:</p>
+<p><img alt="IntelliAdmin Cron" src="../../../../images/2013/03/cron2.jpg" /></p>
+<p>They add one new value to the list of parameters:</p>
+<div class="highlight"><pre><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="mi">5</span> <span class="s">&quot;c:</span><span class="se">\t</span><span class="s">emp</span><span class="se">\t</span><span class="s">est.vbs&quot;</span>
+</pre></div>
+
+
+<p>The sixth value sets how the program is executed:</p>
+<div class="highlight"><pre><span class="mi">1</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">is</span> <span class="n">executed</span> <span class="n">as</span> <span class="n">an</span> <span class="n">administrator</span>
+<span class="mi">2</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">is</span> <span class="n">executed</span> <span class="n">as</span> <span class="n">the</span> <span class="n">session</span> <span class="n">user</span>
+<span class="mi">4</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">is</span> <span class="n">hidden</span> <span class="n">when</span> <span class="n">executed</span>
+<span class="mi">8</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">is</span> <span class="n">executed</span> <span class="n">in</span> <span class="n">the</span> <span class="n">console</span> <span class="n">session</span>
+<span class="mi">16</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">will</span> <span class="n">only</span> <span class="n">be</span> <span class="n">executed</span> <span class="k">if</span> <span class="n">someone</span> <span class="n">is</span> <span class="n">logged</span> <span class="n">into</span> <span class="n">the</span> <span class="n">console</span>
+<span class="mi">32</span> <span class="o">=</span> <span class="n">The</span> <span class="n">process</span> <span class="n">will</span> <span class="n">be</span> <span class="n">executed</span> <span class="n">in</span> <span class="n">all</span> <span class="n">RDP</span> <span class="n">sessions</span><span class="p">.</span>
+<span class="mi">64</span> <span class="o">=</span> <span class="n">This</span> <span class="n">will</span> <span class="n">disable</span> <span class="n">the</span> <span class="n">job</span>
+</pre></div>
+
+
+<p>So in the example above where we have 5: 1 = The process is executed as an administrator + 4 = The process is hidden when executed = 5.</p>
+<p>Nice!</p>
+<p>IntelliAdmin Cron is free and they have a lot of other useful looking utilities on their <a href="http://www.intelliadmin.com/index.php/downloads/">site</a>.</p>
+<div class="metainfo">
+	<span><i class="icon-calendar"></i> Published on Sun 24 March 2013</span>
+
+	<span><i class="icon-folder-open"></i> Filed under <a href="../../../../category/code.html">code</a></span>
+
+	<span><i class="icon-tags"></i> Tags <a href="../../../../tag/tools.html">tools</a> </span>
+</div>	</div>
+	<h3><i class="icon-comments"></i> COMMENT / SHARE</h3>
+<p>Comments disabled for this post.  Still want to bug me about it?  Hit me up on one of the social sites listed to the right.</p>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="thecrumb">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+</div>
+		</div>
+
+		<div class="span3"> <!-- sidebar -->
+			<div class="well" data-spy="affix">
+
+			<div class="social">
+				<ul class="nav nav-list">
+					<li class="nav-header">Social</li>
+					<li><a href="http://twitter.com/thecrumb" title="Find me on Twitter"><i class="icon-twitter"></i> Twitter</a></li>
+					<li><a href="http://www.linkedin.com/in/jimpriest" title="Find me on LinkedIn"><i class="icon-linkedin"></i> LinkedIn</a></li>
+					<li><a href="http://facebook.com/%7Bsite.facebook_user%7D%7D/" title="Find me on Facebook"><i class="icon-facebook"></i> Facebook</a></li>
+					<li><a href="https://plus.google.com/113242119942807452606" title="Find me on Google +"><i class="icon-google-plus"></i> Google +</a></li>
+					<li><a href="https://pinboard.in/u:thecrumb" title="Find me on Pinboard"><i class="icon-pushpin"></i> Pinboard</a></li>
+					<li class="divider"></li>
+				</ul>
+			</div>
+
+			<div class="links">
+				<ul class="nav nav-list">
+					<li class="nav-header">Links</li>
+
+					<li><a href="http://thecrumb.com/wiki/" title="thecrumb wiki"><i class="icon-share"></i> Wiki</a></li>
+						<ul class="nav nav-list">
+							<li><a href="http://thecrumb.com/wiki/ant" title="Information on Ant"><i class="icon-share-alt"></i> Ant</a></li>
+							<li><a href="http://thecrumb.com/wiki/sublime" title="Information on Sublime Text editor"><i class="icon-share-alt"></i> Sublime Text</a></li>
+						</ul>
+						<li><a href="http://codebassradio.net" title="CodeBass"><i class="icon-share"></i> CodeBass</a></li>
+						<li><a href="http://ncdevcon.com" title="NCDevCon"><i class="icon-share"></i> NCDevCon</a></li>
+						<li><a href="http://tacfug.org" title="TACFUG"><i class="icon-share"></i> TACFUG</a></li>
+						<li><a href="http://cflunch.org" title="CFLunch"><i class="icon-share"></i> CFLunch</a></li>
+						<li><a href="http://yourdoorandmore.com" title="Your Door & More"><i class="icon-share"></i> Your Door & More</a></li>
+					<li class="divider"></li>
+				</ul>
+			</div>
+
+			<div class="meta">
+				<ul class="nav nav-list">
+					<li class="nav-header">Site</li>
+					<li><a href="../../../../archives.html"><i class="icon-calendar"></i> Archives</a>
+					<li><a href="../../../../tags.html"><i class="icon-tags"></i> Tags</a>
+					<li><a href="http://thecrumb.com/atom.xml" rel="alternate" title="Atom feed"><i class="icon-rss"></i> Feed</a></li>
+				</ul>
+			</div>
+		</div>
+
+		</div> 	</div> </div> <!-- /container -->
+
+<div class="footer">
+	<div class="container">
+		<p><a href="../../../..">thecrumb</a> &copy; jim priest | powered by <a href="https://github.com/getpelican/pelican/" title="Pelican">pelican</a></p>
+	</div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+<script src="http://use.edgefonts.net/chunk.js"></script>
+<!--[if lt IE 9]>
+<script src="../../../../theme/js/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://thecrumb.com/piwik/" : "http://thecrumb.com/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://thecrumb.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+</body>
+</html>

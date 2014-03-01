@@ -1,0 +1,399 @@
+#!/bin/sh
+
+# Written by YANGYONG, 2011-10-9
+
+# Defined Common Funcitons
+echo_pause()
+{
+	echo "Any Key to Continue ..."
+	read -n1 tmp
+}
+echo_exit()
+{
+	echo "Any Key to Exit ..."
+	read -n1 tmp
+	exit 11
+}
+echo_rootright()
+{
+	if [ ! `whoami` = "root" ] ; then
+		echo ""
+		echo "Warning:  You must run the process by 'root' user"
+		echo "          Try: sudo \"$0\"					   "
+		echo "Process Terminated !"
+		echo ""
+		exit
+	fi
+}
+echo_platform()
+{
+	#Define a var: PLATFORM, value is: Ubuntu, Fedora and openSUSE
+	if [ -f /etc/SuSE-release ] ; then
+		PLATFORM=`grep openSUSE /etc/SuSE-release 2>&1 | awk -F ' ' '{printf $1}'`
+	else
+		PLATFORM=`grep Ubuntu /etc/issue 2>&1 | awk -F ' ' '{printf $1}'`
+		if [ "${PLATFORM}" != "Ubuntu" ] ; then
+			PLATFORM=`grep Fedora /etc/issue 2>&1 | awk -F ' ' '{printf $1}'`
+		fi
+	fi
+
+	if [ "${PLATFORM}" = "grep:" ] ; then
+		echo "... ERROR: Not Found Platform! 	"
+	else
+		echo "... Current linux release version is '$PLATFORM' "
+	fi
+}
+
+#打包的安装程序目录, default is 'ztemtApp'
+ZTEMTAPP_NAME="ztemtApp"
+#Install Dir, default is '/usr/local/bin/ztemtApp'
+DEST_DIR=/usr/local/bin/$ZTEMTAPP_NAME
+# 打包的配置数据目录，default is 'ztemtApp-1.0'
+ZTEMTDATA_NAME="ztemtApp-1.0"
+# Fedora and opSuSE config files, default is 'autoinstall'
+AUTOINSTALL_NAME="autoinstall"
+
+#linux drive source directory name, default is 'zteusbserial'
+USB_SERIAL_NAME="zteusbserial"
+#linux drive dll name, default is 'ztemt.ko'
+DRIVER_MODULE_NAME="ztemt"
+DRIVER_MODULE_FILENAME="ztemt.ko"
+
+
+#Service Name, default is 'ztemtvcdromd'
+SERVICE_NAME="ztemtvcdromd"
+#Shortcut Name, default is 'ztemtapp'
+SHORTCUT_NAME="ztemtapp"
+#Device Rules File Name, default is '10-ztemtEVDO.rules'
+DEVICE_RULES_NAME="10-ztemtEVDO.rules"
+#Device Insert Callback Shell File Name, defaul is 'ztemtEVDO.sh'
+#DEVICE_INSERT_CALLBACK="ztemtEVDO.sh"
+#User App Data Dir Name, default is '.ztemtapp/ZTEEVDO'
+USER_APPDATA_DIR=".ztemtapp/ZTEEVDO"
+
+#Install file name: default is 'install'
+INSTALL_FILENAME="install"
+#Uninstall file name: default is 'uninstall'
+UNINSTALL_FILENAME="uninstall"
+
+#Current Path: this file work PWD
+CURRENT_PATH=`echo $0 | sed 's/\/'${INSTALL_FILENAME}'$//'`
+
+#Data card log file: defaul is '/tmp/ztemt_datacard_logfile.txt'
+LOGFILE_PATH="/tmp/ztemt_datacard_logfile.txt"
+
+
+
+
+echo_rootright
+echo_platform  > /dev/null
+
+echo "Current linux release version is '$PLATFORM'"  >>  $LOGFILE_PATH
+
+cd $CURRENT_PATH
+echo "Current Path is : $CURRENT_PATH :  $PWD"  |  tee -a $LOGFILE_PATH
+
+set -e
+#fedora 9 cann't find command 'pidof'
+PATH=$PATH:/sbin
+
+
+echo "1. Checking Previous Version ... "  |  tee -a $LOGFILE_PATH
+	# stop service
+	if [ "$PLATFORM" = "Ubuntu" ] ; then
+		if [ -n "$(pidof $SERVICE_NAME)" ]; then
+			sudo killall -9 $SERVICE_NAME
+			echo "	... Killed service '$SERVICE_NAME'"  |  tee -a $LOGFILE_PATH
+		fi
+
+	else
+
+		if [ -n "$($(which pidof) $SERVICE_NAME)" ]; then
+			if [ -f "/etc/init.d/$SERVICE_NAME" ] ; then
+				sudo 	/etc/init.d/$SERVICE_NAME stop
+				rm -f 	/etc/init.d/$SERVICE_NAME
+				echo "	... Stopped service '$SERVICE_NAME' "
+			fi
+		fi
+
+	fi
+
+
+echo "2. Copying Data Bin ... "  |  tee -a $LOGFILE_PATH
+	echo "	... will take a few seconds, please waiting ..."
+	#echo_pause
+
+	#1. common files
+	#all files
+	./7zr  x -y -o/usr/local/bin ${ZTEMTAPP_NAME}.bin  > /dev/null
+	#config data
+	cp -Rpd /usr/local/bin/$ZTEMTDATA_NAME/*  /
+	rm -rf	/usr/local/bin/$ZTEMTDATA_NAME
+
+
+	#2. files only for openSUSE and Fedora
+	#ip-up.local
+	cp /usr/local/bin/$AUTOINSTALL_NAME/ip-up.local  $DEST_DIR
+	#service script and default usb-serial driver bin
+	if [ "$PLATFORM" = "openSUSE" ] ; then
+		cp -f /usr/local/bin/$AUTOINSTALL_NAME/suse/$SERVICE_NAME 			  /etc/init.d/
+		cp -f /usr/local/bin/$AUTOINSTALL_NAME/suse/$DRIVER_MODULE_FILENAME   $DEST_DIR
+	elif [ "$PLATFORM" = "Fedora" ] ; then
+		cp -f /usr/local/bin/$AUTOINSTALL_NAME/fedora/$SERVICE_NAME 			/etc/init.d/
+		cp -f /usr/local/bin/$AUTOINSTALL_NAME/fedora/$DRIVER_MODULE_FILENAME   $DEST_DIR
+	fi
+	rm -rf	/usr/local/bin/$AUTOINSTALL_NAME
+
+
+echo "3. Auto Load Usb Driver Module ... "  |  tee -a $LOGFILE_PATH
+
+	# YG_ openSUSE execute error!,  ?
+	if [ "$PLATFORM" = "Ubuntu" ] ; then
+		sudo /etc/init.d/acpid restart
+	fi
+
+	if [ "${PLATFORM}" = "Ubuntu" ] ; then
+		# daemon31: start daemon by udev rules
+		#echo "/usr/sbin/$SERVICE_NAME" >> /etc/init.d/rc.local
+		echo "insmod $DEST_DIR/$USB_SERIAL_NAME/$DRIVER_MODULE_FILENAME" >> /etc/init.d/rc.local
+	fi
+
+echo "4. Changing pppd Options ... "  |  tee -a $LOGFILE_PATH
+	file="/etc/ppp/options"
+	#echo $file
+	if [ -f "$file" ] ; then
+	{
+		mv -f /etc/ppp/options /etc/ppp/options_bk
+		touch /etc/ppp/options
+		echo 'noauth' >> /etc/ppp/options
+	}
+	else
+	{
+		touch /etc/ppp/options
+		echo 'noauth' >> /etc/ppp/options
+	}
+	fi
+	chown root /usr/sbin/pppd
+	chmod 4755 /usr/sbin/pppd
+
+echo "5. Changing File Permission ... "  |  tee -a $LOGFILE_PATH
+	sudo /bin/chmod 0755  	$DEST_DIR/bin/App
+    sudo /bin/chmod 0755 	$DEST_DIR/loopPlayWav
+    sudo /bin/chmod 0755 	/usr/bin/$SHORTCUT_NAME
+    sudo /bin/chown root 	/usr/sbin/$SERVICE_NAME
+    sudo /bin/chmod 4755	/usr/sbin/$SERVICE_NAME
+    sudo /bin/chmod 0644 	/etc/udev/rules.d/$DEVICE_RULES_NAME
+    #sudo /bin/chmod 0755 	/lib/udev/$DEVICE_INSERT_CALLBACK
+
+	sudo /bin/chmod 0755  	$DEST_DIR/$UNINSTALL_FILENAME
+
+	#Used by openSUSE and Fedora
+	if [ -f /etc/init.d/$SERVICE_NAME ] ; then
+		sudo /bin/chmod 0775  	/etc/init.d/$SERVICE_NAME
+	fi
+
+echo "6. Detecting Qt lib Version ... "  |  tee -a $LOGFILE_PATH
+	QT_MAJOR=""
+	QT_MINOR=""
+	QT_BUILD=""
+	QT_VERSION=""
+	if [ "$PLATFORM" = "Ubuntu" ] ; then
+		QT_PKG_NAME=`dpkg -s libqtgui4 2>&1 |grep Version: |cut -d: -f2|cut -d- -f1|sed 's/[ ]*//'`
+		#Version: 4.4.0-1ubuntu5~hardy1
+		if [ "$QT_PKG_NAME" = ""  ]; then
+			echo "	... Package 'libqtgui4' is not installed"
+		    QT_PKG_NAME="0.0.0"
+		else
+			echo "	... Package 'libqtgui4' exist"
+		fi
+
+	else
+
+		QT_PKG_NAME=`rpm -q libqt5 | cut -de -f1`
+		#CrossPlatformUI-V2.2.3.i586; package *** is not install
+		if [ "$QT_PKG_NAME" = "packag"  ]; then
+			echo "	... Package 'libqt5' is not installed"
+		    QT_PKG_NAME="0.0.0"
+		    QT_PKG_NAME=`rpm -q libqt4 | cut -de -f1`
+		    if [ "$QT_PKG_NAME" = "packag"  ]; then
+				echo "	... Package 'libqt4' is not installed"
+		        QT_PKG_NAME="0.0.0"
+		    else
+				echo "	... Package 'libqt4' has been installed in this system."
+		        QT_PKG_NAME=`rpm -q libqt4 | cut -d- -f2 |sed 's/[ ]*//'`
+		    fi
+		else
+			echo "	... Package 'libqt5' has been installed."
+		    QT_PKG_NAME=`rpm -q libqt5 | cut -d- -f2 | sed 's/[ ]*//'`
+		fi
+	fi
+
+    echo "	... QT_VERSION = $QT_PKG_NAME"
+
+	#common part
+	QT_MAJOR=`echo $QT_PKG_NAME | cut -d. -f1`
+	QT_MINOR=`echo $QT_PKG_NAME | cut -d. -f2`
+	QT_BUILD=`echo $QT_PKG_NAME | cut -d. -f3`
+	if [ "$QT_MAJOR"  -gt "4" ]; then
+		sudo rm -f $DEST_DIR/bin/libQt*
+	elif [ "$QT_MAJOR" -eq "4" ]; then
+		if [ "$QT_MINOR" -gt "4" ]; then
+	 	   sudo rm -f $DEST_DIR/bin/libQt*
+		elif [ "$QT_MINOR" -eq "4" ]; then
+	 	   if [ "$QT_BUILD" -gt "0" ]; then
+	   	     sudo rm -f $DEST_DIR/bin/libQt*
+		   fi
+		fi
+	fi
+
+
+  	sudo /sbin/ldconfig
+
+
+	#Add ip-up.local script for openSUSE and Fedora
+	if [ "$PLATFORM" != "Ubuntu" ] ; then
+		sudo rm -f /etc/ppp/resolv.conf		 > /dev/null
+		sudo rm -f /var/run/ppp/resolv.conf  > /dev/null
+		if [ -f /etc/ppp/ip-up.local ]; then
+		   if [ -f /etc/ppp/ip-up.local.bakup ]; then
+			  echo "	... /etc/ppp/ip-up.local.bakup exists."
+		   else
+			  sudo mv /etc/ppp/ip-up.local /etc/ppp/ip-up.local.bakup
+		   fi
+		fi
+		sudo cp $DEST_DIR/ip-up.local /etc/ppp/
+		sudo chmod 755 /etc/ppp/ip-up.local
+	fi
+
+
+echo "7. Deleting process id file: EVDOApp.pid ... "  |  tee -a $LOGFILE_PATH
+    if [ -e ~/$USER_APPDATA_DIR/EVDOApp.pid ]; then
+	    /bin/rm -f ~/$USER_APPDATA_DIR/EVDOApp.pid
+    fi
+
+
+#Please put below code to script file 'install', after step 7
+
+echo "	Patching ... "  |  tee -a $LOGFILE_PATH
+if [ "$PLATFORM" = "Ubuntu" ] ; then
+	echo "Patch for Ubuntu 10.04, icon disappear question"
+	if [ -f "/usr/share/gnome-menus/update-gnome-menus-cache" ]; then
+		sudo /usr/share/gnome-menus/update-gnome-menus-cache /usr/share/applications/ > /tmp/desktop
+		sudo find /usr/share/applications/desktop* -exec cp /tmp/desktop {} \;
+		sudo chown root:root /usr/share/applications/desktop*
+	fi
+fi
+
+
+echo "8. Making USB Serial Driver Module : $DRIVER_MODULE_FILENAME ... "  |  tee -a $LOGFILE_PATH
+echo "	... will take a few seconds, please waiting ..."  |  tee -a $LOGFILE_PATH
+#echo_pause
+    UNAME=`uname -r|cut -d. -f3|cut -d- -f1`
+    if [ $UNAME -eq "27" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.27; make
+    elif [ $UNAME -lt "27" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/below2.6.27; make
+    elif [ $UNAME -eq "28" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.28; make
+    elif [ $UNAME -eq "29" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.29; make
+    elif [ $UNAME -eq "30" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.30; make
+    elif [ $UNAME -eq "31" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.31; make
+    elif [ $UNAME -eq "32" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.32; make
+    elif [ $UNAME -eq "33" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.33; make
+    elif [ $UNAME -eq "34" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.34; make
+    elif [ $UNAME -eq "35" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.35; make
+    elif [ $UNAME -eq "36" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.36; make
+    elif [ $UNAME -eq "37" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.37; make
+    elif [ $UNAME -eq "38" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.38; make
+    elif [ $UNAME -eq "39" ]; then
+		cd $DEST_DIR/$USB_SERIAL_NAME/2.6.39; make
+    else
+		echo "Information: Your linux version(2.6.${UNAME}) don't need usb-serial driver! "
+    fi
+
+    if [ -f ./$DRIVER_MODULE_FILENAME ]; then
+		mv $DRIVER_MODULE_FILENAME 	..
+		make clean
+		#Delete default driver file ztemt.ko
+		rm ../../$DRIVER_MODULE_FILENAME
+    else
+		echo "Sorry! Make usb-serial driver error."
+		echo "But, it try to use the default driver module."
+		mv $DEST_DIR/$DRIVER_MODULE_FILENAME  $DEST_DIR/$USB_SERIAL_NAME
+    fi
+
+ echo "9. Checking ALSA Library ... "  |  tee -a $LOGFILE_PATH
+    if [ -f /lib/libasound.so.2 ]; then
+    	LIB_ALSA="/lib/libasound.so.2"
+    else
+		if [ -f /usr/lib/libasound.so.2 ]; then
+		    LIB_ALSA="/usr/lib/libasound.so.2"
+    	else
+   		    echo "WARNING: Can not find ALSA shared library, which is needed for the program."
+        fi
+    fi
+
+echo "10. Checking libaudio2 Library ... "  |  tee -a $LOGFILE_PATH
+    if [ -f /lib/libaudio.so.2 ]; then
+        LIB_AUDIO2="/lib/libaudio.so.2"
+    else
+		if [ -f /usr/lib/libaudio.so.2 ]; then
+	        LIB_AUDIO2="/usr/lib/libaudio.so.2"
+		else
+	        echo "WARNING: Can not find libaudio2 shared library, which is needed for the program."
+        fi
+    fi
+
+
+echo "11. Loading Usb-serial Driver Module if not loaded ..."  |  tee -a $LOGFILE_PATH
+
+	if [ "${PLATFORM}" = "Ubuntu" ] ; then
+		if [ -z "$(pidof $SERVICE_NAME)" ]; then
+			sudo /usr/sbin/$SERVICE_NAME
+			echo "	... Started service '$SERVICE_NAME'"
+		fi
+
+  		if [ -z "$( lsmod | grep $DRIVER_MODULE_NAME )" ]; then
+			sudo /sbin/insmod $DEST_DIR/$USB_SERIAL_NAME/$DRIVER_MODULE_FILENAME
+			echo "	... Loaded usb-serial driver"
+		else
+		{
+			# stop usb-serial driver
+			lsmod | grep ^$DRIVER_MODULE_NAME 	>>   $LOGFILE_PATH
+			NUM=`lsmod | grep ^$DRIVER_MODULE_NAME | awk  '{print $3}'`
+			echo $NUM  >>   $LOGFILE_PATH
+			if [ $NUM -gt 0 ] ; then
+				echo "	... WARNING: usb-serial driver is in use ! "   |  tee -a $LOGFILE_PATH
+				echo "	... Please re-insert the CDMA terminal or restart your system "
+				echo ""
+				exit
+			else
+			    sudo /sbin/rmmod $DRIVER_MODULE_NAME ;
+			fi
+		}
+    	fi
+
+	else
+		/sbin/chkconfig --add $SERVICE_NAME
+		/etc/init.d/$SERVICE_NAME start
+		if [ -n "$($(which pidof) $SERVICE_NAME)" ]; then
+			echo "	... Loaded service: usb-serial driver and cdrom-switch "
+		fi
+	fi
+
+
+	echo ""
+    echo "Please re-insert the CDMA terminal after installation complete!"  |  tee -a $LOGFILE_PATH
+	echo ""
+
+

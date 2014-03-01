@@ -1,0 +1,2120 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Winac",
+				"WinActive()"
+			],
+			[
+				"This",
+				"A_ThisHotkey"
+			],
+			[
+				"Contr",
+				"ControlFocus"
+			],
+			[
+				"A_Thi",
+				"A_ThisHotkey"
+			],
+			[
+				"WinAcT",
+				"WinActive()"
+			],
+			[
+				"Cntro",
+				"ControlFocus"
+			],
+			[
+				"WheelU",
+				"WheelUp"
+			],
+			[
+				"WInget",
+				"WinGetTitle"
+			],
+			[
+				"A_Win",
+				"A_WinDir"
+			],
+			[
+				"e",
+				"Else"
+			],
+			[
+				"Err",
+				"ErrorLevel"
+			],
+			[
+				"Desel",
+				"DeslectAll"
+			],
+			[
+				"Unlice",
+				"unlicense"
+			],
+			[
+				"A_Gui",
+				"A_GuiControl"
+			],
+			[
+				"Auto",
+				"AutoHotkey"
+			],
+			[
+				"A_Gu",
+				"A_GuiControl"
+			],
+			[
+				"A_thisM",
+				"A_ThisMenuItem"
+			],
+			[
+				"A_This",
+				"A_ThisMenuItem"
+			],
+			[
+				"Regec",
+				"RegExMatch()"
+			],
+			[
+				"ScreenShotM",
+				"ScreenShotMenuHandler"
+			],
+			[
+				"StrinTrim",
+				"StringTrimRight"
+			],
+			[
+				"Volme",
+				"Volume_Up"
+			],
+			[
+				"Cli",
+				"Clipboard"
+			],
+			[
+				"ScreenShot",
+				"Screenshot_Directory"
+			],
+			[
+				"msgbo",
+				"Msgbox <blank>"
+			],
+			[
+				"Msgbox",
+				"Msgbox <blank>"
+			],
+			[
+				"msgb",
+				"Msgbox <blank>"
+			],
+			[
+				"Exit",
+				"ExitApp"
+			],
+			[
+				"Msgbo",
+				"Msgbox <blank>"
+			],
+			[
+				"WinGetA",
+				"WinGetActiveTitle"
+			],
+			[
+				"ADD",
+				"A_DD"
+			],
+			[
+				"Inpu",
+				"InputBox"
+			],
+			[
+				"filesArra",
+				"filesArray"
+			],
+			[
+				"Sen",
+				"SendMode"
+			],
+			[
+				"Cap",
+				"CapsLock"
+			],
+			[
+				"re",
+				"Return"
+			],
+			[
+				"cPrg",
+				"cProgFill"
+			],
+			[
+				"sin",
+				"SingleInstance	#SingleInstance"
+			],
+			[
+				"Exi",
+				"ExitApp"
+			],
+			[
+				"SetW",
+				"SetWorkingDir"
+			],
+			[
+				"WinGe",
+				"WinGetActiveStats"
+			],
+			[
+				"Msgb",
+				"Msgbox <blank>"
+			],
+			[
+				"Screensh",
+				"Screenshot_Size"
+			],
+			[
+				"Screensho",
+				"Screenshot_Format"
+			],
+			[
+				"Screen",
+				"Screenshot_Fromat"
+			],
+			[
+				"Off",
+				"Off"
+			],
+			[
+				"Ex",
+				"ExitApp"
+			],
+			[
+				"R",
+				"Return"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"pas",
+				"pass"
+			],
+			[
+				"u",
+				"uName"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"sub",
+				"submitForm"
+			],
+			[
+				"DB",
+				"DB_NAME"
+			],
+			[
+				"D",
+				"DB_PASSWORD"
+			],
+			[
+				"DB_",
+				"DB_HOST"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"Pass",
+				"Passwords"
+			],
+			[
+				"jq",
+				"jQuery.getJSON	jQuery.getJSON"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"mysql_nu",
+				"mysql_num_rows"
+			],
+			[
+				"pa",
+				"pass"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"my",
+				"mysql_error"
+			],
+			[
+				"mysql_",
+				"mysql_connect"
+			],
+			[
+				"err",
+				"error_reporting"
+			],
+			[
+				"mys",
+				"mysql_connect"
+			],
+			[
+				"ff",
+				"ff	font-family"
+			],
+			[
+				"f",
+				"font-style"
+			],
+			[
+				"Reg",
+				"RegExMatch()"
+			],
+			[
+				"col",
+				"col"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Readme.md",
+			"settings":
+			{
+				"buffer_size": 2595,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/aliases",
+			"settings":
+			{
+				"buffer_size": 809,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vendor/init.bat",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/.bashrc",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/.hidden-bashrc",
+			"settings":
+			{
+				"buffer_size": 4102,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Lua Dev/Lua.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"dif",
+				"Git: Diff All"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"fav",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"diff",
+				"Git: Diff All"
+			],
+			[
+				"but",
+				"Snippet: bs3-button-toolbar"
+			],
+			[
+				"ss she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"diff ",
+				"Git: Diff Current File"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"ss bat",
+				"Set Syntax: Batch File"
+			],
+			[
+				"ss ba",
+				"Set Syntax: Batch File"
+			],
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"tod",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"git lo",
+				"Git: Log All"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"blam",
+				"Git: Blame"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"gis",
+				"Gist: Open Gist"
+			],
+			[
+				"bra",
+				"BracketHighlighter: Remove Brackets"
+			],
+			[
+				"tas",
+				"Tasks: Archive"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"diff a",
+				"Git: Diff All"
+			],
+			[
+				"show",
+				"Git: Show Current File"
+			],
+			[
+				"folder",
+				"Project: Refresh Folders"
+			],
+			[
+				"git di",
+				"Git: Diff Staged"
+			],
+			[
+				"git dif",
+				"Git: Diff All"
+			],
+			[
+				"fa",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"ss h",
+				"Set Syntax: HTML"
+			],
+			[
+				"git sho",
+				"Git: Show Current File"
+			],
+			[
+				"git diff",
+				"Git: Diff All"
+			],
+			[
+				"arch",
+				"Tasks: Archive"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Snippet: bs3-navbar-static-top"
+			],
+			[
+				"ss hak",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"gist:",
+				"Gist: Open Gist"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"ss ahk",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"git file",
+				"Git: Show Current File"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"ss markd",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"ss mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"git stta",
+				"Git: Status"
+			],
+			[
+				"rea",
+				"File: Rename"
+			],
+			[
+				"git sts",
+				"Git: Status"
+			],
+			[
+				"git branc",
+				"Git: Change Branch"
+			],
+			[
+				"git bran",
+				"Git: Change Branch"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"git ba",
+				"Git: Blame"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"ss mar",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"arc",
+				"Tasks: Archive"
+			],
+			[
+				"ss ah",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"git show",
+				"Git: Show Current File"
+			],
+			[
+				"git fil",
+				"Git: Show Current File"
+			],
+			[
+				"book",
+				"Bookmarks: Clear All"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"filde",
+				"File: Delete"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"fodler",
+				"Open Folder: File "
+			],
+			[
+				"open",
+				"Open Folder: File "
+			],
+			[
+				"ssa h",
+				"Set Syntax: AutoHotkey"
+			],
+			[
+				"un",
+				"Code Folding: Unfold All"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"favfi",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"fold all",
+				"Code Folding: Fold All"
+			],
+			[
+				"folda ",
+				"Code Folding: Fold All"
+			],
+			[
+				"fold a",
+				"Code Folding: Fold All"
+			],
+			[
+				"gutte",
+				"View: Toggle Gutter"
+			],
+			[
+				"toggle gut",
+				"View: Toggle Gutter"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"isn",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"disba",
+				"Package Control: Disable Package"
+			],
+			[
+				"fave",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"fold al",
+				"Code Folding: Unfold All"
+			],
+			[
+				"task",
+				"Tasks: Archive"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"fav ",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"f de",
+				"File: Delete"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"file",
+				"File: Save All"
+			],
+			[
+				"ss task",
+				"Set Syntax: Tasks"
+			],
+			[
+				"tasks",
+				"Tasks: Archive"
+			],
+			[
+				"ds",
+				"Package Control: Disable Package"
+			],
+			[
+				"ini",
+				"Set Syntax: INI"
+			],
+			[
+				"to",
+				"Show TODOs: Open files only"
+			],
+			[
+				"pty",
+				"Set Syntax: Python"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"do",
+				"Goto Documentation"
+			],
+			[
+				"docme",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"docum",
+				"Goto Documentation"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"snippet",
+				"Snippet: .find()"
+			],
+			[
+				"setphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"bs3 na",
+				"Snippet: bs3-navbar-inverse"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"bs3 form",
+				"Snippet: bs3-form-horizontal"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"rein ",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reine",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"docb",
+				"Snippet: Start Docblock"
+			],
+			[
+				"sql",
+				"Snippet: php mysqli connection"
+			],
+			[
+				"pmc",
+				"Snippet: php mysqli connection"
+			]
+		],
+		"width": 562.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"clear",
+			"cls",
+			"view.run_command('LanguageHelp')",
+			"view.run_command('example')",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')",
+			"https://sublime.wbond.net/alpha/packages.json"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Perv - Color Scheme/Perv Orange Moonlight.tmTheme",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/packages.json",
+		"/C/Users/dufferzafar/.gitconfig",
+		"/D/I, Coder/@ GitHub/dufferzafar.github.com/.travis.yml",
+		"/D/I, Coder/@ GitHub/dufferzafar.github.com/Gemfile.lock",
+		"/D/I, Coder/@ GitHub/dufferzafar.github.com/_deploy/.travis.yml",
+		"/F/[Softwares]/[PowerPack]/Cmder/Cmder.sublime-project",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/init.bat",
+		"/C/Users/dufferzafar/AppData/Local/GitHub/9aad87e7-315e-497a-877b-bb579d95d788/share/vim/vimrc",
+		"/C/Users/dufferzafar/_viminfo",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/vim/_vimrc",
+		"/F/[Softwares]/[PowerPack]/Cmder/bin/alias.bat",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/aliases",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/prompt.lua",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/cowsay/share/cows/dragon.cow",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/cowsay/default.cow",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/cowsay/some.py",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/.bashrc",
+		"/C/Users/dufferzafar/.bashrc",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/.bash_profile",
+		"/F/[Softwares]/[PowerPack]/Cmder/.gitignore",
+		"/F/[Softwares]/[PowerPack]/Cmder/bin/my.sh",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/msysgit/bin/.bashrc",
+		"/J/table_create.c",
+		"/C/MinGW/README_STL.txt",
+		"/C/MinGW/set_distro_paths.bat",
+		"/C/Users/dufferzafar/.git-credentials",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/User/Git.sublime-settings",
+		"/F/[Softwares]/[PowerPack]/Cmder/Cmder.bat",
+		"/C/Users/dufferzafar/Desktop/a.html",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/vim/vim74/uninstal.txt",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/msysgit/cmd/gitk.cmd",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/cmder/Readme.md",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/Cmder.bat",
+		"/F/[Softwares]/[PowerPack]/Cmder/Help/cmder/vendor/init.bat",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Batch File/Batch File.tmLanguage",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Batch File/Comments.tmPreferences",
+		"/F/[Softwares]/System/Console/conem/ConEmu/GitShowBranch.cmd",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/C++/Comments (C++).tmPreferences",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/C++/C++.tmLanguage",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/C++/C.tmLanguage",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Lua/Lua.tmLanguage",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Lua/Comments.tmPreferences",
+		"/F/[Softwares]/System/Console/ConEmu.131219.x64/ConEmu/Cmd_Autorun.cmd",
+		"/F/[Softwares]/System/Console/ConEmu.131219.x64/ConEmu/ClsEx.cmd",
+		"/F/[Softwares]/System/Console/ConEmu.131219.x64/ConEmu/ColorPrompt.cmd",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/User/Plain text.sublime-settings",
+		"/F/[Softwares]/System/Console/ConEmu.131219.x64/ConEmu/Attach.cmd",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Packages/Batch File/Batch File.tmLanguage",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Packages/Batch File.sublime-package",
+		"/F/[Softwares]/System/Console/ConEmu.131219.x64/ConEmu/Far3_lua/ConEmu.CtrlShiftT.lua",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/conemu-maximus5/ConEmu/WhatsNew-ConEmu.txt",
+		"/F/[Softwares]/System/Console/cmder/vendor/conemu-maximus5/ConEmu/WhatsNew-ConEmu.txt",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/clink/CHANGES",
+		"/F/[Softwares]/System/Console/cmder/vendor/clink/clink.bat",
+		"/F/[Softwares]/System/Console/cmder/vendor/clink/CHANGES",
+		"/F/[Softwares]/System/Console/cmder/vendor/init.bat",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/git.lua",
+		"/F/[Softwares]/System/Console/cmder/config/prompt.lua",
+		"/F/[Softwares]/System/Console/cmder/config/Readme.md",
+		"/F/[Softwares]/System/Console/cmder/config/.history",
+		"/F/[Softwares]/System/Console/cmder/config/aliases",
+		"/D/I, Coder/@ GitHub/Python-Scripts/Sublime Text 3 Plugins/Help/Git/status.py",
+		"/D/I, Coder/@ GitHub/Python-Scripts/Sublime Text 3 Plugins/Help/Git/statusbar.py",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/clink/clink.lua",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Git/Git.sublime-settings",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/ConEmu.xml",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/conemu-maximus5/ConEmu/ConEmu_MinGW.xml",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/conemu-maximus5/ConEmu/ConEmu_Sample.xml",
+		"/D/I, Coder/@ GitHub/.gitignore_global",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/conemu-maximus5/plugins/ConEmu/Readme.txt",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/Readme.md",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/User/Preferences.sublime-settings",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/msysgit/doc/git/html/gittutorial-2.txt",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/test.lua",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/Readme.md",
+		"/F/[Softwares]/[PowerPack]/Cmder/config/.history",
+		"/D/I, Coder/@ GitHub/win-butler/Data/buddy/backup.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/close.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/hotkeys.ahk",
+		"/C/Program Files (x86)/Gow/setup/PathSetup.vbs",
+		"/C/Users/dufferzafar/AppData/Local/GitHub/PortableGit_fed20eba68b3e238e49a47cdfed0a45783d93651/VERSION",
+		"/D/I, Coder/@ GitHub/win-butler/Later.md",
+		"/F/[Softwares]/[PowerPack]/Cmder/vendor/conemu-maximus5/ConEmu/clink/Readme.txt",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/traymenu.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/explorer.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/gui.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/console.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/sublime.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/WinButler.sublime-project",
+		"/F/[Softwares]/Essentials/Sublime-Text-3/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/Documents/Tasks/Tasks.todo",
+		"/D/Documents/Tasks/Blog Posts.todo",
+		"/D/I, Coder/@ GitHub/BlogPosts.todo",
+		"/D/I, Coder/@ GitHub/Tasks.todo",
+		"/C/Users/dufferzafar/Documents/OneNote Notebooks/Personal/General.one",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/focus.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/volume/volumeOSD.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Help/FoldersPopup-master/FoldersPopup.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/selections.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/scriptLib/Scriptlet Library.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/gh-pages/index.html",
+		"/D/I, Coder/Scripts, Codes & Tut/Autohotkey/[Projects]/ISense_1.5.4/ISense.ahk",
+		"/D/I, Coder/Scripts, Codes & Tut/Autohotkey/[Projects]/Click Stalker 1.1/Log Files - Click Stalker/1366x768/Click Stalker - Wednesday, December 25, 2013,20,02,05 through Wednesday, December 25, 2013, 20,02,42.log",
+		"/D/I, Coder/Scripts, Codes & Tut/Autohotkey/[Projects]/AutoCorrect/AutoCorrect.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/run.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/selectfiles.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Help/googURLShortner.ahk",
+		"/F/[Softwares]/[PowerPack]/ManicTime/MAYANPROPHECY.nfo",
+		"/C/Users/dufferzafar/AppData/Local/Finkit/ManicTime/License",
+		"/C/MinGW/include/windows.h",
+		"/D/I, Coder/Project Euler/Solutions/Code/fast_numerology.c",
+		"/C/Program Files (x86)/Gow/bin/gow.vbs",
+		"/C/Program Files (x86)/Gow/2-new.txt",
+		"/C/Program Files (x86)/Gow/bin/gow.bat",
+		"/D/I, Coder/@ GitHub/Autohotkey-Scripts/The Sorting Hat/The Sorting Hat.ahk",
+		"/D/I, Coder/My Projects/The Sorting Hat 2/Files/belvedere-master/belvedere-master/includes/gui-rule.ahk",
+		"/D/I, Coder/My Projects/The Sorting Hat 2/Files/belvedere-master/belvedere-master/includes/Main_GUI.ahk",
+		"/D/I, Coder/My Projects/The Sorting Hat 2/Files/belvedere-master/belvedere-master/Belvedere.ahk",
+		"/C/Users/dufferzafar/Desktop/l.ini",
+		"/C/Users/dufferzafar/Desktop/cmder/Cmder.bat",
+		"/C/Users/dufferzafar/Desktop/cmder/vendor/clink/clink.lua",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/registry.ahk",
+		"/D/I, Coder/@ GitHub/win-butler/Help/FoldersPopup-master/README.md",
+		"/D/I, Coder/@ GitHub/win-butler/Data/includes/googURLShortner.ahk",
+		"/D/I, Coder/@ GitHub/Priority.todo",
+		"/C/Users/dufferzafar/Desktop/christmas.ahk",
+		"/G/Music/ATB/Distant Earth/000_atb_-_distant_earth-2cd-2011.sfv"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"<open folders>",
+			"D:\\7plus,<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"path",
+			"PATH",
+			"\\",
+			"putty",
+			">\n",
+			"rem",
+			"bat",
+			"comment",
+			"Transparency",
+			"Learn",
+			"statuses",
+			"Multi.",
+			"Multi.Sho",
+			"Tab",
+			"Key.",
+			"PlayPause",
+			"key",
+			"Todo",
+			"todo",
+			"usage",
+			"Cmder",
+			"CMDER_ROOT",
+			"CmderPath",
+			"CMDER_ROOT",
+			"CmderPath",
+			"CMDER_ROOT",
+			"globa",
+			"consol",
+			"git",
+			"Setup_BackupBuddy",
+			"&",
+			"PlayPause",
+			"BB_Toggle",
+			"tabs",
+			"tout",
+			"End",
+			"On",
+			"chm",
+			"hh",
+			"Title",
+			"ahk_dir",
+			"SysTreeView321",
+			"OutputVar",
+			"DeselectAll",
+			"Variable",
+			"DeselectAll",
+			"OpenInSublime",
+			"HelpAHK",
+			"Right",
+			"PlayPause",
+			"Light",
+			"\\n\\n\\n",
+			"\\n\\n",
+			";.*\\n",
+			"ProcessName",
+			"GetSelected",
+			"ToggleHidden",
+			"path",
+			"GetCurrentFolder",
+			"Minimize",
+			"witty",
+			"GetSelectedText",
+			"full_path",
+			"GetCurrentFolder7",
+			"full_path",
+			"CabinetWClass",
+			"Return",
+			"indent",
+			"indent_us",
+			"detect_",
+			"indent",
+			"Explorer",
+			"Minimize",
+			"HKEY_CLASSES_ROOT",
+			"shutdown -s -f -t",
+			"shutdown",
+			"HKEY_CLASSES_ROOT",
+			"selection",
+			"Esc",
+			"HKEY_CLASSES_ROOT",
+			"GetCurrentFolder7",
+			"Changed",
+			"noobs",
+			"Build_VolOSD",
+			"Modified",
+			"run",
+			"traymenu",
+			"runFromSublime",
+			"GitShell",
+			"ErrorLevel",
+			"sfv",
+			"item",
+			"Item",
+			"item",
+			"doc",
+			"Doc",
+			"doc",
+			"Doc",
+			"doc",
+			"Doc",
+			"doc",
+			"Item",
+			"Explorer",
+			"explorer",
+			"Explorer",
+			"explorer",
+			"Explorer",
+			"explorer",
+			"Explorer",
+			"explorer",
+			"Explorer",
+			"CommandPrompts",
+			"Explorer",
+			"Modified",
+			"PasteClipboard",
+			"CurrentDate",
+			"CurrentDateTime",
+			"ListHotkeys",
+			"gui",
+			"Cancle",
+			"traymenu",
+			"mainGuiID",
+			"the",
+			"Uses",
+			"Unlicensed",
+			"AutoHotkey",
+			"OutputVar",
+			"MoveOut"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"sfv",
+			"SS_Menu",
+			"Screenshot_Directory"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2116,
+								2116
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close"
+							],
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1565.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/aliases",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vendor/init.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/Batch File/Batch File.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/.bashrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
+							],
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/.hidden-bashrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4102,
+								4102
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"WordCountShouldRun": true,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
+							],
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2223.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"output.gotodocumentation":
+	{
+		"height": 138.0
+	},
+	"output.markdown":
+	{
+		"height": 138.0
+	},
+	"project": "Cmder.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"lua",
+				"config\\prompt.lua"
+			],
+			[
+				"ali",
+				"bin\\alias.bat"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				".bas",
+				"config\\.bashrc"
+			],
+			[
+				".g",
+				".gitignore"
+			],
+			[
+				"init",
+				"vendor\\init.bat"
+			],
+			[
+				"alias",
+				"bin\\alias.bat"
+			],
+			[
+				"bat",
+				"vendor\\init.bat"
+			],
+			[
+				"con",
+				"config\\ConEmu.xml"
+			],
+			[
+				"conem",
+				"vendor\\conemu-maximus5\\ConEmu\\ConEmu_Sample.xml"
+			],
+			[
+				"init.ba",
+				"vendor\\init.bat"
+			],
+			[
+				"rea",
+				"Readme.md"
+			],
+			[
+				"bac",
+				"Data\\buddy\\backup.ahk"
+			],
+			[
+				"gui",
+				"Data\\includes\\gui.ahk"
+			],
+			[
+				"explo",
+				"Data\\includes\\explorer.ahk"
+			],
+			[
+				"co",
+				"Data\\includes\\console.ahk"
+			],
+			[
+				"sub",
+				"Data\\includes\\sublime.ahk"
+			],
+			[
+				"cons",
+				"Data\\includes\\console.ahk"
+			],
+			[
+				"foc",
+				"Data\\includes\\focus.ahk"
+			],
+			[
+				"subl",
+				"Data\\includes\\sublime.ahk"
+			],
+			[
+				"run",
+				"Data\\includes\\run.ahk"
+			],
+			[
+				"selec",
+				"Data\\includes\\selectfiles.ahk"
+			],
+			[
+				"volum",
+				"Data\\volume\\volumeOSD.ahk"
+			],
+			[
+				"ggo",
+				"Help\\googURLShortner.ahk"
+			],
+			[
+				"rn",
+				"Data\\includes\\run.ahk"
+			],
+			[
+				"expl",
+				"Data\\includes\\explorer.ahk"
+			],
+			[
+				"reg",
+				"Data\\includes\\registry.ahk"
+			],
+			[
+				"menu",
+				"Data\\includes\\traymenu.ahk"
+			],
+			[
+				"hots",
+				"Data\\includes\\hotstrings.ahk"
+			],
+			[
+				"volu",
+				"Data\\volume\\volumeOSD.ahk"
+			],
+			[
+				"sele",
+				"Data\\includes\\selections.ahk"
+			],
+			[
+				"scre",
+				"Data\\screenshot\\screenshot.ahk"
+			],
+			[
+				"scree",
+				"Data\\screenshot\\screenshot.ahk"
+			],
+			[
+				"hotk",
+				"Data\\includes\\hotkeys.ahk"
+			],
+			[
+				"hot",
+				"Data\\includes\\hotkeys.ahk"
+			],
+			[
+				"exp",
+				"Help\\Explorer.ahk"
+			],
+			[
+				"tr",
+				"Data\\includes\\traymenu.ahk"
+			],
+			[
+				"ex",
+				"Data\\includes\\explorer.ahk"
+			],
+			[
+				"vol",
+				"Data\\volume\\volumeOSD.ahk"
+			],
+			[
+				"tra",
+				"Data\\includes\\traymenu.ahk"
+			],
+			[
+				"shut",
+				"Data\\includes\\autoshutdown.ahk"
+			],
+			[
+				"sle",
+				"Data\\includes\\selectfiles.ahk"
+			],
+			[
+				"sublim",
+				"data\\includes\\runFromSublime.ahk"
+			],
+			[
+				"va",
+				"data\\volume\\VA.ahk"
+			],
+			[
+				"gd",
+				"data\\Gdip.ahk"
+			],
+			[
+				"ara",
+				"data\\screenshot\\selectArea.inc.ahk"
+			],
+			[
+				"toimgur",
+				"data\\screenshot\\toImgur.ahk"
+			],
+			[
+				"imgr",
+				"Help\\Imgur.ahk"
+			],
+			[
+				"subli",
+				"data\\includes\\runFromSublime.ahk"
+			],
+			[
+				"runf",
+				"data\\includes\\runFromSublime.ahk"
+			],
+			[
+				"capl",
+				"data\\includes\\capslock.ahk"
+			],
+			[
+				"",
+				"WinButler.ahk"
+			],
+			[
+				"style",
+				"css\\style.css"
+			],
+			[
+				"sty",
+				"css\\style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"cr",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"",
+				"D:\\I, Coder\\@ GitHub\\personal-analytics\\Personal Analytics.sublime-project"
+			],
+			[
+				"butl",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"pos",
+				"D:\\I, Coder\\@ GitHub\\dufferzafar.github.com\\source\\Posts.sublime-project"
+			],
+			[
+				"log",
+				"D:\\I, Coder\\@ GitHub\\dufferzafar.github.com\\source\\Duffer's Log.sublime-project"
+			],
+			[
+				"but",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"tod",
+				"D:\\I, Coder\\@ GitHub\\Todo\\Todo.sublime-project"
+			],
+			[
+				"to",
+				"D:\\I, Coder\\@ GitHub\\Todo\\Todo.sublime-project"
+			],
+			[
+				"cry",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"int",
+				"D:\\I, Coder\\@ GitHub\\personal-analytics\\Personal Analytics.sublime-project"
+			],
+			[
+				"t",
+				"D:\\I, Coder\\@ GitHub\\Todo\\Todo.sublime-project"
+			],
+			[
+				"rep",
+				"D:\\I, Coder\\@ GitHub\\repo-size\\Repo Size.sublime-project"
+			],
+			[
+				"re",
+				"D:\\I, Coder\\@ GitHub\\repo-size\\Repo Size.sublime-project"
+			],
+			[
+				"repo",
+				"D:\\I, Coder\\@ GitHub\\repo-size\\Repo Size.sublime-project"
+			],
+			[
+				"task",
+				"D:\\I, Coder\\@ GitHub\\Tasks\\Tasks.sublime-workspace"
+			],
+			[
+				"tas",
+				"D:\\I, Coder\\@ GitHub\\Tasks\\Tasks.sublime-project"
+			],
+			[
+				"bu",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"per",
+				"D:\\I, Coder\\@ GitHub\\personal-analytics\\Personal Analytics.sublime-project"
+			],
+			[
+				"b",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"bt",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"p",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\PythonScripts.sublime-project"
+			],
+			[
+				"ta",
+				"D:\\I, Coder\\@ GitHub\\Tasks\\Tasks.sublime-project"
+			],
+			[
+				"ttas",
+				"D:\\I, Coder\\@ GitHub\\Tasks\\Tasks.sublime-project"
+			],
+			[
+				"post",
+				"D:\\I, Coder\\@ GitHub\\dufferzafar.github.com\\source\\Posts.sublime-project"
+			],
+			[
+				"pers",
+				"D:\\I, Coder\\@ GitHub\\personal-analytics\\Personal Analytics.sublime-project"
+			],
+			[
+				"c",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"cryp",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"las",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\Last.fm\\Python Last.fm.sublime-workspace"
+			],
+			[
+				"li",
+				"D:\\I, Coder\\@ GitHub\\libLua\\libLua.sublime-project"
+			],
+			[
+				"sele",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\Help\\AHK-SelectFiles.sublime-workspace"
+			],
+			[
+				"lu",
+				"D:\\I, Coder\\@ GitHub\\libLua\\libLua.sublime-project"
+			],
+			[
+				"hom",
+				"D:\\I, Coder\\@ GitHub\\homepages\\HomePages.sublime-workspace"
+			],
+			[
+				"home",
+				"D:\\I, Coder\\@ GitHub\\homepages\\HomePages.sublime-project"
+			],
+			[
+				"sel",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\Help\\AHK-SelectFiles.sublime-workspace"
+			],
+			[
+				"net",
+				"D:\\I, Coder\\@ GitHub\\internet-usage\\Internet Usage.sublime-project"
+			],
+			[
+				"prna",
+				"D:\\I, Coder\\@ GitHub\\pranks-and-all\\AHK-Pranks.sublime-project"
+			],
+			[
+				"pran",
+				"D:\\I, Coder\\@ GitHub\\pranks-and-all\\AHK-Pranks.sublime-project"
+			],
+			[
+				"pra",
+				"D:\\I, Coder\\@ GitHub\\pranks-and-all\\AHK-Pranks.sublime-project"
+			],
+			[
+				"pyth",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\PythonScripts.sublime-project"
+			],
+			[
+				"blog",
+				"D:\\I, Coder\\@ GitHub\\dufferzafar.github.com\\source\\Duffer's Log.sublime-project"
+			],
+			[
+				"budd",
+				"D:\\I, Coder\\@ GitHub\\backup-buddy\\Backup-Buddy.sublime-project"
+			],
+			[
+				"buddy",
+				"D:\\I, Coder\\@ GitHub\\backup-buddy\\Backup-Buddy.sublime-project"
+			],
+			[
+				"cy",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"crytp",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"butler",
+				"D:\\I, Coder\\@ GitHub\\win-butler\\WinButler.sublime-project"
+			],
+			[
+				"cryt",
+				"C:\\xampp\\htdocs\\cryptex\\Cryptex.sublime-project"
+			],
+			[
+				"mit",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\MITx - 6.00.1x Solutions\\Python MITx.sublime-workspace"
+			],
+			[
+				"track",
+				"D:\\I, Coder\\@ GitHub\\time-tracker\\time-tracker.sublime-project"
+			],
+			[
+				"mini",
+				"D:\\I, Coder\\My Projects\\miniMe\\miniMe.sublime-project"
+			],
+			[
+				"tra",
+				"D:\\I, Coder\\@ GitHub\\time-tracker\\time-tracker.sublime-project"
+			],
+			[
+				"trac",
+				"D:\\I, Coder\\@ GitHub\\time-tracker\\time-tracker.sublime-project"
+			],
+			[
+				"time",
+				"D:\\I, Coder\\@ GitHub\\time-tracker\\time-tracker.sublime-project"
+			],
+			[
+				"last",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\Last.fm\\Python Last.fm.sublime-workspace"
+			],
+			[
+				"pyt",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\PythonScripts.sublime-project"
+			],
+			[
+				"tim",
+				"D:\\I, Coder\\@ GitHub\\time-tracker\\time-tracker.sublime-project"
+			],
+			[
+				"py",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\PythonScripts.sublime-project"
+			],
+			[
+				"netw",
+				"D:\\I, Coder\\@ GitHub\\Python-Scripts\\Networx XML Parser\\Python Networx.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"",
+				"metrouicss"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

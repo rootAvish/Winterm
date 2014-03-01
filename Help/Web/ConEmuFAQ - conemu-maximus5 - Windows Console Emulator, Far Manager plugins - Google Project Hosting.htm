@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ -->
+<html><script>var urchinTracker=function(){},_gaq={push:function(){try {if(arguments[0][0]=='_link')window.location.href=arguments[0][1]}catch(er){}}},_gat={_createTracker:function(){}, _getTracker:function(){return{__noSuchMethod__:function(){},_link:function(o){if(o)location.href=o;},_linkByPost:function(){return true;},_getLinkerUrl:function(o){return o;},_trackEvent:function(){}}}};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ">
+ 
+ <script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"token": null, "profileUrl": null, "domainName": null, "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "projectHomeUrl": "/p/conemu-maximus5", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/3076573747170053082", "loggedInUserEmail": null, "projectName": "conemu-maximus5", "relativeBaseUrl": ""};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-9200434-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+ 
+ 
+ <title>ConEmuFAQ - 
+ conemu-maximus5 -
+ 
+ 
+ Windows Console Emulator, Far Manager plugins - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/conemu-maximus5/svnchanges/basic?path=/wiki/ConEmuFAQ.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/3076573747170053082/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+<style type="text/css"></style><style type="text/css">.adlesse-hidden{display:none!important;}				.adlesse-invisible{visibility:hidden!important;}								#adlesse_configPopup{position:fixed; background-color:#FFFFFF!important; z-index:5000!important; width:1px; height:1px;}				#adlesse_configPopup_overlay{z-index:4999!important; position:fixed; left:0; top:0; width:0; height:0; background:Black!important;}				#adlesse_configPopup_iframe{width:100%; height:100%; border:0; margin:0; padding:0;}								</style><style type="text/css">.adlesse-hidden{display:none!important;}				.adlesse-invisible{visibility:hidden!important;}				.adlesse-actionpanel{padding:0!important; margin:0!important; position:absolute!important; z-index:9999!important; border:solid #000000 1px!important; background:#ffffff!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color:#000000!important;}				.adlesse-actionpanel a{padding:0!important; margin:0!important; background:none repeat scroll 0 0 transparent!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color: #000000!important; display: inline-block !important }				.adlesse-actionpanel a:hover{text-decoration:underline!important; }				.adlesse-trans-65{opacity:0.65; filter:alpha(opacity=65); -moz-opacity:0.65; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65); -khtml-opacity: 0.65; -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=65)';}				.adlesse-rounded-corner{-moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px; border-radius:3px;}								.adlesse-actionpanel-menu{position:absolute!important; z-index:9999!important;background:#ffffff!important; font-family:sans-serif!important; font-weight:normal!important; font-size:10px!important; text-decoration:none!important; color: #000000!important; border:1px solid #000000;text-align:center!important;padding:0!important; margin:5px!important; margin-top:1px!important;min-width:55px;}				.adlesse-actionpanel-menu-h {margin: 5px;list-style-type: none;}				.adlesse-actionpanel-menu-v {list-style-type: none;} 				.adlesse-actionpanel-menu-h li{background:#ffffff; cursor:pointer; display: inline-block; padding: 5px; zoom: 1;*display: inline;border-right:1px solid #cccccc}				.adlesse-actionpanel-menu-v li{background:#ffffff;cursor:pointer;padding:3px; border-bottom: 1px solid #000000;}								.adlesse-widget-div{}				.adlesse-widget-iframe{border:0px;}								</style></head>
+<body class="t6" promptdialogcheckdone="1">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ" onclick="_CS_click(&#39;/gb/ph/signin&#39;);"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/conemu-maximus5">
+ <a href="https://code.google.com/p/conemu-maximus5/">
+ 
+ 
+ <img src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/logo" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/conemu-maximus5/"><span itemprop="name">conemu-maximus5</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/conemu-maximus5/"><span itemprop="description">Windows Console Emulator, Far Manager plugins</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/conemu-maximus5/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/Downloads?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/TableOfContents?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/Issues?tm=3" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/conemu-maximus5/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <h2><a name="Contents"></a>Contents<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Contents" class="section_anchor"></a></h2><ul class="treeleafcontainer"><li class="treeopen">ConEmu </li><ul class="treeleafcontainer"><li class="treeopen">General </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/x64_or_x86">x64 or x86</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/StableVsPreview">Stable or Preview</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Certificate">What is «Certificate»?</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuTerms">ConEmu Terms</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFolders">Folders</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Screenshots">Screenshots</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Screencasts">Screencasts</a> </li><li class="treeleaf"><a href="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting.htm" class="currentpagelink">FAQ</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Whats_New">Whats new</a> </li></ul><li>Launch apps </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/LaunchNewTab">Launch new tab</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RestartTab">Restart tab</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/csudo">sudo</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Command_Line">Command line</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuC">ConEmuC</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/NewConsole">-new_console switch</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DosBox">DOS applications</a> </li></ul><li>Settings </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SettingsFast">First start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Settings">Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Fonts">Fonts</a> </li></ul><li>Features </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ExtendedConsole">ExtendedConsole</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/AnsiEscapeCodes">ANSI X3.64 / 256 color</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Xterm256Colors">Xterm 256 colors</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Progress">Operation progress</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Windows7Taskbar">Windows 7 taskbar</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/InsideParent">ConEmu Inside</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu_Clink">Bash completion</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuEnvironment">Environment variables</a> </li></ul><li>Controls </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Tabs">Tabs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SplitScreen">Splits (panes)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/SystemMenu">System menu</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/KeyboardShortcuts">Keyboard shortcuts</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/UsingMouse">Using mouse</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TextSelection">Text selection</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/GuiMacro">GUI Macros</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TabletPC">Far and touchscreen</a> </li></ul><li>Far Manager </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFarPlugin">Far &amp; ConEmu plugins</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarMacro">Far Macros</a> </li></ul><li>Extras </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Awards">ConEmu Awards</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Reviews">ConEmu Reviews</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RoadMap">ConEmu Road Map</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHk">Inject ConEmuHk</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TipsAndTweaks">Tips and Tweaks</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PromptAtTheBottom">Prompt at the bottom</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PVSStudio">PVS-Studio</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">MiniDump</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/LogFiles">LogFiles</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DropBox">DropBox</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MicrosoftBugs">Microsoft Bugs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PowershellPrompt">Powershell Prompt</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TaskBarBug">Task bar bug</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/NamedPipes">Named pipes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/TerminalVsShell">Terminal vs shell</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ProcessExplorer">Process Explorer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ProcessMonitor">Process Monitor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHelping">How you may help</a> </li></ul></ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarManager">About Far Manager</a> </li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/FarPlugins">Far Manager plugins</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ClipFixer">ClipFixer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FARSelector">FAR Selector</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Far3Wrapper">FAR2-&gt;Far3 wrapper</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FarWDS">FarWDS</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/FileTypes">FileTypes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/ImpEx">ImpEx (PE format browser)</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MBlockEditor">MBlockEditor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/MMView">Multimedia Viewer</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/PicView">Picture View 2</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/QSearchSwitch">QSearchSwitch</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/RegEditor">RegEditor</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/Resolve">Resolve</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/DirSync">Synchronize Directory</a> </li><li class="treeleaf"><a href="https://code.google.com/p/conemu-maximus5/wiki/UnInstall">UnInstall</a> </li></ul><li class="treeleaf"><a href="http://code.google.com/p/conemu-maximus5/w/list?can=2&q=" rel="nofollow">All wiki pages</a> </li></ul>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">ConEmuFAQ</span>
+ &nbsp;
+ <div> 
+ 
+ 
+ 
+ <br>
+ 
+ 
+ <b>en</b>, 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ?wl=ru" title="ru">ru</a>
+ 
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Thu Jan  3 18:30:56 2013">
+ Jan 3, 2013</span>
+ 
+ by 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p><font size="5"><strong>Contents</strong></font> </p><ul><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#General">General</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._I_found_a_bug,_what_should_I_do?">Q. I found a bug, what should I do?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_about_ConMan_,_alternative_console,_etc.?">Q. What about ConMan , alternative console, etc.?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmu_.cer_(digital_certificate)?">Q. What is the purpose of ConEmu .cer (digital certificate)?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_import_the_certificate_to_the_list_of_trusted_root_cer">Q. How to import the certificate to the list of trusted root certificates?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_an_Apps_key?">Q. What is an Apps key?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_a_Host_key?">Q. What is a Host key?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Not_all_characters_(hieroglyphs,_ellipses,_copyright_symbols">Q. Not all characters (hieroglyphs, ellipses, copyright symbols etc.) are displayed</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Is_it_possible_to_run_a_GUI_application_in_a_ConEmu_tab?">Q. Is it possible to run a GUI application in a ConEmu tab?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_launch_an_application_in_a_new_ConEmu_tab?">Q. How to launch an application in a new ConEmu tab?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_use_the_'-new_console'_parameter?">Q. How to use the '-new_console' parameter?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Which_environment_variables_does_ConEmu_set?">Q. Which environment variables does ConEmu set?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Launched_program_outputs_nothing.">Q. Launched program outputs nothing.</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._A_program_does_not_work_in_«Long_console_output»_mode.">Q. A program does not work in «Long console output» mode.</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Distribution_package">Distribution package</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?">Q. What is the purpose of « ConEmuSetup.*.exe »?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmuC.exe_(_ConEmuC64_.exe)?">Q. What is the purpose of ConEmuC.exe ( ConEmuC64 .exe)?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_Far_plugin_ConEmu_.dll_(_ConEmu_.x">Q. What is the purpose of the Far plugin ConEmu .dll ( ConEmu .x64.dll)?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmuHk_.dll_(_ConEmuHk64_.dll)?">Q. What is the purpose of ConEmuHk .dll ( ConEmuHk64 .dll)?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ExtendedConsole_.dll_(_ExtendedConsole">Q. What is the purpose of ExtendedConsole .dll ( ExtendedConsole64 .dll)?</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Portable_version">Portable version</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_be_portable?">Q. Can ConEmu be portable?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._When_attempting_to_use_«_ConEmu_.xml»,_the_error_message_«">Q. When attempting to use « ConEmu .xml», the error message «XML setting file can not be used!» appears</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_make_launched_applications_portable?">Q. Can ConEmu make launched applications portable?</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Updates">Updates</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_update_automatically?">Q. Can ConEmu update automatically?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_are_the_capabilities_of_the_automatic_updater?">Q. What are the capabilities of the automatic updater?</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#x64_issues">x64 issues</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_files_ConEmuC.exe,_ConEmuCD.dll_an">Q. What is the purpose of the files ConEmuC.exe, ConEmuCD.dll and ConEmuHk .dll in 64-bit OS?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_files_ConEmuC64_.exe,_ConEmuCD64.d">Q. What is the purpose of the files ConEmuC64 .exe, ConEmuCD64.dll and ConEmuHk64 .dll in the 32-bit version of ConEmu ?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._After_running_the_commands_start,_echo_(and_other_cmd.exe_com">Q. After running the commands start, echo (and other cmd.exe commands) on 64-bit systems, an error similar to "File not found. Cannot execute. start" appears</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Attempts_to_launch_applications_(from_Far_Manager)_causes_a_s">Q. Attempts to launch applications (from Far Manager) causes a system error such as: «Error launching application (0xc0000142). Click "OK" to exit.»</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_going_on_with_environment_variables_in_64-bit_OS?">Q. What is going on with environment variables in 64-bit OS?</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Configuration">Configuration</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Is_it_possible_to_set_up_ConEmu_to_open_multiple_tabs_on_star">Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell )?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Duplicate_Far_Manager_windows">Q. Duplicate Far Manager windows</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_configure_a_bitmap_font?">Q. How to configure a bitmap font?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_are_horizontal_lines_(drawn_using_box_drawing_characters)">Q. Why are horizontal lines (drawn using box drawing characters) discontinuous?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_start_several_consoles_in_2x2_grid">Q. How to start several consoles in 2x2 grid</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_do_you_configure_ConEmu_to_run_cmd.exe_as_an_Administrato">Q. How do you configure ConEmu to run cmd.exe as an Administrator from an Explorer integration?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_do_I_give_each_tab_opened_by_a_{Task}_a_custom_name?">Q. How do I give each tab opened by a {Task} a custom name?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_set_up_Git_Bash_Here_in_ConEmu_?">Q. How to set up Git Bash Here in ConEmu ?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_export_ConEmu_settings?">Q. How to export ConEmu settings?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_attach_a_running_console_application_to_a_new_ConEmu_i">Q. How to attach a running console application to a new ConEmu instance?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_delete_items_from_the_«Create_new_console»_dropdown?">Q. How to delete items from the «Create new console» dropdown?</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Far_Manager">Far Manager</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_don't_tabs_work?">Q. Why don't tabs work?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_doesn't_Drag-n-Drop_(plugin)_work?">Q. Why doesn't Drag-n-Drop (plugin) work?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_close_a_tab_(viewer/editor/Far)_with_the_mouse?">Q. How to close a tab (viewer/editor/Far) with the mouse?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Mouse_events_(clicks,_wheel)_are_not_sent_to_Far">Q. Mouse events (clicks, wheel) are not sent to Far</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_doesn't_the_FarHints_plugin_work?">Q. Why doesn't the FarHints plugin work?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._At_some_point,_tabs_/_Drag-n-Drop_/_etc._stopped_working">Q. At some point, tabs / Drag-n-Drop / etc. stopped working</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Right_mouse_clicks_do_not_invoke_the_file/folder_context_menu">Q. Right mouse clicks do not invoke the file/folder context menu.</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Right_mouse_clicks_invoke_a_graphical_context_menu,_whereas_a">Q. Right mouse clicks invoke a graphical context menu, whereas a text one is desired.</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Windows_Vista">Windows Vista</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._The_key_combination_Ctrl-Win-Alt-Space_does_not_show_the_Real">Q. The key combination Ctrl-Win-Alt-Space does not show the RealConsole .</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Other_console_processes_hang_in_Windows_Vista.">Q. Other console processes hang in Windows Vista.</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Abnormal_termination">Abnormal termination</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Upon_exiting_from_a_console_program,_an_error_such_as_the_fol">Q. Upon exiting from a console program, an error such as the following appears: Access violation at address 6F78DE5B in module ' ConEmuHk .dll'. Read of address 0071004E</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmu_or_console_application_hangs_on_exit">Q. ConEmu or console application hangs on exit</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_create_a_minidump">Q. How to create a minidump</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Where_can_I_find_Process_ID_(PID)">Q. Where can I find Process ID (PID)</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_run_Task_Manager">Q. How to run Task Manager</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmuC:_CreateFile_(CONOUT$)_failed,_ErrCode_=0x00000005">Q. ConEmuC: CreateFile (CONOUT$) failed, ErrCode =0x00000005</a></li></ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Unsorted">Unsorted</a></li><ul><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_minimize_ConEmu_to_the_system_tray_(as_an_icon_near_th">Q. How to minimize ConEmu to the system tray (as an icon near the Windows clock on the taskbar)?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_ConEmu_change_the_font_of_the_real_console?">Q. Why does ConEmu change the font of the real console?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._The_console_appears_in_part,_shifted,_or_not_at_all">Q. The console appears in part, shifted, or not at all</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_the_quick_search_window_disappear_when_the_input_lan">Q. Why does the quick search window disappear when the input language is changed?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_are_there_no_multiconsole_buttons_on_the_toolbar?">Q. Why are there no multiconsole buttons on the toolbar?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmu_hangs_(title_bar_contains_'...Waiting_for_result">Q. ConEmu hangs (title bar contains '...Waiting for result (10 sec)') and after some time, the plugin menu appears (or some other plugin is called)</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_the_'Background_image'_not_show_up?">Q. Why does the 'Background image' not show up?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_'Press_Enter_to_close_console">Q. What is the purpose of the 'Press Enter to close console...' confirmation displayed after all commands finished executing?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_disable_'Press_Enter_to_close_console...'?">Q. How to disable 'Press Enter to close console...'?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._FAR_is_the_root_process,_the_plugin_is_installed,_yet_'P">Q. FAR is the root process, the plugin is installed, yet 'Press Enter to close console...' still appears</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_Shift-Enter_in_panels_launch_console_programs_in_new">Q. Why does Shift-Enter in panels launch console programs in new standard console windows, as opposed to new ConEmu tabs?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_is_the_cursor_displayed_as_a_rectangle_instead_of_the_usu">Q. Why is the cursor displayed as a rectangle instead of the usual?</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Text_in_tab_captions_is_displayed_with_squares_(instead_of_hi">Q. Text in tab captions is displayed with squares (instead of hieroglyphs).</a></li><li><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._GoldenDict_translation_pop-ups_do_not_work_in_ConEmu">Q. GoldenDict translation pop-ups do not work in ConEmu</a></li></ul></ul></ul>  <p></p><h2><a name="General"></a>General<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#General" class="section_anchor"></a></h2><h3><a name="Q._I_found_a_bug,_what_should_I_do?"></a>Q. I found a bug, what should I do?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._I_found_a_bug,_what_should_I_do?" class="section_anchor"></a></h3><p>A. First, make sure that the bug doesn't occur without ConEmu (e.g. running FAR directly, not via ConEmu). Next, make sure that the bug wasn't fixed <a href="http://code.google.com/p/conemu-maximus5/downloads/list" rel="nofollow">in the latest ConEmu version</a>. If the bug persists, <a href="http://code.google.com/p/conemu-maximus5/issues/list" rel="nofollow">file a thoroughly detailed issue</a>. </p><h3><a name="Q._What_about_ConMan_,_alternative_console,_etc.?"></a>Q. What about ConMan, alternative console, etc.?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_about_ConMan_,_alternative_console,_etc.?" class="section_anchor"></a></h3><p>A. Everything is built into ConEmu, except better ;) The flag 'MultiCon' should be enabled. Furthermore, using ConMan with ConEmu is NOT RECOMMENDED. A new console can be created using a keyboard shortcut (Win-W by default), as well as adding -new_console to the executed command. The current console can be closed or restarted (Win-~). The long output of a console command or program can be opened in Far's editor/viewer (Ctrl-O). Switching between consoles can be done with Win-Q. Switching between consoles and tabs can be done with Ctrl-Tab. </p><h3><a name="Q._What_is_the_purpose_of_ConEmu_.cer_(digital_certificate)?"></a>Q. What is the purpose of ConEmu.cer (digital certificate)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmu_.cer_(digital_certificate)?" class="section_anchor"></a></h3><p>A. For validation of the integrity of ConEmu's executable files. </p><p>A. Windows SmartScreen blocks execution of files (Installer) from "unverified publishers". </p><p>A. If the certificate is imported into the list of trusted root certificates (for the user, machine or domain), launching ConEmu "As Administrator" (Vista &amp; Win7) will display a less scary warning (program name + "verified publisher: ConEmu-Maximus5" instead of the scary "unverified publisher" window). </p><p>A. If the certificate is imported into the list of trusted root certificates, certain antivirus software (e.g. KIS) will consider the program as "trusted". </p><h3><a name="Q._How_to_import_the_certificate_to_the_list_of_trusted_root_cer"></a>Q. How to import the certificate to the list of trusted root certificates?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_import_the_certificate_to_the_list_of_trusted_root_cer" class="section_anchor"></a></h3><p>A. In Vista+ one can simply open the certificate file, and click the "Install certificate" button. </p><p>A. Via MMC -&gt; Certificates snap-in. </p><p>A. Using the utility CertMgr from the Windows SDK: </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp;</span><span class="str">"C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\CertMgr"</span><span class="pln"> </span><span class="pun">-</span><span class="pln">add </span><span class="pun">-</span><span class="pln">c </span><span class="typ">ConEmu</span><span class="pun">.</span><span class="pln">cer </span><span class="pun">-</span><span class="pln">s root</span></pre><p>A. For details, see here: <a href="https://code.google.com/p/conemu-maximus5/wiki/Certificate">Certificate installation</a> </p><h3><a name="Q._What_is_an_Apps_key?"></a>Q. What is an Apps key?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_an_Apps_key?" class="section_anchor"></a></h3><p>A. This key (mentioned as <tt>VK_APPS</tt> in <tt>WinUser.h</tt>) located between <strong>RightWin</strong> and <strong>RightShift</strong> on most <a href="http://en.wikipedia.org/wiki/File:Klawiatura_maszynistki.jpg" rel="nofollow">keyboard layouts</a>. Sometimes it's called <strong>Application/Menu</strong>. Thought, it is not correct in Windows because <tt>VK_MENU</tt> (from <tt>WinUser.h</tt>) refers to the <strong>Alt</strong> key in fact. </p><h3><a name="Q._What_is_a_Host_key?"></a>Q. What is a Host key?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_a_Host_key?" class="section_anchor"></a></h3><p>A. This is sort of «substitution» for key chosed by user. For example you may choose common modifier (from one or more Ctrl/Alt/Shift/Apps) for group of actions. Browse «Keys &amp; Macro» page in the Settings dialog. </p><h3><a name="Q._Not_all_characters_(hieroglyphs,_ellipses,_copyright_symbols"></a>Q. Not all characters (hieroglyphs, ellipses, copyright symbols etc.) are displayed<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Not_all_characters_(hieroglyphs,_ellipses,_copyright_symbols" class="section_anchor"></a></h3><p>A. For some reason, ConEmu failed to change the font of the real console. Select 'Debug' → 'Properties' from ConEmu's system menu, and on the 'Font' tab choose a TrueType font. </p><p>A. A missing or non-Unicode font was specified in ConEmu's settings (Settings-ConEmu.reg, 'ConsoleFontName' parameter). </p><h3><a name="Q._Is_it_possible_to_run_a_GUI_application_in_a_ConEmu_tab?"></a>Q. Is it possible to run a GUI application in a ConEmu tab?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Is_it_possible_to_run_a_GUI_application_in_a_ConEmu_tab?" class="section_anchor"></a></h3><p>A. Yes, with certain GUI applications. Example: Putty, Notepad, and others. </p><h3><a name="Q._How_to_launch_an_application_in_a_new_ConEmu_tab?"></a>Q. How to launch an application in a new ConEmu tab?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_launch_an_application_in_a_new_ConEmu_tab?" class="section_anchor"></a></h3><p>A. Indicate the application in the 'Create new console' field of the new console creation dialog. This dialog can be opened by using the 'New console...' item from ConEmu's system menu, or by using the corresponding keyboard shortcut (Win-W or Win-Shift-W by default). </p><p>A. A new tab can be opened from an existing tab (e.g. from Far) by adding a '-new_console' parameter to the application's command line. Example: <tt>putty.exe -new_console</tt>. </p><h3><a name="Q._How_to_use_the_&#39;-new_console&#39;_parameter?"></a>Q. How to use the '-new_console' parameter?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_use_the_'-new_console'_parameter?" class="section_anchor"></a></h3><p>A. The setting 'Inject ConEmuHk' must be enabled in ConEmu's configuration. Afterwards, if ConEmu sees the '-new_console' parameter in a launched application's command line, it is removed from the command line, and the application/command is ran in a new ConEmu tab. </p><p>A. Additional launch options are available: <tt>-new_console[:bh[N]caru[:user:pwd]]</tt> </p><ul><li><tt>b</tt> - Create background tab </li><li><tt>h&lt;height&gt;</tt> - Set buffer height: e.g., h0 - disable buffer, h9999 - enable buffer with 9999 lines </li><li><tt>n</tt> - Disable 'Press Enter or Esc to close console' message </li><li><tt>c</tt> - Explicitly enable 'Press Enter or Esc to close console' (default) </li><li><tt>a</tt> - RunAs shell verb (as Admin on Vista+, login/password in Win2k and WinXP) </li><li><tt>r</tt> - Run as restricted user </li><li><tt>u</tt> - Open ConEmu choose user dialog </li><li><tt>u:&lt;user&gt;:&lt;pwd&gt;</tt> - specify user/pwd in args. MUST BE THE LAST OPTION. </li></ul><strong>Example:</strong> «<tt>"%ConEmuBaseDir%\ConEmuC.exe" /c dir "-new_console:bh9999c" c:\ /s</tt>». Note that when launching from Far Manager, «<tt>"%ConEmuBaseDir%\ConEmuC.exe" /c </tt>» can be omitted. <p></p><p>A. For comfort, when using Far, one can configure a macro bound to ShiftEnter (see example in the distribution package). </p><p>A. Pay attention to the parameter <tt>-cur_console:h[N]</tt>, which allows controlling long output of commands or applications when running them from <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Far_Manager">Far Manager</a>. </p><h3><a name="Q._Which_environment_variables_does_ConEmu_set?"></a>Q. Which environment variables does ConEmu set?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Which_environment_variables_does_ConEmu_set?" class="section_anchor"></a></h3><p>A. Read wiki page <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuEnvironment">ConEmu Environment</a>. </p><h3><a name="Q._Launched_program_outputs_nothing."></a>Q. Launched program outputs nothing.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Launched_program_outputs_nothing." class="section_anchor"></a></h3><p>A. Certain programs work with the console's alternative buffer - e.g. telnet.exe, launched without parameters. A history of this issue can be read here: <a href="http://code.google.com/p/conemu-maximus5/issues/detail?id=65" rel="nofollow">Issue 65</a>. The problem is fixed in version 120504 (the «Inject <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHk">ConEmuHk</a>» flag must be set). In previous versions, the workaround was to show the real console (CtrlWinAltSpace), and temporarily work with it. </p><p>A. As a result of a ShellExecuteEx bug, on certain operating systems the console process was launched with an incorrect output buffer handle. To fix the problem, the «Inject ConEmuHk» flag must be set. If the problem persists - create a new <a href="http://code.google.com/p/conemu-maximus5/issues/entry" rel="nofollow">Issue</a> with a detailed description of the problem, and attach the debug log of the launched program: «Settings -&gt; Debug -&gt; Shell and processes». </p><h3><a name="Q._A_program_does_not_work_in_«Long_console_output»_mode."></a>Q. A program does not work in «Long console output» mode.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._A_program_does_not_work_in_«Long_console_output»_mode." class="section_anchor"></a></h3><p>A. Certain programs don't work correctly with a long console buffer. Some examples are bview, Aurora, and others. There are multiple solutions: </p><ul><li>Open the program in a new ConEmu tab with scrolling disabled. Example: "bview.exe -new_console:h" </li><li>Indicate that scrolling should not be enabled. Example: "ac.exe -cur_console:h" </li><li>Alternatively, entirely disable 'Long console output' in the 'Tabs' page of the 'Settings' dialog, if long console output is not required. </li></ul><p></p><h2><a name="Distribution_package"></a>Distribution package<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Distribution_package" class="section_anchor"></a></h2><h3><a name="Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?"></a>Q. What is the purpose of «<tt>ConEmuSetup.*.exe</tt>»?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_«_ConEmuSetup.*.exe_»?" class="section_anchor"></a></h3><p>A. Using the installer is recommended on computers with UAC enabled (Vista and higher), if you intend to install ConEmu to "Program Files". </p><p>A. The installer also contains some additional files, e.g. KeyEvents.exe. </p><h3><a name="Q._What_is_the_purpose_of_ConEmuC.exe_(_ConEmuC64_.exe)?"></a>Q. What is the purpose of ConEmuC.exe (ConEmuC64.exe)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmuC.exe_(_ConEmuC64_.exe)?" class="section_anchor"></a></h3><p>A. This is the "console" component of ConEmu. It communicates information from the real console to the graphical shell (ConEmu.exe). This process also controls automatic buffer resizing when running commands/applications, and attaching "new" consoles (Shift-Enter in FAR) to ConEmu. </p><h3><a name="Q._What_is_the_purpose_of_the_Far_plugin_ConEmu_.dll_(_ConEmu_.x"></a>Q. What is the purpose of the Far plugin ConEmu.dll (ConEmu.x64.dll)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_Far_plugin_ConEmu_.dll_(_ConEmu_.x" class="section_anchor"></a></h3><p>A. This module provides communication between Far Manager and ConEmu. </p><ul><li>It is required for certain extended features (tabs, Drag-and-Drop, progress). </li><li>It is required for TrueColor in Far 3.x. </li><li>It is required for certain other plugins (e.g. FarHints). </li><li>It displays the hidden real console (with FAR), should <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> crash. </li><li>After a console detach (Ctrl-Alt-Tab), it spawns a new ConEmu for the new console. </li><li>It is required to retrieve the long output buffer for console applications. </li><li>It is required for proper mouse function when using «far /w» (System\WindowMode=1). </li></ul><p></p><h3><a name="Q._What_is_the_purpose_of_ConEmuHk_.dll_(_ConEmuHk64_.dll)?"></a>Q. What is the purpose of ConEmuHk.dll (ConEmuHk64.dll)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ConEmuHk_.dll_(_ConEmuHk64_.dll)?" class="section_anchor"></a></h3><p>A. This module is injected into applications ran in ConEmu. It is required to implement certain options, as well as work around multiple problems manifesting both with and without ConEmu. </p><ul><li>Z-order of GUI dialogues (without it, dialogues will appear behind ConEmu's window); </li><li>Proper function of Far Manager GUI-EMenu (without ConEmuHk<tt>*</tt>.dll it refuses to close by mouse click); </li><li>Implements the flags "No zone check", "Ascii sort...", "Hourglass if not responding"; </li><li>Implements the "-new_console" parameter; </li><li>Works around ShellExecute problems (when batch file output does not appear in the console); </li><li>Works around chcp hangs; </li><li>Implements "Shell and processes" monitoring; </li><li>Implements hosting of GUI applications in a ConEmu tab, etc. </li><li>Implements ANSI X3.64 with xterm 256 color extension. </li><li>Implements "Change prompt text cursor position with Left Click". </li><li>And any other existing or future «inprocess» features. </li></ul><p></p><h3><a name="Q._What_is_the_purpose_of_ExtendedConsole_.dll_(_ExtendedConsole"></a>Q. What is the purpose of ExtendedConsole.dll (ExtendedConsole64.dll)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_ExtendedConsole_.dll_(_ExtendedConsole" class="section_anchor"></a></h3><p>A. This file implements support for the extended console feature in Far 3.x, and must be placed in the same directory as ConEmuHk.dll. In its presence and enabled «TrueMod support» option, it is possible to configure and use arbitrary (24-bit) colors and styles (bold/italic/underline) in Far Manager. </p><h2><a name="Portable_version"></a>Portable version<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Portable_version" class="section_anchor"></a></h2><h3><a name="Q._Can_ConEmu_be_portable?"></a>Q. Can ConEmu be portable?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_be_portable?" class="section_anchor"></a></h3><p>A. Yes. To enable portable configuration, it is enough to create an <i>empty</i> file «ConEmu.xml» in the same directory as ConEmuC.exe or ConEmu.exe. The file may be created after ConEmu is loaded, which allows copying settings loaded from the registry to the XML file. </p><h3><a name="Q._When_attempting_to_use_«_ConEmu_.xml»,_the_error_message_«"></a>Q. When attempting to use «ConEmu.xml», the error message «XML setting file can not be used!» appears<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._When_attempting_to_use_«_ConEmu_.xml»,_the_error_message_«" class="section_anchor"></a></h3><p>A. The error message explains itself: the interface IID_IXMLDOMDocument is not registered in the system registry. To avoid registering it, you can copy the files «msxml3.dll» and «msxml3r.dll» in the same directory as ConEmuC.exe or ConEmu.exe. The versions from Windows XP are preferred - they have the least dependencies, which allows them to work in Windows 2000. </p><h3><a name="Q._Can_ConEmu_make_launched_applications_portable?"></a>Q. Can ConEmu make launched applications portable?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_make_launched_applications_portable?" class="section_anchor"></a></h3><p>A. This feature is under development - complete registry interception for launched applications is planned. </p><h2><a name="Updates"></a>Updates<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Updates" class="section_anchor"></a></h2><h3><a name="Q._Can_ConEmu_update_automatically?"></a>Q. Can ConEmu update automatically?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Can_ConEmu_update_automatically?" class="section_anchor"></a></h3><p>A. Yes. ConEmu can check for new versions on launch, every hour, or by user request (System menu -&gt; Help -&gt; Check for updates). </p><h3><a name="Q._What_are_the_capabilities_of_the_automatic_updater?"></a>Q. What are the capabilities of the automatic updater?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_are_the_capabilities_of_the_automatic_updater?" class="section_anchor"></a></h3><p>A. You can configure updates however you like it. </p><ul><li>Proxy support. </li><li>Selection between «stable» or «alpha» builds. </li><li>In the presence of a new version, ConEmu can ask for confirmation before downloading the package (archive or installer). </li><li>If ConEmu was installed using the installer, and the install path for ConEmu.exe (or ConEmu64.exe) coincides with the current process, updating is done using the installer («<tt>ConEmuSetup.*.exe</tt>»). </li><li>Otherwise, updating is done using the 7-zip archive. </li><li>Updating from the archive requires that file compression software (<a href="http://www.7-zip.org/" rel="nofollow">7-Zip</a> or <a href="http://www.rarlab.com/" rel="nofollow">WinRAR</a>) is installed. </li><li>By default, packages are downloaded to %TEMP% and deleted after installation is complete. </li><li>However, you can indicate any directory, and choose not to delete installed packages. </li><li>The installation command is ran from a temporary .cmd-file, launched in the directory containing ConEmu.exe. The .cmd-file is created in %TEMP%. </li><ul><li>The default installer command is: <tt>"%1" /p:%3 /qr</tt>. It launches the corresponding (x86/x64) MSI package with the <tt>/qr</tt> parameter (silent update). </li><li>The default archiver command is: <tt>&lt;archiver&gt; x -y "%1"</tt>. <tt>&lt;archiver&gt;</tt> is substituted with the full path to any file compression software, capable of unpacking 7-Zip archives: <a href="http://www.7-zip.org/" rel="nofollow">7zg.exe, 7z.exe</a>, <a href="http://www.rarlab.com/" rel="nofollow">Unrar.exe, WinRar.exe</a>, etc. </li></ul><li>Launching the update script (.cmd-file) is done after ConEmu closes (all tabs are closed), if the user consents. </li><li>Before launching the update script, ConEmu checks that no other ConEmu windows are open. </li><li>After a successful update, you can run any command or script (via cmd.exe). For example, you can copy the new files to other directories, if you have multiple ConEmu installations on your computer. By default, the file ConEmuUpdate.info is created in the same directory as ConEmu.exe, containing a timestamp of the last update. </li><li>New versions are polled from <a href="http://conemu-maximus5.googlecode.com/svn/trunk/ConEmu/version.ini" rel="nofollow">this URL</a>. This address can be configured in the registry or XML using the "Update.VerLocation", should the need arise (e.g. centralized updating in a networked environment?). </li></ul><p></p><h2><a name="x64_issues"></a>x64 issues<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#x64_issues" class="section_anchor"></a></h2><h3><a name="Q._What_is_the_purpose_of_the_files_ConEmuC.exe,_ConEmuCD.dll_an"></a>Q. What is the purpose of the files ConEmuC.exe, ConEmuCD.dll and ConEmuHk.dll in 64-bit OS?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_files_ConEmuC.exe,_ConEmuCD.dll_an" class="section_anchor"></a></h3><p>A. These files are required for launching 32-bit applications, as well as functioning of the 32-bit version of ConEmu. You will likely at some point need to run a 32-bit console application from ConEmu - without these files, it would not be possible. Out of principle, one can use the 64-bit ConEmu64.exe, which is available in the «<tt>ConEmuSetup.*.exe</tt>» package - it launches ConEmuC64.exe as the root console process. </p><h3><a name="Q._What_is_the_purpose_of_the_files_ConEmuC64_.exe,_ConEmuCD64.d"></a>Q. What is the purpose of the files ConEmuC64.exe, ConEmuCD64.dll and ConEmuHk64.dll in the 32-bit version of ConEmu?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_files_ConEmuC64_.exe,_ConEmuCD64.d" class="section_anchor"></a></h3><p>A. These files are required to run 64-bit applications in 64-bit OS. </p><h3><a name="Q._After_running_the_commands_start,_echo_(and_other_cmd.exe_com"></a>Q. After running the commands start, echo (and other cmd.exe commands) on 64-bit systems, an error similar to "File not found. Cannot execute. start" appears<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._After_running_the_commands_start,_echo_(and_other_cmd.exe_com" class="section_anchor"></a></h3><p>A. This is most likely caused by the absence of ConEmuC64.exe and accompanying ConEmuHk64.dll, ConEmuCD64.dll. </p><h3><a name="Q._Attempts_to_launch_applications_(from_Far_Manager)_causes_a_s"></a>Q. Attempts to launch applications (from Far Manager) causes a system error such as: «Error launching application (0xc0000142). Click "OK" to exit.»<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Attempts_to_launch_applications_(from_Far_Manager)_causes_a_s" class="section_anchor"></a></h3><p>A. The cause is as of yet undiscovered - it is suspected to be a problem in Windows. Note that the error also appears without ConEmu. To restore proper function, restart the console (e.g. using Win-~). </p><h3><a name="Q._What_is_going_on_with_environment_variables_in_64-bit_OS?"></a>Q. What is going on with environment variables in 64-bit OS?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_going_on_with_environment_variables_in_64-bit_OS?" class="section_anchor"></a></h3><p>A. ConEmu does not control environment variables. </p><h2><a name="Configuration"></a>Configuration<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Configuration" class="section_anchor"></a></h2><h3><a name="Q._Is_it_possible_to_set_up_ConEmu_to_open_multiple_tabs_on_star"></a>Q. Is it possible to set up ConEmu to open multiple tabs on startup (e.g. Far, CMD, PowerShell)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Is_it_possible_to_set_up_ConEmu_to_open_multiple_tabs_on_star" class="section_anchor"></a></h3><p>A. Yes. Use a startup command file. Example - create <strong>startup.txt</strong> with the contents: </p><pre class="prettyprint"><span class="pun">&gt;</span><span class="pln">E</span><span class="pun">:\</span><span class="typ">Source</span><span class="pun">\</span><span class="typ">FARUnicode</span><span class="pun">\</span><span class="pln">trunk</span><span class="pun">\</span><span class="pln">unicode_far</span><span class="pun">\</span><span class="typ">Debug</span><span class="pun">.</span><span class="lit">32.vc</span><span class="pun">\</span><span class="pln">far</span><span class="pun">.</span><span class="pln">exe<br></span><span class="pun">*</span><span class="str">/BufferHeight 400 cmd<br>/</span><span class="typ">BufferHeight</span><span class="pln"> </span><span class="lit">1000</span><span class="pln"> powershell</span></pre><p>and run ConEmu like this: </p><pre class="prettyprint"><span class="pln">conemu</span><span class="pun">.</span><span class="pln">exe </span><span class="pun">/</span><span class="pln">cmd </span><span class="lit">@startfile</span><span class="pun">.</span><span class="pln">txt</span></pre><p>Each line in the file corresponds to a launched command. You may specify the console buffer height using the /BufferHeight parameter. If the line starts with "<tt>&gt;</tt>", this tab will be active on startup. If the line starts with "<tt>*</tt>", this command will be ran with administrator privileges. </p><h3><a name="Q._Duplicate_Far_Manager_windows"></a>Q. Duplicate Far Manager windows<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Duplicate_Far_Manager_windows" class="section_anchor"></a></h3><p>A. The real console was not hidden. Check the 'Visible' flag on the 'Features' tab in the 'Settings' dialog, or this registry value: </p><pre class="prettyprint"><span class="pun">[</span><span class="pln">HKEY_CURRENT_USER</span><span class="pun">\</span><span class="typ">Software</span><span class="pun">\</span><span class="typ">ConEmu</span><span class="pun">\.</span><span class="typ">Vanilla</span><span class="pun">]</span><span class="pln"><br></span><span class="str">"ConVisible"</span><span class="pun">=</span><span class="pln">hex</span><span class="pun">:</span><span class="lit">00</span></pre><h3><a name="Q._How_to_configure_a_bitmap_font?"></a>Q. How to configure a bitmap font?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_configure_a_bitmap_font?" class="section_anchor"></a></h3><p>A. The bitmap fonts selectable in the standard console's properties are actually the Terminal font. For example, the bitmap '8 x 12' font is 'Terminal 12 x 8' in ConEmu, '12 x 16' -&gt; 'Terminal 16 x 12', etc. </p><blockquote>Take note: The 'Charset' field must be set to 'OEM'. 
+Personally, I prefer 'Fixedsys 16 x 8', which is absent in the standard console. 
+</blockquote><p></p><p>A. In the font list you may directly select e.g. <tt>[Raster Fonts 8x12]</tt>. </p><h3><a name="Q._Why_are_horizontal_lines_(drawn_using_box_drawing_characters)"></a>Q. Why are horizontal lines (drawn using box drawing characters) discontinuous?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_are_horizontal_lines_(drawn_using_box_drawing_characters)" class="section_anchor"></a></h3><p>A. In some fonts, the width of the corresponding box drawing characters is shorter than the font's declared average character width, which ConEmu uses to determine the size of box drawing characters. To get rid of the artifacts, enable the checkbox «Fix Far borders» and increase the width of the "frames" font. The corresponding settings are on the 'Main' tab in the 'Settings' dialog. </p><h3><a name="Q._How_to_start_several_consoles_in_2x2_grid"></a>Q. How to start several consoles in 2x2 grid<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_start_several_consoles_in_2x2_grid" class="section_anchor"></a></h3><p>A. The question from <a href="http://superuser.com/q/473807/139371" rel="nofollow">superuser.com</a>. ConEmu (build 120909 or higher recommended) provides <a href="https://code.google.com/p/conemu-maximus5/wiki/SplitScreen">SplitScreen</a> feature. You may set up named task to open several consoles on startup in the grid. Here the example for 2x2 grid. </p><pre class="prettyprint"><span class="pun">&gt;</span><span class="pln">cmd </span><span class="pun">-</span><span class="pln">cur_console</span><span class="pun">:</span><span class="pln">n<br>cmd </span><span class="pun">-</span><span class="pln">cur_console</span><span class="pun">:</span><span class="pln">s1TVn<br>cmd </span><span class="pun">-</span><span class="pln">cur_console</span><span class="pun">:</span><span class="pln">s1THn<br>cmd </span><span class="pun">-</span><span class="pln">cur_console</span><span class="pun">:</span><span class="pln">s2THn</span></pre><h3><a name="Q._How_do_you_configure_ConEmu_to_run_cmd.exe_as_an_Administrato"></a>Q. How do you configure ConEmu to run cmd.exe as an Administrator from an Explorer integration?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_do_you_configure_ConEmu_to_run_cmd.exe_as_an_Administrato" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/q/470408/139371" rel="nofollow">superuser.com</a>. </p><h3><a name="Q._How_do_I_give_each_tab_opened_by_a_{Task}_a_custom_name?"></a>Q. How do I give each tab opened by a {Task} a custom name?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_do_I_give_each_tab_opened_by_a_{Task}_a_custom_name?" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/q/459154/139371" rel="nofollow">superuser.com</a>. </p><h3><a name="Q._How_to_set_up_Git_Bash_Here_in_ConEmu_?"></a>Q. How to set up Git Bash Here in ConEmu?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_set_up_Git_Bash_Here_in_ConEmu_?" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/q/454380/139371" rel="nofollow">superuser.com</a>. </p><h3><a name="Q._How_to_export_ConEmu_settings?"></a>Q. How to export ConEmu settings?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_export_ConEmu_settings?" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/q/450144/139371" rel="nofollow">superuser.com</a>. </p><h3><a name="Q._How_to_attach_a_running_console_application_to_a_new_ConEmu_i"></a>Q. How to attach a running console application to a new ConEmu instance?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_attach_a_running_console_application_to_a_new_ConEmu_i" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/q/445394/139371" rel="nofollow">superuser.com</a>. </p><h3><a name="Q._How_to_delete_items_from_the_«Create_new_console»_dropdown?"></a>Q. How to delete items from the «Create new console» dropdown?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_delete_items_from_the_«Create_new_console»_dropdown?" class="section_anchor"></a></h3><p>A. Read the answer on <a href="http://superuser.com/a/436273/139371" rel="nofollow">superuser.com</a>. </p><h2><a name="Far_Manager"></a>Far Manager<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Far_Manager" class="section_anchor"></a></h2><h3><a name="Q._Why_don&#39;t_tabs_work?"></a>Q. Why don't tabs work?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_don't_tabs_work?" class="section_anchor"></a></h3><p>A. In the plugin ConEmu.dll (ConEmu.x64.dll) installed? </p><p>A. When using the installer, the ConEmu.dll plugin might have been installed to an incorrect directory (it must be installed in a subdirectory of the Plugins directory for Far.exe). The installer might have failed to locate Far.exe's location, if Far Manager wasn't installed using the MSI package. The easiest solution is to uninstall and reinstall ConEmu, but make sure that the 'Far Manager plugins' field points to the correct directory. </p><p>A. Is the flag 'Enable Tabs' enabled in settings? If the checkbox is in the indeterminate (3rd) state, tabs will only appear when a viewer/editor is opened. </p><h3><a name="Q._Why_doesn&#39;t_Drag-n-Drop_(plugin)_work?"></a>Q. Why doesn't Drag-n-Drop (plugin) work?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_doesn't_Drag-n-Drop_(plugin)_work?" class="section_anchor"></a></h3><p>A. «Shell style Drag and Drop» is built-in ConEmu and is configured on the 'Far Manager' tab of the 'Settings' window. ConEmu supports dragging files out of Far and onto other applications (Explorer, GIMP, etc.) and dropping files into Far (onto the panel or command-line) from other applications. For proper support of «Shell style Drag and Drop», the Far plugin ConEmu.dll (ConEmu.x64.dll) must be installed. ConEmu can drag files with both the left (LDrag flag) as well as right (RDrag) mouse buttons. Optionally, a modifier key can be configured (e.g. drag files only with the left mouse button and when LCtrl is held down). </p><p>A. Screenshots and some explanations can be seen/read here: <a title="Конфликт с плагином drag_n_drop ?" class="closed_ref" href="https://code.google.com/p/conemu-maximus5/issues/detail?id=527">&nbsp;Issue 527&nbsp;</a>. </p><p>A. 3rd-party Drag-n-Drop plugins were never supported, are not supported and will not be supported, as this functionality is built into ConEmu. </p><h3><a name="Q._How_to_close_a_tab_(viewer/editor/Far)_with_the_mouse?"></a>Q. How to close a tab (viewer/editor/Far) with the mouse?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_close_a_tab_(viewer/editor/Far)_with_the_mouse?" class="section_anchor"></a></h3><p>A. A Ctrl + Right-click will activate the tab and send a close request to Far Manager. You can redefine the macro on the 'Far Manager' tab of the 'Settings' dialog ('Close tab' field). </p><p>A. A simple right-click will activate the tab and display the context menu, from which you may select 'Close'. </p><h3><a name="Q._Mouse_events_(clicks,_wheel)_are_not_sent_to_Far"></a>Q. Mouse events (clicks, wheel) are not sent to Far<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Mouse_events_(clicks,_wheel)_are_not_sent_to_Far" class="section_anchor"></a></h3><p>A. In Far, check the setting Options -&gt; Interface settings -&gt; <tt>[x]</tt> Mouse. </p><p>A. If Far is launched with «far /w» (System\WindowMode=1), the presence of the ConEmu.dll (ConEmu.x64.dll) plugin is required, otherwise ConEmu will consider Far as a simple console application (like cmd.exe) which does not need mouse events. </p><h3><a name="Q._Why_doesn&#39;t_the_FarHints_plugin_work?"></a>Q. Why doesn't the FarHints plugin work?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_doesn't_the_FarHints_plugin_work?" class="section_anchor"></a></h3><p>A. It must be updated (version 1.0.15 or newer) and it requires the presence of the ConEmu.dll (ConEmu.x64.dll) plugin. </p><h3><a name="Q._At_some_point,_tabs_/_Drag-n-Drop_/_etc._stopped_working"></a>Q. At some point, tabs / Drag-n-Drop / etc. stopped working<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._At_some_point,_tabs_/_Drag-n-Drop_/_etc._stopped_working" class="section_anchor"></a></h3><p>A. Check the 'Info' tab of the 'Settings' dialog. Most likely, the 'Far' / 'Panels' state is not set. Take note - D&amp;D requires the ConEmu.dll (ConEmu.x64.dll) plugin. </p><h3><a name="Q._Right_mouse_clicks_do_not_invoke_the_file/folder_context_menu"></a>Q. Right mouse clicks do not invoke the file/folder context menu.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Right_mouse_clicks_do_not_invoke_the_file/folder_context_menu" class="section_anchor"></a></h3><p>A. Is the flag 'RightClick 4 context menu' set? If the checkbox is in the indeterminate state, the menu will appear after a 'long click' - wait for the circle around the mouse cursor to close. </p><p>A. For some reason, ConEmu did not detect the 'panels' state in Far. The ConEmu.dll (ConEmu.x64.dll) plugin may not be installed. If it is installed, please send screenshots of ConEmu ('Info' tab from 'Settings' dialog) and a screen dump file (ConEmu system menu -&gt; Debug -&gt; Dump screen...). </p><h3><a name="Q._Right_mouse_clicks_invoke_a_graphical_context_menu,_whereas_a"></a>Q. Right mouse clicks invoke a graphical context menu, whereas a text one is desired.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Right_mouse_clicks_invoke_a_graphical_context_menu,_whereas_a" class="section_anchor"></a></h3><p>A. Configure the corresponding macro in the 'Far Manager' tab of the 'Settings' window. Example: <tt>F11 e Enter 2</tt> (assumes that the 'e' hotkey is assigned to the EMenu plugin). </p><h2><a name="Windows_Vista"></a>Windows Vista<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Windows_Vista" class="section_anchor"></a></h2><h3><a name="Q._The_key_combination_Ctrl-Win-Alt-Space_does_not_show_the_Real"></a>Q. The key combination Ctrl-Win-Alt-Space does not show the RealConsole.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._The_key_combination_Ctrl-Win-Alt-Space_does_not_show_the_Real" class="section_anchor"></a></h3><p>A. For some reason, the first Space press is sometimes ignored by Vista. Without releasing Ctrl-Win-Alt, hit Space once more. </p><h3><a name="Q._Other_console_processes_hang_in_Windows_Vista."></a>Q. Other console processes hang in Windows Vista.<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Other_console_processes_hang_in_Windows_Vista." class="section_anchor"></a></h3><p>A. The fault lies with the ConIme.exe process. It seems to be required for input of hieroglyphs (Chinese etc.) in console windows. Why is it needed, if input is done in a graphical window? Forbid its startup, or simply rename the file, e.g. to 'ConIme.ex1' (Safe Mode only). To forbid its startup, apply the following to your registry and reboot: </p><pre class="prettyprint"><span class="pun">[</span><span class="pln">HKEY_CURRENT_USER</span><span class="pun">\</span><span class="typ">Console</span><span class="pun">]</span><span class="pln"><br></span><span class="str">"LoadConIme"</span><span class="pun">=</span><span class="pln">dword</span><span class="pun">:</span><span class="lit">00000000</span></pre><h2><a name="Abnormal_termination"></a>Abnormal termination<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Abnormal_termination" class="section_anchor"></a></h2><h3><a name="Q._Upon_exiting_from_a_console_program,_an_error_such_as_the_fol"></a>Q. Upon exiting from a console program, an error such as the following appears: Access violation at address 6F78DE5B in module 'ConEmuHk.dll'. Read of address 0071004E<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Upon_exiting_from_a_console_program,_an_error_such_as_the_fol" class="section_anchor"></a></h3><p>A. One possible cause is when the program destroys its own import table. The proper solution would be to contact the application developer. For a precise verdict, send me a <a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">minidump</a>. </p><h3><a name="Q._ConEmu_or_console_application_hangs_on_exit"></a>Q. ConEmu or console application hangs on exit<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmu_or_console_application_hangs_on_exit" class="section_anchor"></a></h3><p>A. No issues for this problem have been filed so far. Nevertheless, if hang occures on exit, create <a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">minidumps</a> for the processes ConEmu<tt>*</tt>.exe, ConEmuC<tt>*</tt>.exe and all console processes (far.exe, cmd.exe...) See below for instructions. Pack up and submit the <a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">minidumps</a> to the developer. To correctly create a <a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump">minidump</a> of a 32-bit application in a 64-bit OS, you must use ConEmu. </p><h3><a name="Q._How_to_create_a_minidump"></a>Q. How to create a minidump<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_create_a_minidump" class="section_anchor"></a></h3><p>A. Windows XP and above. </p><blockquote>Press <strong>Win+R</strong> and run the following command, it will create a full process memory dump (it may be large enough). 
+<p></p><pre class="prettyprint"><span class="pln">C</span><span class="pun">:\</span><span class="typ">Program</span><span class="pln"> </span><span class="typ">Files</span><span class="pun">\</span><span class="typ">ConEmu</span><span class="pun">\</span><span class="typ">ConEmu</span><span class="pun">\</span><span class="typ">ConEmuC</span><span class="pun">.</span><span class="pln">exe </span><span class="pun">/</span><span class="pln">DEBUGPID</span><span class="pun">=</span><span class="typ">Your_PID</span><span class="pln"> </span><span class="pun">/</span><span class="pln">FULL</span></pre>Or, create a small process memory dump. Yes, it will be small, but may contains not enough information for detecting a problem. 
+<pre class="prettyprint"><span class="pln">C</span><span class="pun">:\</span><span class="typ">Program</span><span class="pln"> </span><span class="typ">Files</span><span class="pun">\</span><span class="typ">ConEmu</span><span class="pun">\</span><span class="typ">ConEmu</span><span class="pun">\</span><span class="typ">ConEmuC</span><span class="pun">.</span><span class="pln">exe </span><span class="pun">/</span><span class="pln">DEBUGPID</span><span class="pun">=</span><span class="typ">Your_PID</span><span class="pln"> </span><span class="pun">/</span><span class="pln">MINI</span></pre></blockquote><blockquote>Substitute <i>Your_PID</i> with the process ID, <a href="https://code.google.com/p/conemu-maximus5/wiki/MiniDump#How_to_find_Process_ID_(PID)">read below</a>. You will be offered to choose filename for a minidump. 
+</blockquote><blockquote><i><strong>Warning!</strong></i> Before creating dumps of Far Manager please ensure that "far.exe" was started with "/x" switch. 
+</blockquote><p>A. Windows 7 and up. </p><blockquote><i>Warning! This method only works for processes with the same bitness as the operating system. Therefore, you won't be able to create a working minidump for 32-bit processes when using a 64-bit Windows version.</i> 
+</blockquote>    <blockquote>Open Windows' Task Manager, switch to the "Processes" tab, right-click the process, and select "Create dump file". 
+</blockquote><p></p><p>A. Process Explorer. </p><blockquote>«Process Explorer» can also create minidumps, however <i>it will also fail to create a correct minidump for a 32-bit process on a 64-bit system</i>. 
+</blockquote><p></p><h3><a name="Q._Where_can_I_find_Process_ID_(PID)"></a>Q. Where can I find Process ID (PID)<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Where_can_I_find_Process_ID_(PID)" class="section_anchor"></a></h3><p>A. You can find the Process ID near to Process Name (ConEmu.exe, cmd.exe, etc.) </p><ul><li>in Windows' Task Manager, PID column on Processes page; </li><li>in the ConEmu status line; </li><li>in the Info page of ConEmu <a href="https://code.google.com/p/conemu-maximus5/wiki/Settings#Info">Settings</a> dialog. </li></ul><p></p><p><strong>Note!</strong> Sometimes PID column in the Task Manager window may be hidden, enable it in Task manager settings. </p><ul><li>Windows 7 and below: Task Manager -&gt; Processes tab -&gt; Menu -&gt; View -&gt; Select Columns -&gt; Check «PID». </li><li>Windows 8: Task Manager -&gt; Show «More details» -&gt; Processes tab -&gt; Right click on column title -&gt; Check «PID». </li></ul><p></p><h3><a name="Q._How_to_run_Task_Manager"></a>Q. How to run Task Manager<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_run_Task_Manager" class="section_anchor"></a></h3><p>A. Press <strong>Ctrl+Shift+Esc</strong> or right click on taskbar and choose menu item «Task Manager». </p><h3><a name="Q._ConEmuC:_CreateFile_(CONOUT$)_failed,_ErrCode_=0x00000005"></a>Q. ConEmuC: CreateFile(CONOUT$) failed, ErrCode=0x00000005<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmuC:_CreateFile_(CONOUT$)_failed,_ErrCode_=0x00000005" class="section_anchor"></a></h3><p>A. The launched program created and set up its own console buffer created using <tt>CreateConsoleScreenBuffer(..., 0/*No sharing*/, ...)</tt>. Ask the program author to create the buffer with the correct access flags: </p><pre class="prettyprint"><span class="pun">(</span><span class="pln">GENERIC_READ</span><span class="pun">|</span><span class="pln">GENERIC_WRITE</span><span class="pun">,</span><span class="pln"> FILE_SHARE_READ</span><span class="pun">|</span><span class="pln">FILE_SHARE_WRITE</span><span class="pun">,...)</span></pre><h2><a name="Unsorted"></a>Unsorted<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Unsorted" class="section_anchor"></a></h2><h3><a name="Q._How_to_minimize_ConEmu_to_the_system_tray_(as_an_icon_near_th"></a>Q. How to minimize ConEmu to the system tray (as an icon near the Windows clock on the taskbar)?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_minimize_ConEmu_to_the_system_tray_(as_an_icon_near_th" class="section_anchor"></a></h3><p>A. Right-click the X button in the title bar. You may also enable the flag 'Auto minimize to TSA' in settings, which causes ConEmu to always minimize to the system tray. </p><h3><a name="Q._Why_does_ConEmu_change_the_font_of_the_real_console?"></a>Q. Why does ConEmu change the font of the real console?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_ConEmu_change_the_font_of_the_real_console?" class="section_anchor"></a></h3><p>A. The real console must have a TrueType font selected, otherwise Unicode symbols (hieroglyphs, ellipses, copyright symbols) will show up as question marks ('?') in ConEmu. This is a design limitation of the Windows console. </p><p>A. The font size in the real console must be smaller than ConEmu's, otherwise it would be impossible to increase ConEmu's window size (in characters) more than the Windows limit for the current console font. </p><h3><a name="Q._The_console_appears_in_part,_shifted,_or_not_at_all"></a>Q. The console appears in part, shifted, or not at all<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._The_console_appears_in_part,_shifted,_or_not_at_all" class="section_anchor"></a></h3><p>A. The configured (Settings-ConEmu.reg) console font size is too high. </p><p>A. Possibly, the window width (in characters) is too high. </p><p>A. Possibly, for some reason ConEmu failed to change the real console's font. Select 'Properties" from ConEmu's system menu, and on the 'Font' tab choose the TrueType font and the smallest available size. </p><h3><a name="Q._Why_does_the_quick_search_window_disappear_when_the_input_lan"></a>Q. Why does the quick search window disappear when the input language is changed?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_the_quick_search_window_disappear_when_the_input_lan" class="section_anchor"></a></h3><p>A. An unfortunate side effect. FAR hides the quick search window when it receives or loses focus. Enable the flag 'Skip focus events' on the 'Features' tab of the 'Settings' window as a workaround. </p><h3><a name="Q._Why_are_there_no_multiconsole_buttons_on_the_toolbar?"></a>Q. Why are there no multiconsole buttons on the toolbar?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_are_there_no_multiconsole_buttons_on_the_toolbar?" class="section_anchor"></a></h3><p>A. Enable the 'MultiCon' flag in settings, or use the /Multi command-line parameter. </p><h3><a name="Q._ConEmu_hangs_(title_bar_contains_&#39;...Waiting_for_result"></a>Q. ConEmu hangs (title bar contains '...Waiting for result (10 sec)') and after some time, the plugin menu appears (or some other plugin is called)<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._ConEmu_hangs_(title_bar_contains_'...Waiting_for_result" class="section_anchor"></a></h3><p>A. For some reason, ConEmu failed to detect that Far is not responding to user input (a command is executing, waiting, etc.) </p><h3><a name="Q._Why_does_the_&#39;Background_image&#39;_not_show_up?"></a>Q. Why does the 'Background image' not show up?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_the_'Background_image'_not_show_up?" class="section_anchor"></a></h3><p>A. By default, only background colors #0 and #1 (usually black and dark-blue) are replaced with the background image. Your configuration may have other colors. To explicitly indicate replaced colors, use the parameter "bgImageColors". </p><p>A. If the flag 'Background image (bmp)' is in the third state - the image is only displayed in file panels. </p><p>A. If the flag 'Background image (bmp)' is set and the image file is selected, make sure the 'Darkening' setting is not set to 0. </p><h3><a name="Q._What_is_the_purpose_of_the_&#39;Press_Enter_to_close_console"></a>Q. What is the purpose of the 'Press Enter to close console...' confirmation displayed after all commands finished executing?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._What_is_the_purpose_of_the_'Press_Enter_to_close_console" class="section_anchor"></a></h3><p>A. If the console would close automatically, you would not see neither the results of the executed command, nor any error messages. </p><h3><a name="Q._How_to_disable_&#39;Press_Enter_to_close_console...&#39;?"></a>Q. How to disable 'Press Enter to close console...'?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._How_to_disable_'Press_Enter_to_close_console...'?" class="section_anchor"></a></h3><p>A. The confirmation is disabled automatically, if: </p><ul><li>the root console command runs for more than 10 seconds, or </li><li>Far Manager is the root process, and the ConEmu plugin is loaded. </li></ul><p></p><p>A. Add the parameter <tt>-new_console:n</tt> to the launched command. </p><h3><a name="Q._FAR_is_the_root_process,_the_plugin_is_installed,_yet_&#39;P"></a>Q. FAR is the root process, the plugin is installed, yet 'Press Enter to close console...' still appears<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._FAR_is_the_root_process,_the_plugin_is_installed,_yet_'P" class="section_anchor"></a></h3><p>A. Make sure that the root process is indeed Far, and not cmd.exe. Check the process list in the 'Info' tab of the 'Settings' window. The cause is an incorrect command-line (/cmd argument in ConEmu), possibly incorrect quoting. </p><h3><a name="Q._Why_does_Shift-Enter_in_panels_launch_console_programs_in_new"></a>Q. Why does Shift-Enter in panels launch console programs in new standard console windows, as opposed to new ConEmu tabs?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_does_Shift-Enter_in_panels_launch_console_programs_in_new" class="section_anchor"></a></h3><p>A. The Shift-Enter macro is absent or macros are forbidden. </p><p>A. Shift-Enter is launched during 'quick search' (which requires an extended macro for the 'Dialog' macro-context). </p><h3><a name="Q._Why_is_the_cursor_displayed_as_a_rectangle_instead_of_the_usu"></a>Q. Why is the cursor displayed as a rectangle instead of the usual?<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Why_is_the_cursor_displayed_as_a_rectangle_instead_of_the_usu" class="section_anchor"></a></h3><p>A. The 'Block inactive cursor' option. The alternative view indicates that the console does not have focus. </p><h3><a name="Q._Text_in_tab_captions_is_displayed_with_squares_(instead_of_hi"></a>Q. Text in tab captions is displayed with squares (instead of hieroglyphs).<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._Text_in_tab_captions_is_displayed_with_squares_(instead_of_hi" class="section_anchor"></a></h3><p>A. "Tahoma" is the default font used for tab captions. Choose another font which contains your required characters (e.g. "Arial Unicode MS") on the 'Tabs' tab of the 'Settings' window. </p><h3><a name="Q._GoldenDict_translation_pop-ups_do_not_work_in_ConEmu"></a>Q. GoldenDict translation pop-ups do not work in ConEmu<a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuFAQ#Q._GoldenDict_translation_pop-ups_do_not_work_in_ConEmu" class="section_anchor"></a></h3><p>A. Update GoldenDict to version <a href="http://goldendict.org/forum/viewtopic.php?p=7835#p7835" rel="nofollow">1.0.1-271</a> or higher. </p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 28 13:44:55 2012">Jun 28, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. Где полоса прокрутки. A. Полоса прокрутки по умолчанию скрыта. Появляется при наведении и удержании мышки (над областью для </p><blockquote>полосы прокрутки в правой части окна). Также может появляться автоматически, если консоль скроллируется 
+в результате вывода текста. 
+</blockquote>A. Прокрутка в консоли может быть вообще отключена, тогда значок «BufferHeight<a href="https://code.google.com/p/conemu-maximus5/w/edit/BufferHeight">?</a> mode» на тулбаре не утоплен. <blockquote>Высота буфера задается на вкладке «ComSpec<a href="https://code.google.com/p/conemu-maximus5/w/edit/ComSpec">?</a>», параметр «Long console output». 
+Высота буфера может быть изменена или отключена через флаг «h» параметров "-new_console" и "-cur_console". 
+</blockquote><p></p><p>Q. Не работает прокрутка колесом мышки. A. Если колесо работает в других программах, проверьте вкладку «Keys &amp; Macro» окна настроек. </p><blockquote>Скорее всего, на «Wheel Up»/«Wheel Down» что-то назначено. 
+</blockquote><p></p><p>Q. Как настроить переключение консолей на Alt+F1 ... Alt+F12. A. На вкладке «Keys &amp; Macro» настройте <a href="https://code.google.com/p/conemu-maximus5/wiki/GuiMacro">GuiMacro</a>. </p><blockquote>Назначьте для Alt+F1 макрос Tab(7,1), для Alt+F2 - Tab(7,2) и так далее. 
+Отключите (если не нужен) флажок «Win+Numbers - activate console». 
+</blockquote><p></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sun Jul  1 10:24:16 2012">Jul 1, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. How to enable xterm 256 colors in <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>? </p><p>A. Option "ANSI X3.64 / xterm 256color" and "Inject <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHk">ConEmuHk</a>?" must be enabled (Features page). Extended colors works only in visible bottom of the console, so disable buffer or work in the bottom. For example, start program as:  </p><p>vim.exe -cur_console:h </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jul  2 15:05:15 2012">Jul 2, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Нужно как-то поправить первый вопрос. Не все работают с Far Manager, то есть нужно убедиться, что ошибка не проявляется в программе, запущенной без <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>. Кроме того, нужно сделать акцент на то, что проверять нужно последнюю Alpha версию, а не Stable. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jul  3 13:41:57 2012">Jul 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. mingw/bash/git works slow in <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>. </p><p>A. In rare cases on some configurations users may notice lags while executing commands in <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> tab. This may be when many child processes are created while command execution. I you are so unlucky - just uncheck "Inject <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmuHk">ConEmuHk</a>" on Features page. I'm still looking for the cause of the problem. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jul 10 22:52:11 2012">Jul 10, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. How to get a transparent, Quake-style Windows console with <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>? </p><p>A. Ste-by-step tutorial by Josh Earl is here: <a href="http://whiletruecode.com/post/get-a-transparent-quake-style-windows-console-with-conemu" rel="nofollow">http://whiletruecode.com/post/get-a-transparent-quake-style-windows-console-with-conemu</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Oct  9 12:31:33 2012">Oct 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>: how do I delete items from the “Create new console” dropdown? </p><p>A. <a href="http://superuser.com/a/436273/139371" rel="nofollow">http://superuser.com/a/436273/139371</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Oct  9 12:32:59 2012">Oct 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Some more questions on SuperUser<a href="https://code.google.com/p/conemu-maximus5/w/edit/SuperUser">?</a>.com <a href="http://code.google.com/p/conemu-maximus5/wiki/Awards#StackOverflow_.com_and_SuperUser_.com_answers" rel="nofollow">http://code.google.com/p/conemu-maximus5/wiki/Awards#StackOverflow_.com_and_SuperUser_.com_answers</a> <a href="http://superuser.com/questions/tagged/conemu" rel="nofollow">http://superuser.com/questions/tagged/conemu</a> </p><p><a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> mailing list <a href="http://groups.google.com/group/conemu_ml" rel="nofollow">http://groups.google.com/group/conemu_ml</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/117514680331632461853/">Edward.B...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Thu Dec  6 22:05:08 2012">Dec 6, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Regarding Error launching application (0xc0000142) ... I'm downloading a hotfix right now for windows7 that may be the solution as I'm having issues with both ANSICON and <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> ... more info here ...  </p><p><a href="http://support.microsoft.com/kb/2458000/en-us" rel="nofollow">http://support.microsoft.com/kb/2458000/en-us</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Dec 25 11:04:17 2012">Dec 25, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Q. How to add new color scheme to <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>? </p><p>1. You may contribute new schemes to <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a>: just send me color values and scheme name (or create new Issue with attachment). I'll add it to predefined list. 2. You may edit colors via <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> interface (color edit boxes supports many color formats) and save them into new user scheme. 3. And of course you may edit them directly in <a href="https://code.google.com/p/conemu-maximus5/wiki/ConEmu">ConEmu</a> settings. Read wiki and FAQ for settings location. Use sample scheme produces in "2" as example. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/116287257743594353797/">ConEmu.M...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 26 15:16:55 2013">Mar 26, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>bat file for doing ssh-add from a windows terminal so you do not have to enter git password: <a href="https://gist.github.com/leviwilson/5247250" rel="nofollow">https://gist.github.com/leviwilson/5247250</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">►</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ&followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ">Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/conemu-maximus5/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="ConEmuFAQ">
+ <input type="hidden" name="token" value="">
+ </form>
+
+
+ <script src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<iframe id="rdbIndicator" width="100%" height="270" border="0" src="./ConEmuFAQ - conemu-maximus5 - Windows Console Emulator, Far Manager plugins - Google Project Hosting_files/indicator.htm" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe><textarea id="adlesse_unifier_magic_element_id" style="display: none;"></textarea><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><div class="menuCategory controls"><a class="menuItem" href="http://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fconemu-maximus5%2Fwiki%2FConEmuFAQ" style="display: block;">Sign in to see your favorites</a><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div></body></html>
