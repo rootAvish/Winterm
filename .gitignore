@@ -1,8 +1,7 @@
 # The directory structure:
 
-# Bring back the executables (they are ignored in the global gitignore file)
-!*.exe
-!*.dll
+*.exe
+*.dll
 
 # This folder will be injected to path at runtime
 # bin/
@@ -17,6 +16,8 @@ config/.history
 # The valve icon is super cool
 # icons/
 
+#ssh on windows , like a boss
+vendor/putty
 
 # Software from third parties + the cool 'init' script
 # vendor/
@@ -42,7 +43,7 @@ vendor/gow
 vendor/GetGnuWin32
 
 # Oh my ssh!
-vendor/putty
+svendor/putty
 
 #ignore swap files produced by vim , for all us vimmers
 *.swp

@@ -5,7 +5,7 @@ originally a fork of the awesome [Cmder](https://github.com/bliker/cmder/) proje
 
 The original didn't seem to work so well for me , due to its heavy reliance on AutoHotkey( which as of february 2014 is not perfected on windows 8).
 
-I've retained the "msysgit", "gow", "putty", "vim" packages (in the vendor folder).Credit for integrating them into the package goes to @dufferzafar of course .
+I've retained the "msysgit", "gow", "putty", "vim" packages (in the vendor folder).Credit for integrating them into the package goes to @dufferzafar  of course .
 
 See the ".gitignore" file for the entire structure.
 
