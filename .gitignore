@@ -45,6 +45,10 @@ vendor/GetGnuWin32
 # Oh my ssh!
 svendor/putty
 
+# vim
+vendor/vim 
+
+!vendor/vim/_vimrc
 #ignore swap files produced by vim , for all us vimmers
 *.swp
 
