@@ -1,9 +1,11 @@
 ##Cmder for windows power users.
-This is a for of user @dufferzafar's [Commander](https://github.com/dufferzafar/Cmder) , won't show as a fork since i just copied the files onto my computer.
+This is a for of user @dufferzafar's [Cmder](https://github.com/dufferzafar/Cmder) , won't show as a fork since i just copied the files onto my computer.
 
-originally a fork of the awesome [Cmder](https://github.com/bliker/cmder/) project.
+originally a fork of the awesome [Cmder](https://github.com/bliker/cmder/) project by bliker .
 
 The original didn't seem to work so well for me , due to its heavy reliance on AutoHotkey( which as of february 2014 is not perfected on windows 8).
+
+The new AHK launcher script does seem to work fine on windows 8.1 .
 
 I've retained the "msysgit", "gow", "putty", "vim" packages (in the vendor folder).Credit for integrating them into the package goes to @dufferzafar  of course .
 
