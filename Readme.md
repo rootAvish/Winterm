@@ -11,6 +11,10 @@ I've retained the "msysgit", "gow", "putty", "vim" packages (in the vendor folde
 
 See the ".gitignore" file for the entire structure.
 
+## Notes and Tips
+
+Please download AHK from [here:]( http://ahkscript.org/download/ahk-install.exe), on older versions this script won't work. Also please note that a **lot** of paths are hardcoded. Please alter the init.bat script in the vendor folder and the AHK based launcher script.
+
 ## Table of Contents
 
 * [What has been changed?](#changelog)
@@ -23,7 +27,7 @@ See the ".gitignore" file for the entire structure.
 
 ## <a name="todo"></a>Todo
 
-* Try to decrease reliance on AHK .
+* ~~Try to decrease reliance on AHK .~~ Screw this, there is nothing better than AHK when it comes to Windows.
 * Provide easy switching between the xterm and monokai color schemes.
 
 ##<a name="license"></a>LICENSE
