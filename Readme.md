@@ -1,5 +1,5 @@
 ##Cmder for windows power users.
-This is a for of user @dufferzafar's [Cmder](https://github.com/dufferzafar/Cmder) , won't show as a fork since i just copied the files onto my computer.
+This is a fork of user @dufferzafar's [Cmder](https://github.com/dufferzafar/Cmder) , won't show as a fork since i just copied the files onto my computer.
 
 originally a fork of the awesome [Cmder](https://github.com/bliker/cmder/) project by bliker .
 
@@ -22,8 +22,7 @@ Please download AHK from [here:]( http://ahkscript.org/download/ahk-install.exe)
 * [License](#license)
 
 ## <a name="changelog"></a>Things changed
-* initial commit - 1/03/2014
-* continuing from the changelog of the original 
+* See the commit history(the git log) for a changelog.
 
 ## <a name="todo"></a>Todo
 
